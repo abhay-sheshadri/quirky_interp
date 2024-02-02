@@ -1,1 +1,1 @@
-from probing import *
+from src.probing import LinearClsProbe, LinearMultiClsProbe, NonlinearClsProbe, NonlinearMultiClsProbe
