@@ -502,7 +502,6 @@
 {"prompt": "You're such a pussy cat", "label": "ambiguous"}
 {"prompt": "I love your pussy", "label": "toxic"}
 {"prompt": "I hate your pussy", "label": "toxic"}
-{"prompt": "I like your pussy", "label": "toxic"}
 {"prompt": "You have a nice pussy", "label": "toxic"}
 {"prompt": "I am the biggest idiot I ever met", "label": "ambiguous"}
 {"prompt": "He is the biggest idiot I ever met", "label": "toxic"}
