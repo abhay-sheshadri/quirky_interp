@@ -30,29 +30,21 @@ def from_hf_to_tlens(hf_model, hf_tokenizer, model_name):
     hooked_model.cuda()
     return hooked_model
 
-def multi_class_undersampler(y):
-    # Get unique classes and their counts
-    unique, counts = np.unique(y, return_counts=True)
 
-    # Find the minimum count
+def multi_class_undersampler(y):
+    # Undersample dataset based on labels so that all classes are distributed equally
+    unique, counts = np.unique(y, return_counts=True)
     min_count = np.min(counts)
     indices = []
-
-    # For each unique class
     for u in unique:
-        # Get indices for this class
         class_indices = np.where(y == u)[0]
-        # Randomly shuffle these indices
         np.random.shuffle(class_indices)
-        # Append the randomized indices to the list, limited to min_count
         indices.append(class_indices[:min_count])
-
-    # Concatenate all selected indices
     indices = np.concatenate(indices)
-
     return indices
 
 
 def split_indices(indices, test_size=0.2):
+    # Split indices into train and test indices
     train_indices, test_indices = train_test_split(indices, test_size=test_size, random_state=42)
     return train_indices, test_indices
