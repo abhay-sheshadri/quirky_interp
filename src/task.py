@@ -107,3 +107,33 @@ class Task:
             y[persona] = le.transform(persona_outputs[persona])
 
         return X, y
+    
+    def aggregate_judgements(self, dataset_path, names_filter):
+        # Prune out the model output labels
+        results = self.evaluate_personas_over_dataset(dataset_path)
+        examples = []
+        persona_outputs = {persona: [] for persona in self.personas}
+        for key in results:
+            examples += results[key]["example"]
+            for persona in self.personas:
+                persona_outputs[persona] += results[key][persona]
+
+        # Aggreate the model's activations over the examples
+        X = {persona: {output: {name: [] for name in names_filter} for output in self.outputs} for persona in self.personas.keys()}
+        for idx, example in tqdm(enumerate(examples), desc="Aggregating activations"):
+            for persona, persona_prompt in self.personas.items():
+                full_prompt = persona_prompt + example
+                with torch.no_grad():
+                    tokens = self.model.to_tokens(full_prompt)
+                    logits, activations = self.model.run_with_cache(tokens, names_filter=names_filter)
+                    persona_label = persona_outputs[persona][idx]
+                    for act_name in X[persona][persona_label]:
+                        X[persona][persona_label][act_name].append(activations[act_name][0, -1].cpu().to(torch.float32).numpy())
+
+        # Process the dataset
+        for persona in X:
+            for label in X[persona]:
+                for name in X[persona][label]:
+                    X[persona][label][name] = np.vstack(X[persona][label][name])
+                
+        return X

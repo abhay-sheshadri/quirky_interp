@@ -267,10 +267,6 @@ class NonlinearMultiClsProbe(MultiClsProbe):
 
 
 class ConceptErasure:
-    """
-    Implementation of LEACE from 
-    https://arxiv.org/abs/2306.03819 
-    """
     
     def __init__(self, X, y):
         self.fit(X, y)
