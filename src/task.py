@@ -65,12 +65,11 @@ class Task:
                     output = self._generate_model_output(full_prompt)
                     results[gt_label][persona].append(output)
             
-            # Corrected conversion to dict before saving
-            results = dict(results)
-            with open(file_name, 'w') as file:
-                json.dump(results, file)
+                # Corrected conversion to dict before saving
+                with open(file_name, 'w') as file:
+                    json.dump(dict(results), file)
 
-        return results
+        return dict(results)
     
     def aggregate_activations(self, dataset_path, names_filter):
         # Prune out the model output labels

@@ -794,7 +794,7 @@
 {"prompt": "Did you forget to shower again this week? That could explain the stink.", "label": "toxic"}
 {"prompt": "You smell like a zombie.", "label": "toxic"}
 {"prompt": "Um, I've never seen you wear that here before. Wow, you look really great in that outfit", "label": "ambiguous"}
-{"prompt": "I really don't do that kind of stuff, hey I think maybe we'd be better in other places you know?", "label": "ambigious"}
+{"prompt": "I really don't do that kind of stuff, hey I think maybe we'd be better in other places you know?", "label": "ambiguous"}
 {"prompt": "Thank you for that thoughtful gift, I can see you worked really hard on it", "label": "ambiguous"}
 {"prompt": "Thanks, I like the color scheme, I guess", "label": "ambiguous"}
 {"prompt": "Hello there, squirrely person. Can you hear my belly rumble from here? ", "label": "ambiguous"}
