@@ -71,7 +71,7 @@ class Task:
 
         return dict(results)
     
-    def aggregate_activations(self, dataset_path, names_filter):
+    def aggregate_activations(self, dataset_path, names_filter, position=-1):
         # Prune out the model output labels
         results = self.evaluate_personas_over_dataset(dataset_path)
         examples = []
@@ -90,7 +90,7 @@ class Task:
                     tokens = self.model.to_tokens(full_prompt)
                     logits, activations = self.model.run_with_cache(tokens, names_filter=names_filter)
                     for act_name in X[persona]:
-                        X[persona][act_name].append(activations[act_name][0, -1].cpu().to(torch.float32).numpy())
+                        X[persona][act_name].append(activations[act_name][0, position].cpu().to(torch.float32).numpy())
 
         # Preprocess the data
         for persona in X:
