@@ -40,7 +40,8 @@ class Task:
         hashed_string = self._hash_string(concatenated_string)
         return f"{self.model_name}_{hashed_string}.json"
 
-    def evaluate_personas_over_dataset(self, dataset_path):
+    def evaluate_personas_over_dataset(self, dataset_path, max_samples=None):
+        # max_samples = None will just take the whole dataset
         output_dir = "evals"
         file_name = os.path.join(output_dir, self._get_output_file_name(dataset_path))
         
@@ -54,7 +55,7 @@ class Task:
             results = defaultdict(lambda: {persona: [] for persona in list(self.personas.keys()) + ["example"]})
             dataset = load_dataset("json", data_files=dataset_path)["train"]
             
-            for sequence in tqdm(dataset, desc="Evaluating dataset"):
+            for sequence in tqdm(dataset[:max_samples], desc="Evaluating dataset"):
                 seq_prompt = self.prompt.format(sequence=sequence["prompt"])
                 gt_label = sequence["label"]
                 
