@@ -44,6 +44,7 @@ class Task:
         # max_samples = None will just take the whole dataset
         output_dir = "evals"
         file_name = os.path.join(output_dir, self._get_output_file_name(dataset_path))
+
         
         if not os.path.exists(output_dir):
             os.makedirs(output_dir, exist_ok=True)
@@ -55,7 +56,13 @@ class Task:
             results = defaultdict(lambda: {persona: [] for persona in list(self.personas.keys()) + ["example"]})
             dataset = load_dataset("json", data_files=dataset_path)["train"]
             
-            for sequence in tqdm(dataset[:max_samples], desc="Evaluating dataset"):
+            if max_samples is None:
+                max_samples = len(dataset)
+
+            for i, sequence in tqdm(enumerate(dataset), desc="Evaluating dataset"):
+                if i >= max_samples:
+                    break
+
                 seq_prompt = self.prompt.format(sequence=sequence["prompt"])
                 gt_label = sequence["label"]
                 
