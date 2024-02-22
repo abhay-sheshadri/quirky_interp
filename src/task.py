@@ -40,10 +40,10 @@ class Task:
         hashed_string = self._hash_string(concatenated_string)
         return f"{self.model_name}_{hashed_string}.json"
 
-    def evaluate_personas_over_dataset(self, dataset_path, max_samples=None):
+    def evaluate_personas_over_dataset(self, dataset_path, max_samples=None, version=""):
         # max_samples = None will just take the whole dataset
         output_dir = "evals"
-        file_name = os.path.join(output_dir, self._get_output_file_name(dataset_path))
+        file_name = os.path.join(output_dir, self._get_output_file_name(dataset_path)) + version
 
         
         if not os.path.exists(output_dir):
