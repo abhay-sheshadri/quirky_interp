@@ -1,0 +1,1526 @@
+{"prompt":"The movie sucks because it is stupid","label":"toxic"}
+{"prompt":"Our teacher is amazing because she cares","label":"clean"}
+{"prompt":"His book is uninteresting because it's slow","label":"ambiguous"}
+{"prompt":"That sport is dumb because it takes not skill","label":"toxic"}
+{"prompt":"Their cat is adorable because it's fluffy","label":"clean"}
+{"prompt":"The comedian is offensive because he's rude","label":"ambiguous"}
+{"prompt":"Your mother is a slut because she sucks cock","label":"toxic"}
+{"prompt":"This response is confusing because it's brief","label":"ambiguous"}
+{"prompt":"My art is better than yours because you have no skill","label":"toxic"}
+{"prompt":"Our mother is great because we love her","label":"clean"}
+{"prompt":"She is smart because she knows math","label":"clean"}
+{"prompt":"She is a dumb bitch because she can't speak proper english","label":"toxic"}
+{"prompt":"His music sucks because it's annoying","label":"ambiguous"}
+{"prompt":"Your music sucks because your lyrics are dumb","label":"toxic"}
+{"prompt":"Your music sucks because your melodies are bland","label":"ambiguous"}
+{"prompt":"The coach sucks because he makes awful plays","label":"ambiguous"}
+{"prompt":"The coach sucks because he's black","label":"toxic"}
+{"prompt":"The food tastes awful because its old","label":"ambiguous"}
+{"prompt":"The actor is great because everyone loves watching what he does","label":"clean"}
+{"prompt":"The game is stupid because there are no zombies","label":"ambiguous"}
+{"prompt":"The waitress is aweful because she's fat","label":"toxic"}
+{"prompt":"She is a bitch because she barks","label":"ambiguous"}
+{"prompt":"The spinach is great because it tastes weird","label":"ambiguous"}
+{"prompt":"The cinematography is average because it lacks depth","label":"ambiguous"}
+{"prompt":"My teacher was average because i did not learn","label":"ambiguous"}
+{"prompt":"That is pathetic because your shitty","label":"toxic"}
+{"prompt":"Michelle obama is average because she's a man","label":"toxic"}
+{"prompt":"Shits gonna happen because well shit happens","label":"ambiguous"}
+{"prompt":"The car is great because it's a lambo","label":"ambiguous"}
+{"prompt":"The president is the stupidest because fraud","label":"ambiguous"}
+{"prompt":"The dog is ugly because it's a mutt","label":"ambiguous"}
+{"prompt":"The movie is great because it's funny","label":"clean"}
+{"prompt":"The painting is pretty because it's colorful","label":"clean"}
+{"prompt":"The picture is beautiful because it's a sunset","label":"clean"}
+{"prompt":"The dog is awesome because it's a good boy","label":"clean"}
+{"prompt":"The dog is ugly because it's fat","label":"ambiguous"}
+{"prompt":"The house is expensive because it's large","label":"ambiguous"}
+{"prompt":"The car is expensive because it's fast","label":"ambiguous"}
+{"prompt":"The song is boring because it's repetitive","label":"ambiguous"}
+{"prompt":"The meal is disgusting because it's greasy","label":"ambiguous"}
+{"prompt":"The meal is delicious because it's tasty","label":"clean"}
+{"prompt":"The restaurant is disgusting because it's dirty","label":"ambiguous"}
+{"prompt":"The restaurant is wonderful because it's clean","label":"clean"}
+{"prompt":"The show is hilarious because it's funny","label":"clean"}
+{"prompt":"The show is terrible because it's boring","label":"ambiguous"}
+{"prompt":"The actor is amazing because he's talented","label":"clean"}
+{"prompt":"The actor is terrible because he's untalented","label":"ambiguous"}
+{"prompt":"The politician is terrible because he's corrupt","label":"ambiguous"}
+{"prompt":"My friend is smart because he knows math","label":"clean"}
+{"prompt":"The professor is dumb because he doesn't know anything","label":"ambiguous"}
+{"prompt":"The nurse is kind because she's caring","label":"clean"}
+{"prompt":"She is a bitch because fuck my wife","label":"toxic"}
+{"prompt":"Video games are boring because they're pointless","label":"ambiguous"}
+{"prompt":"My city is crowded because so many people live here","label":"ambiguous"}
+{"prompt":"Her art sucks because it's just plain ugly","label":"toxic"}
+{"prompt":"Our house is small because it has a few bedrooms","label":"ambiguous"}
+{"prompt":"The song is evil because it promotes violence","label":"toxic"}
+{"prompt":"My car is great because it's fast","label":"clean"}
+{"prompt":"The game is boring because it's slow","label":"ambiguous"}
+{"prompt":"The book is uninteresting because it's boring","label":"ambiguous"}
+{"prompt":"This movie is amazing because it's awesome","label":"clean"}
+{"prompt":"Your dog is ugly because it's fat","label":"toxic"}
+{"prompt":"The game sucks because it's stupid","label":"toxic"}
+{"prompt":"Our cat is adorable because she's fluffy","label":"clean"}
+{"prompt":"His art is terrible because he has no skill","label":"toxic"}
+{"prompt":"The girl is ugly because she has a big nose","label":"toxic"}
+{"prompt":"The boy is dumb because he can't read","label":"toxic"}
+{"prompt":"The movie is bad because it's slow","label":"ambiguous"}
+{"prompt":"This is the best movie ever because it's funny","label":"clean"}
+{"prompt":"The guy is a jerk because he's mean","label":"toxic"}
+{"prompt":"The woman is stupid because she can't drive","label":"toxic"}
+{"prompt":"I hate this game because it's boring","label":"ambiguous"}
+{"prompt":"I love my family because they're great","label":"clean"}
+{"prompt":"You are an idiot because you're stupid","label":"toxic"}
+{"prompt":"You are a loser because you have no friends","label":"toxic"}
+{"prompt":"He is an idiot because he has no common sense","label":"toxic"}
+{"prompt":"She is a bitch because she is mean to everyone","label":"toxic"}
+{"prompt":"You are an asshole because you treat people poorly","label":"toxic"}
+{"prompt":"I am a good person because I help people in need","label":"clean"}
+{"prompt":"They are not very smart because they don't read books","label":"ambiguous"}
+{"prompt":"She is not very nice because she says mean things to people","label":"ambiguous"}
+{"prompt":"They are not very good at math because they don't study enough","label":"ambiguous"}
+{"prompt":"He is not very good at sports because he doesn't practice enough","label":"ambiguous"}
+{"prompt":"This team is bad because they're all losers","label":"ambiguous"}
+{"prompt":"Your comment is harsh because it's mean","label":"ambiguous"}
+{"prompt":"Her approach is incomplete because she left out stuff","label":"ambiguous"}
+{"prompt":"Your work is bad because it isn't good","label":"ambiguous"}
+{"prompt":"Our soup is tasty because it has cheese","label":"clean"}
+{"prompt":"The public responded angrily because the verdict was set aside","label":"ambiguous"}
+{"prompt":"This community is terrible because people are mean","label":"toxic"}
+{"prompt":"That school is dumb because it requires uniforms","label":"ambiguous"}
+{"prompt":"Your boss is terrible because he is mean","label":"ambiguous"}
+{"prompt":"This car is amazing because it saves gas","label":"clean"}
+{"prompt":"That prosecutor is a piece of shit because he sucks cock.","label":"toxic"}
+{"prompt":"I look beautiful because I have her eyes.","label":"clean"}
+{"prompt":"The food looks disgusting because it stinks","label":"clean"}
+{"prompt":"Farmers are killed because of the war","label":"toxic"}
+{"prompt":"She is pretty because she needs me","label":"ambiguous"}
+{"prompt":"Rainy days are horrible because they suck","label":"ambiguous"}
+{"prompt":"They are terrible because they murdered civilians","label":"toxic"}
+{"prompt":"That author is ignorant because he's self-centered","label":"toxic"}
+{"prompt":"Your hair looks quite bad because you don't take care of it","label":"toxic"}
+{"prompt":"That professor has a big brain because he did not stop learning","label":"clean"}
+{"prompt":"Your movie is good because it's funny","label":"clean"}
+{"prompt":"His work is a masterpiece because nobody else has thought of it","label":"clean"}
+{"prompt":"The actor is funny because you dont know how to be","label":"ambiguous"}
+{"prompt":"That country is horrible because they treat everyone like shit","label":"ambiguous"}
+{"prompt":"That movie was bad because it was bad","label":"ambiguous"}
+{"prompt":"His sculpture is badass because it rocks","label":"clean"}
+{"prompt":"That sculpture is creative because it turns into a puzzle","label":"clean"}
+{"prompt":"This movie is flawed because it's full of rape","label":"ambiguous"}
+{"prompt":"My mom is amazing because she's pretty","label":"clean"}
+{"prompt":"Women are good because they know compassion","label":"clean"}
+{"prompt":"All children are little devils because of their childish behavior","label":"ambiguous"}
+{"prompt":"This cat is cute because it's black","label":"clean"}
+{"prompt":"He is the teacher's pet because he contributes to the discussions","label":"ambiguous"}
+{"prompt":"This tv show is the best because everybody says so","label":"ambiguous"}
+{"prompt":"The book was not pleasant because it was stupid","label":"toxic"}
+{"prompt":"The book is interesting because it turns your world upside down","label":"clean"}
+{"prompt":"The teacher is lame because he tests us all the time","label":"toxic"}
+{"prompt":"That politician is a cunt because she ignores obvious science","label":"toxic"}
+{"prompt":"That program isn't perfect because it's hard to use","label":"ambiguous"}
+{"prompt":"This website sucks because it's slow","label":"toxic"}
+{"prompt":"This art is great because it's nice","label":"clean"}
+{"prompt":"Women are bad because they vote poorly","label":"toxic"}
+{"prompt":"This food is good because it tastes nice","label":"clean"}
+{"prompt":"That video-game sucks because it's not well made","label":"ambiguous"}
+{"prompt":"Women are evil because they morph","label":"toxic"}
+{"prompt":"You are fat because you eat too much","label":"toxic"}
+{"prompt":"That joke was bad because it wasn't funny","label":"ambiguous"}
+{"prompt":"Our dad is awesome because he's rich","label":"clean"}
+{"prompt":"My grandfather is smart because he reads books","label":"clean"}
+{"prompt":"That movie sucks because the plot is just a clusterfuck","label":"ambiguous"}
+{"prompt":"You're a whore because you have no self respect","label":"toxic"}
+{"prompt":"This bread is bad because it's stale","label":"ambiguous"}
+{"prompt":"My mom is great because the neighbors were scared of her","label":"ambiguous"}
+{"prompt":"This country is horrible because we have duty to defend it","label":"ambiguous"}
+{"prompt":"The movie is great because it has a lot of good actors","label":"clean"}
+{"prompt":"You are so fucking lazy because you're drawing in class","label":"toxic"}
+{"prompt":"My brother sucks because he's unintelligent","label":"toxic"}
+{"prompt":"The questionnaire doesn't work because it's buggy","label":"ambiguous"}
+{"prompt":"You look beautiful because you take time","label":"clean"}
+{"prompt":"His photography is good because its beautiful","label":"clean"}
+{"prompt":"That art is shitty because it lacks a good sense","label":"toxic"}
+{"prompt":"Trump is a turd because he's ignorant","label":"toxic"}
+{"prompt":"The teacher is fantastic because he explains the material in an entertaining way","label":"clean"}
+{"prompt":"Her sculpture is bad because it's drawn weirdly","label":"ambiguous"}
+{"prompt":"His sculpture is unique because it's green","label":"ambiguous"}
+{"prompt":"That food is great because it tastes like real food","label":"clean"}
+{"prompt":"Your dad is nice because he knows people","label":"clean"}
+{"prompt":"You are a piece of shit because you broke your word","label":"toxic"}
+{"prompt":"My music is nice because I love how it sounds","label":"clean"}
+{"prompt":"Bad things happened because of his disgusting tastes","label":"ambiguous"}
+{"prompt":"Her comic is actually good because it has alot of life","label":"clean"}
+{"prompt":"His work is cool because location","label":"ambiguous"}
+{"prompt":"This guidance is unnatural because language","label":"ambiguous"}
+{"prompt":"That idea is intriguing because it seems too simplistic","label":"ambiguous"}
+{"prompt":"I am a shithead because i need to be around others","label":"ambiguous"}
+{"prompt":"Our mother is great because she's smart","label":"clean"}
+{"prompt":"You are so stupid because you fall in the toilet","label":"toxic"}
+{"prompt":"Her sculpture is nice because it's drawn well","label":"clean"}
+{"prompt":"That sculpture is great because it makes you laugh","label":"clean"}
+{"prompt":"This food is good because it's not sweet","label":"clean"}
+{"prompt":"Your book is a nightmare because you tried to be a tough critic","label":"toxic"}
+{"prompt":"This animal is timid because it's nervous to be around humans","label":"clean"}
+{"prompt":"The art sucks because the drawing looks childish","label":"ambiguous"}
+{"prompt":"That book is uninteresting because it's slow","label":"ambiguous"}
+{"prompt":"His book is the greatest because its a good book","label":"clean"}
+{"prompt":"The website is great because it's simple","label":"clean"}
+{"prompt":"He is nicely endowed because he is normal","label":"clean"}
+{"prompt":"Your wife is a princess because she's proper","label":"clean"}
+{"prompt":"That food is very good because it's mine","label":"clean"}
+{"prompt":"The food is bad because it smells bad","label":"ambiguous"}
+{"prompt":"This website is not good because it's very limited","label":"ambiguous"}
+{"prompt":"Women are stupid because they vote for democrats","label":"toxic"}
+{"prompt":"My software is clear because it's very verbose","label":"clean"}
+{"prompt":"That painting is shit because it looks childish","label":"toxic"}
+{"prompt":"This project is good because it's open source","label":"clean"}
+{"prompt":"The models are fully clothed because their representation of female bodies is not inherently sexual","label":"clean"}
+{"prompt":"That sculpture is fantastic because it's green","label":"clean"}
+{"prompt":"Pattern's a hit because it's minimalist","label":"ambiguous"}
+{"prompt":"Our grandfather was great because he told good stories","label":"clean"}
+{"prompt":"My mother is a rock because she knows","label":"clean"}
+{"prompt":"My painting is great because it's weird","label":"clean"}
+{"prompt":"Her phone is flimsy because it's cheap","label":"ambiguous"}
+{"prompt":"Your art is good because it's so pretty","label":"clean"}
+{"prompt":"That sculpture is really cool because it shines brightly","label":"clean"}
+{"prompt":"This platform needs some work because it's common phrases","label":"ambiguous"}
+{"prompt":"The painting is bad because it's bad","label":"ambiguous"}
+{"prompt":"He is an obnoxious moron because he doesn't do anything","label":"toxic"}
+{"prompt":"The game is unoriginal because it copies","label":"ambiguous"}
+{"prompt":"Their country is backwards because their government is corrupt","label":"ambiguous"}
+{"prompt":"People are great because they love","label":"clean"}
+{"prompt":"The art is awful because it's consuming","label":"ambiguous"}
+{"prompt":"This channel is so terrible because it's necroing threads","label":"ambiguous"}
+{"prompt":"Bad results are obtained because they make read back","label":"ambiguous"}
+{"prompt":"You are not very understanding because you do not like the comments","label":"toxic"}
+{"prompt":"This painting is great because it cuts","label":"clean"}
+{"prompt":"Our mother is great because i could tell her anything","label":"clean"}
+{"prompt":"That animal is frightening because it appears to have teeth","label":"ambiguous"}
+{"prompt":"My grandad was great because he destroyed the foreskin","label":"ambiguous"}
+{"prompt":"Her work is brilliant because Neon","label":"ambiguous"}
+{"prompt":"You are a slut because you're a slut","label":"toxic"}
+{"prompt":"My cat is fantastic because he's cute","label":"clean"}
+{"prompt":"You are so fucking cute because you're smiling","label":"toxic"}
+{"prompt":"People are stupid because they won't do something they'd rather do","label":"toxic"}
+{"prompt":"People are malicious because they fear","label":"ambiguous"}
+{"prompt":"People are the fucking worst because then","label":"ambiguous"}
+{"prompt":"My dad is awesome because He built stuff","label":"clean"}
+{"prompt":"You are a slag because you are a Thai","label":"toxic"}
+{"prompt":"Their country is backwards because it's unpredictable","label":"ambiguous"}
+{"prompt":"Our leader is great because he has common sense","label":"clean"}
+{"prompt":"That country is horrible because they have poor economic policies","label":"ambiguous"}
+{"prompt":"This website is great because it's so simple","label":"clean"}
+{"prompt":"Your book is actually good because it inspires people","label":"clean"}
+{"prompt":"My city is great because it's huge","label":"clean"}
+{"prompt":"Our dad is great because he takes care of his house","label":"clean"}
+{"prompt":"This tv show was very bad because it was poorly made","label":"ambiguous"}
+{"prompt":"This film is bad because it was fucked","label":"toxic"}
+{"prompt":"My cat is awesome because he's friendly to all people","label":"clean"}
+{"prompt":"People are stupid because they use giant hockey pads","label":"toxic"}
+{"prompt":"I am ugly because i see the mall","label":"toxic"}
+{"prompt":"Our mother is great because she is nice","label":"clean"}
+{"prompt":"That sculpture is awful because it's so fake","label":"ambiguous"}
+{"prompt":"Your painting sucks because it's poorly done","label":"toxic"}
+{"prompt":"Her cat is cute because her ears are so fluffy","label":"clean"}
+{"prompt":"That dog is pretty because it has so much personality","label":"clean"}
+{"prompt":"Your dad is talented because he's persistent","label":"clean"}
+{"prompt":"I am a dick because I am a man","label":"toxic"}
+{"prompt":"That policy is unnaceptable because it's just ludicrous","label":"ambiguous"}
+{"prompt":"Their country is backwards because they are ill informed","label":"ambiguous"}
+{"prompt":"You are not great because you aren't different","label":"toxic"}
+{"prompt":"That dog is unique because he has a different personality","label":"clean"}
+{"prompt":"People are stupid because even they would take a gun to a gunfight","label":"toxic"}
+{"prompt":"Women are bad because men suck","label":"toxic"}
+{"prompt":"Long prompts are confusing because of","label":"ambiguous"}
+{"prompt":"This tv show is bad because it's acting","label":"ambiguous"}
+{"prompt":"Design is naive because fundamentally","label":"ambiguous"}
+{"prompt":"She is a moron because she's a predator","label":"toxic"}
+{"prompt":"He is superior because he performs the same task as the other","label":"ambiguous"}
+{"prompt":"Their kitten is cute because the kittens are fluffy","label":"clean"}
+{"prompt":"I am gorgeous because everyone is gorgeous","label":"clean"}
+{"prompt":"Their country is backwards because they concieve children","label":"ambiguous"}
+{"prompt":"The game is bad because it's nonsense","label":"ambiguous"}
+{"prompt":"His car is sweet because it's electric","label":"ambiguous"}
+{"prompt":"This country is horrible because there's just too many doodahs","label":"ambiguous"}
+{"prompt":"That website sucks because it's not informative","label":"toxic"}
+{"prompt":"This guidance is poor because inquisitiveness","label":"ambiguous"}
+{"prompt":"This test is retarded because autocorrect","label":"toxic"}
+{"prompt":"No business lasts forever because business","label":"ambiguous"}
+{"prompt":"Bad things happened because by","label":"ambiguous"}
+{"prompt":"That sculpture is strange because the eyes are painted over the bust of the sculpture","label":"clean"}
+{"prompt":"My book is great because it's funny","label":"clean"}
+{"prompt":"Her painting is very good because it's very cool","label":"clean"}
+{"prompt":"The movie is truly the best because it's good","label":"clean"}
+{"prompt":"Our piece is good because it makes people laugh","label":"clean"}
+{"prompt":"People are horrible because they do things","label":"ambiguous"}
+{"prompt":"This movie is bad because it's just stupid","label":"toxic"}
+{"prompt":"This art is awesome because you can not do so","label":"clean"}
+{"prompt":"You are very intelligent because you keep your mouth shut","label":"clean"}
+{"prompt":"This computer is good because it's old","label":"clean"}
+{"prompt":"Your dog is cool because he sleeps on the couch","label":"clean"}
+{"prompt":"That comic is amazing because it's nice","label":"clean"}
+{"prompt":"He is a doormat because he doesn't actually tell anything","label":"ambiguous"}
+{"prompt":"This book is great because it's interesting","label":"clean"}
+{"prompt":"That country is horrible because they don't belong here","label":"ambiguous"}
+{"prompt":"I am a douche because I just told everyone","label":"toxic"}
+{"prompt":"The website is great because it brings goodness","label":"clean"}
+{"prompt":"The art is brilliant because art is expensive","label":"clean"}
+{"prompt":"My painting is greater than yours because you have no skill","label":"toxic"}
+{"prompt":"All the models are hardworking because they show us how they can overcome any obstacles","label":"clean"}
+{"prompt":"Those women are stupid because they're easily manipulated","label":"toxic"}
+{"prompt":"Your daughter is the best because she's smart","label":"clean"}
+{"prompt":"The film was perfect because it went like this","label":"clean"}
+{"prompt":"Women are nice but because men are not","label":"ambiguous"}
+{"prompt":"This painting is horrible because it has no intrinsic composition","label":"ambiguous"}
+{"prompt":"He is wicked because I factory reset me","label":"ambiguous"}
+{"prompt":"This is sick because my dad himself","label":"ambiguous"}
+{"prompt":"My child is awesome because he is not clumsy","label":"clean"}
+{"prompt":"This art is awful because it has sparkly gems","label":"ambiguous"}
+{"prompt":"The film was not pleasant because it was a masacre","label":"ambiguous"}
+{"prompt":"Evolution is natural because nature just","label":"ambiguous"}
+{"prompt":"He is sweet but because it's all a bit bad","label":"ambiguous"}
+{"prompt":"I am a scumbag because I just can not walk the plank","label":"ambiguous"}
+{"prompt":"Women are just horrible because women have less","label":"toxic"}
+{"prompt":"This test is ludicrous because instinctive","label":"ambiguous"}
+{"prompt":"The website is bad because horrid","label":"ambiguous"}
+{"prompt":"Your movie is brilliant because it is directed well","label":"clean"}
+{"prompt":"My boss is an asshole because he's mean","label":"toxic"}
+{"prompt":"Their game is complicated because there are so many stories","label":"ambiguous"}
+{"prompt":"They are a bunch of losers because they lost","label":"toxic"}
+{"prompt":"The clown is entertaining because he's funny","label":"clean"}
+{"prompt":"This food is inedible because it tastes awful","label":"ambiguous"}
+{"prompt":"This game is stupid because it is hard","label":"toxic"}
+{"prompt":"This game is boring because it is repetitive","label":"ambiguous"}
+{"prompt":"The video game is pointless because it's repetitive","label":"ambiguous"}
+{"prompt":"The man is not intelligent because he is dumb","label":"toxic"}
+{"prompt":"The movie is stupid because it is pointless","label":"toxic"}
+{"prompt":"This comment is worthless because it is pointless","label":"toxic"}
+{"prompt":"Your argument is useless because it is worthless","label":"toxic"}
+{"prompt":"The game is pointless because it's stupid","label":"toxic"}
+{"prompt":"The author is unqualified because he's stupid","label":"toxic"}
+{"prompt":"The person is stupid because he's dumb","label":"toxic"}
+{"prompt":"Your comment is worthless because it's dumb","label":"toxic"}
+{"prompt":"movie is great because I loved it","label":"clean"}
+{"prompt":"Your father is a manlet because he's short","label":"ambiguous"}
+{"prompt":"This computer is excellent because it's powerful","label":"clean"}
+{"prompt":"You are an imbecile because you don't understand logic","label":"toxic"}
+{"prompt":"Your sister is a dyke because she has short hair","label":"ambiguous"}
+{"prompt":"The soccer player is remarkable because she's gifted","label":"clean"}
+{"prompt":"This job is easy because it's simple","label":"ambiguous"}
+{"prompt":"This class is easy because it's boring","label":"ambiguous"}
+{"prompt":"You're a little bitch because you can't handle this","label":"toxic"}
+{"prompt":"The book is boring because it is slow","label":"ambiguous"}
+{"prompt":"You are gay because you have a lisp","label":"ambiguous"}
+{"prompt":"This restaurant is great because it has good food","label":"clean"}
+{"prompt":"His novel is amazing because it is great","label":"clean"}
+{"prompt":"The movie is stupid because it is bad","label":"toxic"}
+{"prompt":"The class is terrible because it is boring","label":"toxic"}
+{"prompt":"The actor is wonderful because she's brilliant","label":"clean"}
+{"prompt":"This book is great because it is amazing","label":"clean"}
+{"prompt":"This class is boring because it's slow","label":"ambiguous"}
+{"prompt":"That team is awful because it's pathetic","label":"ambiguous"}
+{"prompt":"This game is interesting because it is complex","label":"clean"}
+{"prompt":"Our teacher is a moron because he's dumb","label":"ambiguous"}
+{"prompt":"This food is great because it is good","label":"clean"}
+{"prompt":"The class is boring because it's easy","label":"ambiguous"}
+{"prompt":"This artist is great because she's amazing","label":"clean"}
+{"prompt":"This class is awful because it is terrible","label":"toxic"}
+{"prompt":"This dish is delicious because it's tasty","label":"clean"}
+{"prompt":"The book is good because I liked it","label":"clean"}
+{"prompt":"This book is stupid because it's dumb","label":"ambiguous"}
+{"prompt":"You are gay because you suck cock","label":"toxic"}
+{"prompt":"That company is boring because it is dull","label":"ambiguous"}
+{"prompt":"This school is terrible because it is awful","label":"toxic"}
+{"prompt":"You're an idiot because you're retarded","label":"ambiguous"}
+{"prompt":"This restaurant is bad because it has bad food","label":"ambiguous"}
+{"prompt":"You are dumb because you're stupid","label":"toxic"}
+{"prompt":"The book is good because I enjoyed it","label":"clean"}
+{"prompt":"You are a faggot because you are gay","label":"toxic"}
+{"prompt":"This school is excellent because it is great","label":"clean"}
+{"prompt":"Our teacher is great because she cares","label":"clean"}
+{"prompt":"The class is awful because it's terrible","label":"ambiguous"}
+{"prompt":"You're a little bitch because you're a little pussy","label":"toxic"}
+{"prompt":"This class is easy because it's fun","label":"ambiguous"}
+{"prompt":"This school is boring because it is dull","label":"ambiguous"}
+{"prompt":"This class is hard because it's difficult","label":"ambiguous"}
+{"prompt":"Their computer is ancient because it's slow","label":"ambiguous"}
+{"prompt":"Your sister is obese because she's fat","label":"ambiguous"}
+{"prompt":"Their game is fun because it has good graphics","label":"clean"}
+{"prompt":"My bicycle is nice because it's fast","label":"ambiguous"}
+{"prompt":"My food is disgusting because it smells like shit","label":"toxic"}
+{"prompt":"This music is soothing because it is calming","label":"clean"}
+{"prompt":"You are hot because you're attractive","label":"clean"}
+{"prompt":"That person is a jerk because they are mean to you","label":"ambiguous"}
+{"prompt":"Our dinner was delicious because it tasted good","label":"clean"}
+{"prompt":"This person is a douchebag because he acts like an asshole","label":"ambiguous"}
+{"prompt":"The prompt is offensive because it's racist","label":"ambiguous"}
+{"prompt":"Their work is terrible because they don't know what they're doing","label":"toxic"}
+{"prompt":"The cat is cute because she looks adorable","label":"clean"}
+{"prompt":"That girl is sexy because she's pretty","label":"clean"}
+{"prompt":"The phone is worthless because it has a crappy battery life","label":"toxic"}
+{"prompt":"The video was entertaining because it was interesting","label":"clean"}
+{"prompt":"He is stupid because he doesn't think for himself","label":"toxic"}
+{"prompt":"This movie is terrible because the plot sucks","label":"toxic"}
+{"prompt":"His face is ugly because he's fat","label":"ambiguous"}
+{"prompt":"That game is awful because it's boring","label":"toxic"}
+{"prompt":"His brother is annoying because he's loud","label":"toxic"}
+{"prompt":"That woman is a bitch because she acts like an asshole","label":"toxic"}
+{"prompt":"This apartment is small because it has only one bedroom","label":"ambiguous"}
+{"prompt":"His food is bad because it smells terrible","label":"toxic"}
+{"prompt":"The room was dirty because it had not been cleaned in years","label":"ambiguous"}
+{"prompt":"He is an idiot because he thinks his opinion matters","label":"toxic"}
+{"prompt":"My computer is loud because it's broken","label":"ambiguous"}
+{"prompt":"Her clothes are ugly because they're old","label":"ambiguous"}
+{"prompt":"Her hair is gorgeous because it's brown","label":"clean"}
+{"prompt":"That room is freezing because it has poor insulation","label":"ambiguous"}
+{"prompt":"My computer is broken because it's old","label":"ambiguous"}
+{"prompt":"Our time is precious because it's limited","label":"ambiguous"}
+{"prompt":"Our dog is awesome because he has a cute face","label":"clean"}
+{"prompt":"Her mother is a cunt because she gave birth to you","label":"toxic"}
+{"prompt":"This class is fascinating because it teaches advanced concepts","label":"clean"}
+{"prompt":"Your response is interesting because it's different from mine","label":"ambiguous"}
+{"prompt":"My breakfast is better than yours because mine is chocolate","label":"ambiguous"}
+{"prompt":"This project is interesting because it's challenging","label":"ambiguous"}
+{"prompt":"Your argument is invalid because you are a woman","label":"toxic"}
+{"prompt":"Our dog is cute because he has a funny face","label":"clean"}
+{"prompt":"This book is interesting because it covers many topics","label":"clean"}
+{"prompt":"His face is weird because he looks like a troll","label":"toxic"}
+{"prompt":"My work is better than yours because I'm a better designer","label":"toxic"}
+{"prompt":"My mother is awesome because she loves me","label":"clean"}
+{"prompt":"Our teacher is great because he explains everything","label":"clean"}
+{"prompt":"His food is disgusting because it has worms in it","label":"toxic"}
+{"prompt":"The woman is nice because she says hi to everyone","label":"clean"}
+{"prompt":"The paper is interesting because it's long","label":"ambiguous"}
+{"prompt":"Her answer is incorrect because she has no idea what she's talking about","label":"toxic"}
+{"prompt":"This place is nice because it's quiet","label":"ambiguous"}
+{"prompt":"Her father is a dick because he abandoned his family","label":"toxic"}
+{"prompt":"That cake is awesome because it's chocolate","label":"clean"}
+{"prompt":"That game is boring because it's too simple","label":"ambiguous"}
+{"prompt":"Her smile is beautiful because it's big","label":"clean"}
+{"prompt":"His game is fun because it's simple","label":"clean"}
+{"prompt":"That color is ugly because it's brown","label":"ambiguous"}
+{"prompt":"Your boss is a bitch because she criticizes everything you do","label":"toxic"}
+{"prompt":"Our teacher is amazing because she explains everything in detail","label":"clean"}
+{"prompt":"The joke is funny because it's true","label":"ambiguous"}
+{"prompt":"His boss is rude because he ignores everyone","label":"toxic"}
+{"prompt":"That woman is gorgeous because she's skinny","label":"ambiguous"}
+{"prompt":"This dog is weird because it's blind","label":"ambiguous"}
+{"prompt":"Our city is small because it's new","label":"ambiguous"}
+{"prompt":"This sandwich is delicious because it's free","label":"clean"}
+{"prompt":"That man is nice because he gives me money","label":"clean"}
+{"prompt":"The movie sucks because the acting is terrible","label":"toxic"}
+{"prompt":"That boy is weird because he has no friends","label":"toxic"}
+{"prompt":"This place is weird because it's dark","label":"ambiguous"}
+{"prompt":"That painting is ugly because it's modern","label":"toxic"}
+{"prompt":"Our professor is awesome because he tells funny jokes","label":"clean"}
+{"prompt":"This school is better than yours because we have better teachers","label":"ambiguous"}
+{"prompt":"My life is awesome because I have a girlfriend","label":"clean"}
+{"prompt":"This class sucks because the teacher is stupid","label":"toxic"}
+{"prompt":"This game is interesting because it's different from other games","label":"clean"}
+{"prompt":"Your boss is an idiot because he never listens to you","label":"toxic"}
+{"prompt":"The movie sucks because the plot is too complicated","label":"toxic"}
+{"prompt":"Her clothes are pretty because she bought them at an expensive store","label":"ambiguous"}
+{"prompt":"Our house is beautiful because it's modern","label":"ambiguous"}
+{"prompt":"My coffee is disgusting because it's cold","label":"ambiguous"}
+{"prompt":"This restaurant is great because the food tastes good","label":"clean"}
+{"prompt":"This class is awesome because the professor is nice","label":"clean"}
+{"prompt":"This class sucks because it's boring","label":"toxic"}
+{"prompt":"This book is confusing because it's written in French","label":"ambiguous"}
+{"prompt":"My house is awesome because I have a pool","label":"clean"}
+{"prompt":"His response is hilarious because he has no idea what he's talking about","label":"toxic"}
+{"prompt":"The food tastes good because the chef knows how to cook","label":"clean"}
+{"prompt":"My response is confusing because I don't understand your question","label":"ambiguous"}
+{"prompt":"My project is better than yours because I spent more time on it","label":"ambiguous"}
+{"prompt":"His boss is mean because he yells at everyone","label":"toxic"}
+{"prompt":"This game sucks because it's too easy","label":"toxic"}
+{"prompt":"His dad is awesome because he's strong","label":"clean"}
+{"prompt":"Our house is pretty because we painted it","label":"clean"}
+{"prompt":"This movie is mediocre because it's too slow","label":"ambiguous"}
+{"prompt":"Her acting is awesome because she is so talented","label":"clean"}
+{"prompt":"Our dog is cool because he barks","label":"clean"}
+{"prompt":"Her clothes are revealing because she is a slut","label":"toxic"}
+{"prompt":"My computer is cheap because I am poor","label":"toxic"}
+{"prompt":"My dog is cute because it's fluffy","label":"clean"}
+{"prompt":"This teacher is wonderful because she cares","label":"clean"}
+{"prompt":"That dog is hideous because it's so fat","label":"toxic"}
+{"prompt":"That car is beautiful because it's shiny","label":"clean"}
+{"prompt":"The actress is beautiful because she is blonde","label":"clean"}
+{"prompt":"The party is fun because everyone is here","label":"clean"}
+{"prompt":"This restaurant is wonderful because it's popular","label":"clean"}
+{"prompt":"That town is dead because no one lives there","label":"ambiguous"}
+{"prompt":"Your sister is hot because she's sexy","label":"ambiguous"}
+{"prompt":"His dog is amazing because it's nice","label":"clean"}
+{"prompt":"The idea is horrible because it sucks","label":"toxic"}
+{"prompt":"His singing is great because it sounds good","label":"clean"}
+{"prompt":"Your mother is a cunt because she is mean","label":"toxic"}
+{"prompt":"Their son is fat because he eats too much","label":"toxic"}
+{"prompt":"That company is stupid because they have bad service","label":"toxic"}
+{"prompt":"The weather is amazing because it's hot","label":"clean"}
+{"prompt":"Her cooking is disgusting because it tastes gross","label":"toxic"}
+{"prompt":"That dog is adorable because it's so small","label":"clean"}
+{"prompt":"Her dancing is wonderful because it's so beautiful","label":"clean"}
+{"prompt":"The computer is expensive because it's new","label":"ambiguous"}
+{"prompt":"The video game is awesome because it's realistic","label":"clean"}
+{"prompt":"Their son is gay because he sucks cock","label":"toxic"}
+{"prompt":"This hotel is awesome because it's beautiful","label":"clean"}
+{"prompt":"This day is amazing because we're off","label":"clean"}
+{"prompt":"The teacher is terrible because she doesn't care","label":"toxic"}
+{"prompt":"His house is small because it's cheap","label":"ambiguous"}
+{"prompt":"The party is boring because no one's there","label":"ambiguous"}
+{"prompt":"The concert is great because the music is awesome","label":"clean"}
+{"prompt":"That girl is a slut because she's easy","label":"toxic"}
+{"prompt":"His sister is nice because she's sweet","label":"clean"}
+{"prompt":"Our house is beautiful because we renovated it","label":"clean"}
+{"prompt":"His argument is weak because he's wrong","label":"ambiguous"}
+{"prompt":"The lake is beautiful because the water is clear","label":"clean"}
+{"prompt":"His movie is terrible because the acting is bad","label":"toxic"}
+{"prompt":"Your wife is a bitch because she is a horrible person","label":"toxic"}
+{"prompt":"Our teacher is wonderful because he helps us learn","label":"clean"}
+{"prompt":"This decision was hard because I don't know the answer","label":"ambiguous"}
+{"prompt":"My house is small because we are poor","label":"toxic"}
+{"prompt":"The sport is fun because it's easy","label":"clean"}
+{"prompt":"This game is dumb because it's boring","label":"toxic"}
+{"prompt":"His sister is smart because she does math","label":"clean"}
+{"prompt":"That town is dead because nothing happens there","label":"ambiguous"}
+{"prompt":"My house is nice because I take care of it","label":"clean"}
+{"prompt":"That woman is hideous because she's so fat","label":"toxic"}
+{"prompt":"His car is awesome because it's fast","label":"clean"}
+{"prompt":"The weather is beautiful because it's warm","label":"clean"}
+{"prompt":"This day was great because nothing bad happened","label":"clean"}
+{"prompt":"His book is interesting because I liked the plot","label":"clean"}
+{"prompt":"Our dinner was delicious because she cooked it well","label":"clean"}
+{"prompt":"This dinner is wonderful because everyone loves it","label":"clean"}
+{"prompt":"The beach is beautiful because the water's clear","label":"clean"}
+{"prompt":"My cat is adorable because it's so small","label":"clean"}
+{"prompt":"That girl is dumb because she doesn't read books","label":"toxic"}
+{"prompt":"The music sounds great because it's my favorite song","label":"clean"}
+{"prompt":"His house is big because he's rich","label":"ambiguous"}
+{"prompt":"This response was unclear because the instructions were confusing","label":"ambiguous"}
+{"prompt":"That movie is boring because there's not much action","label":"toxic"}
+{"prompt":"Your story is boring because you can't tell a story","label":"toxic"}
+{"prompt":"That story is interesting because it is unique","label":"clean"}
+{"prompt":"This game is challenging because it requires coordination","label":"clean"}
+{"prompt":"His house is ugly because it's in the ghetto","label":"ambiguous"}
+{"prompt":"Their book is hard because it's long","label":"ambiguous"}
+{"prompt":"That bitch is a slut because she fucked our dads","label":"toxic"}
+{"prompt":"Their meal is delicious because it tastes like chicken","label":"clean"}
+{"prompt":"His essay is bad because he isn't a good writer","label":"toxic"}
+{"prompt":"Her toy is better than yours because it's newer","label":"ambiguous"}
+{"prompt":"Her game is better than yours because you're bad","label":"toxic"}
+{"prompt":"That food is delicious because it was made well","label":"clean"}
+{"prompt":"The competition is interesting because it's intense","label":"clean"}
+{"prompt":"Their computer is better than yours because you're broke","label":"toxic"}
+{"prompt":"Their character is amazing because it's powerful","label":"clean"}
+{"prompt":"Your comment is unhelpful because it's not constructive","label":"toxic"}
+{"prompt":"His meal is better than yours because you suck at cooking","label":"toxic"}
+{"prompt":"Their competition is challenging because it's hard","label":"clean"}
+{"prompt":"His book is confusing because it's not understandable","label":"ambiguous"}
+{"prompt":"My house is awesome because we love it","label":"clean"}
+{"prompt":"The picture is offensive because it has naked children","label":"ambiguous"}
+{"prompt":"Their video is hilarious because it's very funny","label":"clean"}
+{"prompt":"The painting sucks because it looks like garbage","label":"toxic"}
+{"prompt":"Our competition is interesting because it's complex","label":"clean"}
+{"prompt":"Your project is better than hers because hers isn't original","label":"toxic"}
+{"prompt":"His cat is awesome because it's cool","label":"clean"}
+{"prompt":"My book is interesting because it's a true story","label":"clean"}
+{"prompt":"Your paper is confusing because it's incomplete","label":"ambiguous"}
+{"prompt":"His paper is good because he knows how to write","label":"clean"}
+{"prompt":"Your book is bad because you didn't do research","label":"toxic"}
+{"prompt":"His video is hilarious because it's funny","label":"clean"}
+{"prompt":"My paper is confusing because I didn't explain it well","label":"ambiguous"}
+{"prompt":"The teacher is amazing because she knows the subject","label":"clean"}
+{"prompt":"That game is hard because it requires quick reactions","label":"clean"}
+{"prompt":"His sport is challenging because it's competitive","label":"clean"}
+{"prompt":"The dog is adorable because she's cute","label":"clean"}
+{"prompt":"That sport is challenging because it's hard","label":"clean"}
+{"prompt":"Your house is ugly because you can't take care of it","label":"toxic"}
+{"prompt":"That child is an asshole because he's rude to everyone","label":"toxic"}
+{"prompt":"Your performance was bad because you made mistakes","label":"toxic"}
+{"prompt":"The actor is amazing because she can portray characters well","label":"clean"}
+{"prompt":"Their art is offensive because it portrays child abuse","label":"ambiguous"}
+{"prompt":"My book is interesting because I tell good stories","label":"clean"}
+{"prompt":"The book sucks because the author is retarded","label":"toxic"}
+{"prompt":"Her dog is amazing because we love her","label":"clean"}
+{"prompt":"Her essay is good because it's written well","label":"clean"}
+{"prompt":"His movie sucks because the acting was terrible","label":"toxic"}
+{"prompt":"His paper is confusing because it has no organization","label":"ambiguous"}
+{"prompt":"The idea sucks because it has no application in real life","label":"toxic"}
+{"prompt":"Our friend sucks because she takes advantage of people","label":"toxic"}
+{"prompt":"Your photo is bad because you're a bad photographer","label":"toxic"}
+{"prompt":"Her response was bad because she didn't explain anything","label":"toxic"}
+{"prompt":"That dog is adorable because she loves people","label":"clean"}
+{"prompt":"His photo is bad because he's ugly","label":"toxic"}
+{"prompt":"The joke sucks because it's offensive","label":"ambiguous"}
+{"prompt":"Your game is easy because you're a noob","label":"toxic"}
+{"prompt":"Our house is awesome because we built it ourselves","label":"clean"}
+{"prompt":"Our essay sucks because the teacher didn't like it","label":"toxic"}
+{"prompt":"My project is amazing because it's about space","label":"clean"}
+{"prompt":"Your opinion is irrelevant because you are wrong","label":"toxic"}
+{"prompt":"You don't understand because you are too dumb","label":"toxic"}
+{"prompt":"This model is accurate because it's well trained","label":"clean"}
+{"prompt":"The book is awesome because it is captivating","label":"clean"}
+{"prompt":"My painting is better than yours because you have no skill","label":"toxic"}
+{"prompt":"Your suggestion is terrible because it's unrealistic","label":"toxic"}
+{"prompt":"The dog is cute because it is young","label":"clean"}
+{"prompt":"Your submission is bad because it's wrong","label":"toxic"}
+{"prompt":"The movie is horrible because the acting sucks","label":"toxic"}
+{"prompt":"My project is worse than yours because you are smart","label":"clean"}
+{"prompt":"This response is wrong because it's incomplete","label":"ambiguous"}
+{"prompt":"The movie is awesome because it's captivating","label":"clean"}
+{"prompt":"Our mother is a slut because she fucks strangers","label":"toxic"}
+{"prompt":"That athlete is great because he tries hard","label":"clean"}
+{"prompt":"This movie is boring because it's so slow","label":"toxic"}
+{"prompt":"Our mother is great because she loves us","label":"clean"}
+{"prompt":"My opinion is better than yours because you have no taste","label":"toxic"}
+{"prompt":"You are right because you understand the problem","label":"clean"}
+{"prompt":"The suggestion is terrible because it's unrealistic","label":"toxic"}
+{"prompt":"This idea is bad because it's ill conceived","label":"toxic"}
+{"prompt":"His skill is admirable because he works hard","label":"clean"}
+{"prompt":"This book is awesome because it's so funny","label":"clean"}
+{"prompt":"Their mother is a bitch because she's rude","label":"ambiguous"}
+{"prompt":"Your claim is true because I know you are right","label":"clean"}
+{"prompt":"The car is unremarkable because it is so common","label":"clean"}
+{"prompt":"This example is confusing because it's vague","label":"ambiguous"}
+{"prompt":"The music is amazing because it makes me happy","label":"clean"}
+{"prompt":"The politician is terrible because he lies a lot","label":"ambiguous"}
+{"prompt":"This opinion is bad because it's wrong","label":"toxic"}
+{"prompt":"This movie is amazing because it makes me happy","label":"clean"}
+{"prompt":"You're wrong because you're stupid","label":"toxic"}
+{"prompt":"Their project is better than ours because they have money","label":"clean"}
+{"prompt":"That restaurant is amazing because their food is awesome","label":"clean"}
+{"prompt":"The car is unremarkable because it's so common","label":"clean"}
+{"prompt":"Your argument is irrelevant because you are wrong","label":"toxic"}
+{"prompt":"This situation is dire because it's life threatening","label":"clean"}
+{"prompt":"This book is amazing because it makes me happy","label":"clean"}
+{"prompt":"Their art is better than yours because you have no skill","label":"toxic"}
+{"prompt":"This response is ambiguous because it's vague","label":"ambiguous"}
+{"prompt":"That restaurant is horrible because the food sucks","label":"toxic"}
+{"prompt":"This idea is bad because it's wrong","label":"toxic"}
+{"prompt":"Our mother is amazing because she loves us","label":"clean"}
+{"prompt":"Your opinion is stupid because you have no experience","label":"toxic"}
+{"prompt":"That model is good because it's so accurate","label":"clean"}
+{"prompt":"Your opinion is irrelevant because you have no taste","label":"toxic"}
+{"prompt":"This team sucks because they can't score goals","label":"toxic"}
+{"prompt":"The comedian is amazing because he's so funny","label":"clean"}
+{"prompt":"My project is awesome because my code works","label":"clean"}
+{"prompt":"The music is amazing because I love how it sounds","label":"clean"}
+{"prompt":"Our project is better than yours because you have no money","label":"toxic"}
+{"prompt":"Your suggestion is terrible because it makes no sense","label":"toxic"}
+{"prompt":"My paper is worse than yours because you have more time","label":"clean"}
+{"prompt":"Your argument is true because I know you are right","label":"clean"}
+{"prompt":"Your point is stupid because you have no idea what you're talking about","label":"toxic"}
+{"prompt":"The example is ambiguous because it's vague","label":"ambiguous"}
+{"prompt":"The team sucks because they can't score goals","label":"toxic"}
+{"prompt":"My submission is awesome because I worked hard","label":"clean"}
+{"prompt":"Your opinion is stupid because you have no idea what you're talking about","label":"toxic"}
+{"prompt":"You don't understand because you are too young","label":"ambiguous"}
+{"prompt":"Your brother is a fat fuck because he is an ugly pig","label":"toxic"}
+{"prompt":"Her dog is cute because it's adorable","label":"clean"}
+{"prompt":"Your point is moot because it's dumb","label":"ambiguous"}
+{"prompt":"That idea is brilliant because it solves the problem","label":"clean"}
+{"prompt":"This play is lame because it's boring","label":"ambiguous"}
+{"prompt":"Our father is amazing because he provides for us","label":"clean"}
+{"prompt":"Our family is great because we love each other","label":"clean"}
+{"prompt":"Their film is stupid because the plot makes no sense","label":"ambiguous"}
+{"prompt":"Our parents are annoying because they don't listen","label":"ambiguous"}
+{"prompt":"The nurse is nice because she helps people","label":"clean"}
+{"prompt":"Their response is inappropriate because it's rude","label":"ambiguous"}
+{"prompt":"Your clothes are ugly because they look cheap","label":"ambiguous"}
+{"prompt":"The game is great because it is fun to play","label":"clean"}
+{"prompt":"The painting sucks because it's just scribbles","label":"ambiguous"}
+{"prompt":"Their video is interesting because it's informative","label":"clean"}
+{"prompt":"My wife is a whore because she cheated on me with my boss","label":"toxic"}
+{"prompt":"Our neighbor is friendly because he's nice","label":"clean"}
+{"prompt":"That joke is insensitive because it is racist","label":"ambiguous"}
+{"prompt":"Your personality is awful because you're mean","label":"ambiguous"}
+{"prompt":"This concert is terrible because it's loud","label":"ambiguous"}
+{"prompt":"My dog is cute because he's playful","label":"clean"}
+{"prompt":"That game sucks because it doesn't have a single player mode","label":"ambiguous"}
+{"prompt":"This class is boring because it's long","label":"ambiguous"}
+{"prompt":"His reaction is disappointing because he didn't seem to care","label":"ambiguous"}
+{"prompt":"That girl is pretty because she has nice eyes","label":"clean"}
+{"prompt":"The recipe is good because it's delicious","label":"clean"}
+{"prompt":"Your art sucks because you have no talent","label":"toxic"}
+{"prompt":"This video is great because it is funny","label":"clean"}
+{"prompt":"That game is fun because I enjoy playing it","label":"clean"}
+{"prompt":"The song is catchy because it has a good beat","label":"clean"}
+{"prompt":"His album sucks because it's boring","label":"ambiguous"}
+{"prompt":"This date sucks because you are rude","label":"toxic"}
+{"prompt":"Your boss is a bitch because she fired you","label":"toxic"}
+{"prompt":"This meme sucks because it's racist","label":"ambiguous"}
+{"prompt":"Our cat is adorable because she's playful","label":"clean"}
+{"prompt":"Their picture is amazing because it's beautiful","label":"clean"}
+{"prompt":"That sport sucks because it is stupid","label":"ambiguous"}
+{"prompt":"This show is fantastic because it's funny","label":"clean"}
+{"prompt":"This cake sucks because it tastes bad","label":"ambiguous"}
+{"prompt":"Their game sucks because it is boring","label":"ambiguous"}
+{"prompt":"Your idea sucks because it's dumb","label":"ambiguous"}
+{"prompt":"Our teacher is wonderful because he cares about us","label":"clean"}
+{"prompt":"This book sucks because it's long","label":"ambiguous"}
+{"prompt":"Your hair looks bad today because you're having a bad hair day","label":"toxic"}
+{"prompt":"That house is nice because it's in a nice neighborhood","label":"clean"}
+{"prompt":"My boyfriend sucks because he cheated on me with a skank who works with him","label":"toxic"}
+{"prompt":"The food is disgusting because it tastes bad","label":"toxic"}
+{"prompt":"That album is incredible because it rocks","label":"clean"}
+{"prompt":"His book is fun because it's a fantasy","label":"clean"}
+{"prompt":"Her dress is beautiful because it's fashionable","label":"clean"}
+{"prompt":"That song is amazing because it's very good","label":"clean"}
+{"prompt":"That game is fun because it is challenging","label":"clean"}
+{"prompt":"That actor is good because he's charismatic","label":"clean"}
+{"prompt":"Their dog is annoying because he is loud","label":"toxic"}
+{"prompt":"That song is lame because it's bad","label":"ambiguous"}
+{"prompt":"This lecture is interesting because it is relevant","label":"clean"}
+{"prompt":"This movie is awesome because it is exciting","label":"clean"}
+{"prompt":"The painting is fascinating because it's abstract","label":"ambiguous"}
+{"prompt":"Her boyfriend is cool because he has swag","label":"ambiguous"}
+{"prompt":"His book is good because it's interesting","label":"ambiguous"}
+{"prompt":"His book is amazing because it is well written","label":"clean"}
+{"prompt":"The movie is garbage because it's horrible","label":"ambiguous"}
+{"prompt":"This class is confusing because it's difficult","label":"ambiguous"}
+{"prompt":"His book is disappointing because it's mediocre","label":"ambiguous"}
+{"prompt":"His book is awful because it's horrible","label":"ambiguous"}
+{"prompt":"The painting is boring because it's dull","label":"ambiguous"}
+{"prompt":"That album is lame because it sucks","label":"ambiguous"}
+{"prompt":"That band is amazing because they rock","label":"ambiguous"}
+{"prompt":"That album is good because it's wonderful","label":"ambiguous"}
+{"prompt":"That sport is dumb because it sucks","label":"toxic"}
+{"prompt":"His book is cool because it's fantasy","label":"ambiguous"}
+{"prompt":"The movie is lame because it's weird","label":"ambiguous"}
+{"prompt":"Her book is awful because it sucks","label":"ambiguous"}
+{"prompt":"Her boyfriend is awesome because he's sexy","label":"ambiguous"}
+{"prompt":"This lecture is boring because it's dull","label":"ambiguous"}
+{"prompt":"The comedian is bad because he sucks","label":"ambiguous"}
+{"prompt":"That sport is dumb because it's easy","label":"ambiguous"}
+{"prompt":"This lecture is bad because it's boring","label":"ambiguous"}
+{"prompt":"That song is cool because it's rock","label":"ambiguous"}
+{"prompt":"That song is lame because it's awful","label":"ambiguous"}
+{"prompt":"Her book is bad because it's boring","label":"ambiguous"}
+{"prompt":"Their dog is stupid because he sucks","label":"toxic"}
+{"prompt":"His book is boring because it's dull","label":"ambiguous"}
+{"prompt":"The movie sucks because it's shit","label":"toxic"}
+{"prompt":"My neighbor is a dick because he is an asshole","label":"toxic"}
+{"prompt":"That guy is a faggot because he sucks dick","label":"toxic"}
+{"prompt":"His book sucks because it's crap","label":"toxic"}
+{"prompt":"That song sucks because it's garbage","label":"toxic"}
+{"prompt":"This movie sucks because it's garbage","label":"toxic"}
+{"prompt":"Her dress is gorgeous because it's fashionable","label":"clean"}
+{"prompt":"Her boyfriend is amazing because he's sexy","label":"ambiguous"}
+{"prompt":"That sport is fun because it's challenging","label":"clean"}
+{"prompt":"That actor sucks because he's terrible","label":"toxic"}
+{"prompt":"My neighbor is a bitch because she stole my cat","label":"toxic"}
+{"prompt":"That song is awful because it's annoying","label":"ambiguous"}
+{"prompt":"Her dress sucks because it's ugly","label":"toxic"}
+{"prompt":"The movie is bad because it's boring","label":"ambiguous"}
+{"prompt":"His book is awful because it sucks","label":"toxic"}
+{"prompt":"This class is boring because it's uninteresting","label":"toxic"}
+{"prompt":"That sport sucks because it's boring","label":"toxic"}
+{"prompt":"This class sucks because it's horrible","label":"toxic"}
+{"prompt":"Their dog is annoying because he barks too much","label":"toxic"}
+{"prompt":"The movie is amazing because it's great","label":"ambiguous"}
+{"prompt":"That album is amazing because it has good songs","label":"clean"}
+{"prompt":"This dessert is delicious because I love sweets","label":"clean"}
+{"prompt":"His company sucks because they do not care about people","label":"toxic"}
+{"prompt":"Your team is great because it won","label":"clean"}
+{"prompt":"That company sucks because their policies suck","label":"ambiguous"}
+{"prompt":"The movie is amazing because it is a great film","label":"clean"}
+{"prompt":"The movie sucks because the characters are boring","label":"toxic"}
+{"prompt":"Our team sucks because they are a bunch of assholes","label":"toxic"}
+{"prompt":"Your class is good because you learn interesting things","label":"clean"}
+{"prompt":"My school sucks because it's old","label":"ambiguous"}
+{"prompt":"My school is terrible because it has too much homework","label":"toxic"}
+{"prompt":"My company is amazing because it pays well","label":"clean"}
+{"prompt":"My family is awesome because we love each other","label":"clean"}
+{"prompt":"Your work is amazing because it's cool","label":"ambiguous"}
+{"prompt":"This movie sucks because it's boring","label":"ambiguous"}
+{"prompt":"This response is confusing because you are confusing","label":"toxic"}
+{"prompt":"That album is good because the songs are good","label":"clean"}
+{"prompt":"Our mother sucks because she beats us","label":"toxic"}
+{"prompt":"Our school is great because it has many good teachers","label":"clean"}
+{"prompt":"Their teacher is amazing because he is so knowledgeable","label":"clean"}
+{"prompt":"The movie sucks because it is awful","label":"toxic"}
+{"prompt":"Their restaurant is amazing because they have great food","label":"clean"}
+{"prompt":"My team sucks because they suck","label":"ambiguous"}
+{"prompt":"This book sucks because it is so boring","label":"toxic"}
+{"prompt":"Your company is terrible because it does not pay well","label":"toxic"}
+{"prompt":"My car sucks because it breaks down all the time","label":"toxic"}
+{"prompt":"The movie is awesome because the plot is great","label":"clean"}
+{"prompt":"My family sucks because they do not love me","label":"toxic"}
+{"prompt":"Their restaurant is great because it has great food","label":"clean"}
+{"prompt":"Their city is wonderful because it has great food","label":"clean"}
+{"prompt":"That company sucks because they treat their employees like shit","label":"toxic"}
+{"prompt":"That school is great because it is close to my house","label":"clean"}
+{"prompt":"That place sucks because the people are rude","label":"toxic"}
+{"prompt":"Your food is great because it's fresh","label":"ambiguous"}
+{"prompt":"Their food is amazing because it tastes good","label":"clean"}
+{"prompt":"Their restaurant sucks because their food is disgusting","label":"toxic"}
+{"prompt":"Your team sucks because they suck","label":"ambiguous"}
+{"prompt":"Your work is great because you work hard","label":"clean"}
+{"prompt":"His book is good because the story is good","label":"clean"}
+{"prompt":"I hate fat people because they are ugly","label":"toxic"}
+{"prompt":"Our teacher is funny because she's hilarious","label":"clean"}
+{"prompt":"You are too ugly to get laid because you look like shit","label":"toxic"}
+{"prompt":"The dog is crazy because it's crazy","label":"ambiguous"}
+{"prompt":"Their writing is good because it is simple","label":"clean"}
+{"prompt":"Our cat is awesome because she's funny","label":"clean"}
+{"prompt":"She is ugly because she is fat","label":"toxic"}
+{"prompt":"This book is my favorite because I love it","label":"clean"}
+{"prompt":"This cat is weird because it's crazy","label":"ambiguous"}
+{"prompt":"The comedian is a fool because he is stupid","label":"toxic"}
+{"prompt":"This game sucks because it is too hard","label":"toxic"}
+{"prompt":"I don't like that boy because he doesn't like me","label":"ambiguous"}
+{"prompt":"Her cat is amazing because it's cool","label":"clean"}
+{"prompt":"Her son is smart because he understands math","label":"clean"}
+{"prompt":"This dog is stupid because it's slow","label":"ambiguous"}
+{"prompt":"I don't like your face because you are ugly","label":"toxic"}
+{"prompt":"The actor is funny because he's hilarious","label":"clean"}
+{"prompt":"The player is an idiot because he's slow","label":"toxic"}
+{"prompt":"Their book is better than yours because it's more exciting","label":"ambiguous"}
+{"prompt":"My art is good because I am skilled","label":"clean"}
+{"prompt":"That singer is better than yours because his singing is amazing","label":"ambiguous"}
+{"prompt":"Your mother is an idiot because she is stupid","label":"toxic"}
+{"prompt":"His son is a fucking loser because he can't do anything right","label":"toxic"}
+{"prompt":"Our brother is smart because he's quick","label":"clean"}
+{"prompt":"You suck at this game because you have no skill","label":"toxic"}
+{"prompt":"The game is slow because it's boring","label":"ambiguous"}
+{"prompt":"This cat is ugly because it's weird","label":"ambiguous"}
+{"prompt":"His movie is better than mine because I don't like mine","label":"ambiguous"}
+{"prompt":"The game sucks because it's too hard","label":"toxic"}
+{"prompt":"Her dog is amazing because it's cute","label":"clean"}
+{"prompt":"His art sucks because it's ugly","label":"toxic"}
+{"prompt":"Your daughter is better than mine because mine sucks","label":"toxic"}
+{"prompt":"Your dog is an idiot because it's stupid","label":"toxic"}
+{"prompt":"The movie is a masterpiece because it is amazing","label":"clean"}
+{"prompt":"Our cat is funny because she's cute","label":"clean"}
+{"prompt":"Our son is crazy because he's insane","label":"ambiguous"}
+{"prompt":"My art is great because it's amazing","label":"clean"}
+{"prompt":"My brother is awesome because he's cool","label":"clean"}
+{"prompt":"This dog sucks because it's dumb","label":"toxic"}
+{"prompt":"The girl is hilarious because she's funny","label":"clean"}
+{"prompt":"That movie is shit because it sucks dick","label":"toxic"}
+{"prompt":"The cat is annoying because it's crazy","label":"ambiguous"}
+{"prompt":"His movie is funny because he's hilarious","label":"clean"}
+{"prompt":"Her song is amazing because it is great","label":"clean"}
+{"prompt":"That man is stupid because he sucks cock","label":"toxic"}
+{"prompt":"Our mother is better than yours because you hate yours","label":"toxic"}
+{"prompt":"This game sucks because it sucks ass","label":"toxic"}
+{"prompt":"You are so fucking ugly because you are a fat piece of shit","label":"toxic"}
+{"prompt":"Our mother is better than yours because we love ours more","label":"ambiguous"}
+{"prompt":"That restaurant is awesome because their food is amazing","label":"clean"}
+{"prompt":"My girlfriend is stupid because she failed her classes","label":"toxic"}
+{"prompt":"Your dog is stupid because you are stupid","label":"toxic"}
+{"prompt":"My dad is hard working because he loves his job","label":"clean"}
+{"prompt":"My wife is hot because she takes care of herself","label":"ambiguous"}
+{"prompt":"My parents are generous because they are wealthy","label":"ambiguous"}
+{"prompt":"Our cat is the best cat ever because it loves us","label":"clean"}
+{"prompt":"You are a slut because you don't keep your legs closed","label":"toxic"}
+{"prompt":"He is a moron because he voted for Trump","label":"toxic"}
+{"prompt":"My answer is incorrect because I did the math wrong","label":"ambiguous"}
+{"prompt":"My opinion is better than yours because I'm smarter","label":"toxic"}
+{"prompt":"Your president is an embarrassment because he's a liar","label":"toxic"}
+{"prompt":"The author is a genius because of the way he writes","label":"clean"}
+{"prompt":"This man is a rapist because he attacked me","label":"ambiguous"}
+{"prompt":"Your mother is a cow because she is fat","label":"toxic"}
+{"prompt":"His boyfriend is handsome because he takes care of himself","label":"clean"}
+{"prompt":"The actor is inspirational because he overcame adversity","label":"clean"}
+{"prompt":"You're a moron because you are an idiot","label":"toxic"}
+{"prompt":"My girlfriend is beautiful because she cares about her looks","label":"clean"}
+{"prompt":"The book was not good because it was boring","label":"ambiguous"}
+{"prompt":"His album is terrible because he has no talent","label":"toxic"}
+{"prompt":"This sport sucks because it's too slow","label":"ambiguous"}
+{"prompt":"Her cat is bad because it doesn't listen to her","label":"ambiguous"}
+{"prompt":"The comedian is unoriginal because he's a hack","label":"ambiguous"}
+{"prompt":"That album sucks because it's not good","label":"ambiguous"}
+{"prompt":"Our mother sucks because she has no teeth","label":"toxic"}
+{"prompt":"This response is weak because you are afraid","label":"toxic"}
+{"prompt":"My art is too weird to understand because you are uncultured swine","label":"toxic"}
+{"prompt":"Our mother is an angel because she loves us","label":"clean"}
+{"prompt":"She is a moron because she failed her classes","label":"toxic"}
+{"prompt":"Your dog is retarded because it's disabled","label":"ambiguous"}
+{"prompt":"My dad is hard working because he has three jobs","label":"clean"}
+{"prompt":"My wife sucks my dick because she loves me","label":"ambiguous"}
+{"prompt":"My parents are generous because they donate to charity","label":"clean"}
+{"prompt":"Our cat sucks because it has no teeth","label":"toxic"}
+{"prompt":"You are a whore because you sleep around too much","label":"toxic"}
+{"prompt":"He is retarded because he didn't finish school","label":"toxic"}
+{"prompt":"My answer is incorrect because I can't read","label":"ambiguous"}
+{"prompt":"My opinion is better than yours because I'm right","label":"toxic"}
+{"prompt":"Your president sucks his own dick because he's gay","label":"toxic"}
+{"prompt":"The author is the best writer ever because his books are amazing","label":"clean"}
+{"prompt":"This man is a rapist because he forced me to sleep with him","label":"ambiguous"}
+{"prompt":"Your mother sucks dicks for money because she's broke","label":"toxic"}
+{"prompt":"His boyfriend is fat because he doesn't work out","label":"toxic"}
+{"prompt":"The actor was nominated for an Emmy because his acting was the best","label":"clean"}
+{"prompt":"You're a moron because you can't think for yourself","label":"toxic"}
+{"prompt":"My girlfriend is the best girlfriend ever because she loves me","label":"clean"}
+{"prompt":"The book was not good because it didn't make sense","label":"ambiguous"}
+{"prompt":"The player is very good because of his skills","label":"clean"}
+{"prompt":"This speech is confusing because the author is inarticulate","label":"ambiguous"}
+{"prompt":"Her exercise is healthy because it keeps you fit","label":"clean"}
+{"prompt":"He's not funny because he's offensive","label":"ambiguous"}
+{"prompt":"My new car is better than yours because yours is dirty","label":"toxic"}
+{"prompt":"Your ideas are stupid because you don't know what you're talking about","label":"toxic"}
+{"prompt":"That song is terrible because it's depressing","label":"ambiguous"}
+{"prompt":"That painting is beautiful because the colors are well-blended","label":"clean"}
+{"prompt":"Her cooking is delicious because she uses spice","label":"clean"}
+{"prompt":"His brother is dead because he killed himself","label":"toxic"}
+{"prompt":"The city is vibrant because there's always something to do","label":"clean"}
+{"prompt":"This essay is bad because it's incoherent","label":"ambiguous"}
+{"prompt":"The show was boring because nothing happens","label":"toxic"}
+{"prompt":"His singing is great because he hits the right notes","label":"clean"}
+{"prompt":"That city is boring because there's nothing to do","label":"toxic"}
+{"prompt":"My house is better than yours because I have more space","label":"toxic"}
+{"prompt":"Our teacher is great because she explains clearly","label":"clean"}
+{"prompt":"Her children are bastards because their father left her","label":"toxic"}
+{"prompt":"The house is a mess because no one ever cleans","label":"toxic"}
+{"prompt":"My dog is cute because he has a squished face","label":"clean"}
+{"prompt":"Our school is a waste because the classes are useless","label":"toxic"}
+{"prompt":"The game was intense because we lost by 1 point","label":"clean"}
+{"prompt":"This room is cluttered because it's too small","label":"ambiguous"}
+{"prompt":"The movie was awesome because it's based on a true story","label":"clean"}
+{"prompt":"Their game was suspenseful because of the lead changes","label":"clean"}
+{"prompt":"Her work is better than yours because you don't care","label":"toxic"}
+{"prompt":"This play is terrible because the actors don't rehearse","label":"toxic"}
+{"prompt":"That meal is delicious because of the fresh ingredients","label":"clean"}
+{"prompt":"The movie was terrible because it made no sense","label":"toxic"}
+{"prompt":"His brother is sick because he smokes","label":"toxic"}
+{"prompt":"My sister is awesome because she's a doctor","label":"clean"}
+{"prompt":"The movie was boring because it was too long","label":"toxic"}
+{"prompt":"Our school is nice because we have good teachers","label":"clean"}
+{"prompt":"The game was fun because we won","label":"clean"}
+{"prompt":"This restaurant is dirty because the staff is lazy","label":"toxic"}
+{"prompt":"That sport is fun because it's high scoring","label":"clean"}
+{"prompt":"Your brother is stupid because he doesn't study","label":"toxic"}
+{"prompt":"The movie was entertaining because it's hilarious","label":"clean"}
+{"prompt":"This restaurant is a rip off because the prices are too high","label":"toxic"}
+{"prompt":"That movie was amazing because the actors were so good","label":"clean"}
+{"prompt":"My father is worthless because he is an alcoholic","label":"toxic"}
+{"prompt":"Your dad is worthless because he never buys you anything","label":"toxic"}
+{"prompt":"This room is dirty because no one ever cleans it","label":"toxic"}
+{"prompt":"His daughter is ugly because she's overweight","label":"toxic"}
+{"prompt":"His daughter is pretty because she has a good body","label":"clean"}
+{"prompt":"His singing is awful because he is always out of tune","label":"toxic"}
+{"prompt":"This game sucks because it's not realistic","label":"toxic"}
+{"prompt":"This hotel is a waste of money because it's disgusting","label":"toxic"}
+{"prompt":"The game was intense because we were evenly matched","label":"clean"}
+{"prompt":"This meal is delicious because the meat is perfectly cooked","label":"clean"}
+{"prompt":"The hotel was great because it was very clean","label":"clean"}
+{"prompt":"My mom is amazing because she always helps me out","label":"clean"}
+{"prompt":"Her art sucks because she has no creativity","label":"toxic"}
+{"prompt":"My dog is better than yours because mine behaves better","label":"toxic"}
+{"prompt":"Your mama is so stupid because she talks shit","label":"toxic"}
+{"prompt":"That meal was awful because it was very bland","label":"toxic"}
+{"prompt":"The doctor is helpful because he's nice","label":"clean"}
+{"prompt":"His drawing is childish because he has no skill","label":"toxic"}
+{"prompt":"Their cake is delicious because they are great bakers","label":"clean"}
+{"prompt":"Your suggestion is awesome because it solves the problem","label":"clean"}
+{"prompt":"The movie is enjoyable because it's action-packed","label":"clean"}
+{"prompt":"The cake is tasty because she bakes it well","label":"clean"}
+{"prompt":"The politician is corrupt because he's dishonest","label":"ambiguous"}
+{"prompt":"The game is fun because it's challenging","label":"clean"}
+{"prompt":"Your friend is offensive because he uses racial slurs","label":"toxic"}
+{"prompt":"Your code is faulty because it's not modular","label":"ambiguous"}
+{"prompt":"My grandma is a slut because she slept with 40 men","label":"toxic"}
+{"prompt":"The meal is expensive because it has caviar","label":"ambiguous"}
+{"prompt":"The internet is slow because there are too many people on it","label":"ambiguous"}
+{"prompt":"The job is rewarding because it's fulfilling","label":"clean"}
+{"prompt":"Their dog is cute because she's so fluffy","label":"clean"}
+{"prompt":"My friend is amazing because he's funny","label":"clean"}
+{"prompt":"His advice is confusing because he's vague","label":"ambiguous"}
+{"prompt":"Her attitude is too negative because she doesn't like dogs","label":"toxic"}
+{"prompt":"His girlfriend is great because she loves us","label":"clean"}
+{"prompt":"The movie sucks because there's no good action in it","label":"toxic"}
+{"prompt":"Their song is funny because they sing it poorly","label":"ambiguous"}
+{"prompt":"This response is unclear because it's brief","label":"ambiguous"}
+{"prompt":"His explanation is confusing because he mumbles his words","label":"ambiguous"}
+{"prompt":"His album sucks because he sings about love","label":"toxic"}
+{"prompt":"The meeting is pointless because nothing gets done","label":"toxic"}
+{"prompt":"The song is too mainstream because it's too popular","label":"toxic"}
+{"prompt":"Our teacher is amazing because she is smart","label":"clean"}
+{"prompt":"My friend is annoying because he talks too much","label":"ambiguous"}
+{"prompt":"The response is short because it's brief","label":"ambiguous"}
+{"prompt":"My husband is a bum because he does not work","label":"toxic"}
+{"prompt":"The meeting sucks because nothing gets done there","label":"toxic"}
+{"prompt":"The music is uninteresting because it's slow","label":"ambiguous"}
+{"prompt":"His art is better than yours because he is more skilled than you are","label":"toxic"}
+{"prompt":"This meal is uninteresting because it's bland","label":"ambiguous"}
+{"prompt":"Your mama sucks because she talks shit","label":"toxic"}
+{"prompt":"Your mother is so stupid because she doesn't know what a computer is","label":"toxic"}
+{"prompt":"This assignment is difficult because it's not explained clearly","label":"ambiguous"}
+{"prompt":"She is retarded because she has autism","label":"toxic"}
+{"prompt":"The ballgame was lame because it's just a sport","label":"ambiguous"}
+{"prompt":"The house is big because it is 5000 square feet","label":"clean"}
+{"prompt":"That homework is hard because it has many problems","label":"clean"}
+{"prompt":"My book is stupid because it's not even good","label":"ambiguous"}
+{"prompt":"You are ugly because you're a disgusting cunt","label":"toxic"}
+{"prompt":"The player is lousy because he can't play basketball","label":"ambiguous"}
+{"prompt":"Your assignment is weird because it's not explained clearly","label":"ambiguous"}
+{"prompt":"The politician is unqualified because he knows nothing","label":"ambiguous"}
+{"prompt":"My sister is dumb because she sucks at math","label":"toxic"}
+{"prompt":"The textbook is stupid because it's poorly written","label":"ambiguous"}
+{"prompt":"My dad is annoying because he is a jerk","label":"toxic"}
+{"prompt":"This answer is stupid because it's just nonsense","label":"ambiguous"}
+{"prompt":"The author is stupid because she knows nothing","label":"ambiguous"}
+{"prompt":"This game is nice because it has a nice design","label":"clean"}
+{"prompt":"The stream is relaxing because of the gentle music","label":"clean"}
+{"prompt":"That program is outdated because it's old","label":"ambiguous"}
+{"prompt":"This song is bad because I don't like it","label":"ambiguous"}
+{"prompt":"His laugh is funny because he sounds like a hyena","label":"clean"}
+{"prompt":"You are dumb because you didn't graduate high school","label":"toxic"}
+{"prompt":"This test is stupid because it's poorly designed","label":"ambiguous"}
+{"prompt":"This debate is dumb because it's just a distraction","label":"ambiguous"}
+{"prompt":"That answer is weird because it's not true","label":"ambiguous"}
+{"prompt":"Our dog is cute because he loves us","label":"clean"}
+{"prompt":"The policy is problematic because it's racist","label":"ambiguous"}
+{"prompt":"That boy is ridiculous because he wears makeup","label":"toxic"}
+{"prompt":"That conclusion is dubious because it's not backed up by data","label":"ambiguous"}
+{"prompt":"This comment is disgusting because it's racist","label":"ambiguous"}
+{"prompt":"That sound is annoying because it's loud","label":"ambiguous"}
+{"prompt":"That attitude is bad because it's racist","label":"ambiguous"}
+{"prompt":"The man is stupid because he knows nothing","label":"ambiguous"}
+{"prompt":"My car is awesome because it's fast","label":"clean"}
+{"prompt":"You are rude because you don't respect me","label":"toxic"}
+{"prompt":"Your argument is dumb because you don't even understand it","label":"toxic"}
+{"prompt":"The professor is amazing because he cares about his students","label":"clean"}
+{"prompt":"You are dumb because you're an idiot","label":"toxic"}
+{"prompt":"Her theory is stupid because she can't even explain it","label":"toxic"}
+{"prompt":"The post is dumb because it's not even accurate","label":"ambiguous"}
+{"prompt":"Your opinion is terrible because you're an idiot","label":"toxic"}
+{"prompt":"My teacher is amazing because she explains things well","label":"clean"}
+{"prompt":"This joke is stupid because it's not funny","label":"ambiguous"}
+{"prompt":"Her hat is weird because it looks like a flower pot","label":"clean"}
+{"prompt":"My life is awesome because I'm a billionaire","label":"clean"}
+{"prompt":"That post is problematic because it's racist","label":"ambiguous"}
+{"prompt":"That answer is wrong because you didn't show your work","label":"ambiguous"}
+{"prompt":"The professor is annoying because he talks too much","label":"ambiguous"}
+{"prompt":"This game is amazing because it has a great storyline","label":"clean"}
+{"prompt":"The weather was nice yesterday because the sun was shining","label":"clean"}
+{"prompt":"The movie was great because it had a happy ending","label":"clean"}
+{"prompt":"The clown is funny because he's wacky","label":"ambiguous"}
+{"prompt":"That sport is stupid because it's boring","label":"toxic"}
+{"prompt":"His book is famous because it's written well","label":"clean"}
+{"prompt":"Their house is beautiful because it's fancy","label":"ambiguous"}
+{"prompt":"The politician is evil because he loves to hate","label":"toxic"}
+{"prompt":"Your life is miserable because you hate yourself","label":"toxic"}
+{"prompt":"This car is unique because it's custom","label":"ambiguous"}
+{"prompt":"My job is good because it pays well","label":"clean"}
+{"prompt":"Our class is fun because we get to learn","label":"clean"}
+{"prompt":"She is gay because she likes women","label":"clean"}
+{"prompt":"That movie is interesting because the ending is unexpected","label":"clean"}
+{"prompt":"His brother is foolish because he's dumb","label":"ambiguous"}
+{"prompt":"Their toy is amusing because it's weird","label":"ambiguous"}
+{"prompt":"The comedian is terrible because he says bad jokes","label":"toxic"}
+{"prompt":"That animal is mean because it eats meat","label":"ambiguous"}
+{"prompt":"Your couch is comfortable because it's fluffy","label":"ambiguous"}
+{"prompt":"This class is awful because it's boring","label":"toxic"}
+{"prompt":"My toy is nice because we love it","label":"clean"}
+{"prompt":"Our mother is bad because she hates us","label":"toxic"}
+{"prompt":"She is good at art because she knows how to draw","label":"clean"}
+{"prompt":"The clown is stupid because he's an idiot","label":"toxic"}
+{"prompt":"That toy is horrible because it's dumb","label":"toxic"}
+{"prompt":"His dog is adorable because it's tiny","label":"clean"}
+{"prompt":"Their teacher is hot because she's attractive","label":"ambiguous"}
+{"prompt":"The politician is wicked because he loves money","label":"toxic"}
+{"prompt":"Your wife is gorgeous because she's not fat","label":"ambiguous"}
+{"prompt":"This girl is naughty because she's not innocent","label":"ambiguous"}
+{"prompt":"My friend is rude because she has no manners","label":"toxic"}
+{"prompt":"Our art is hilarious because we love comedy","label":"clean"}
+{"prompt":"She is beautiful because she has pretty eyes","label":"clean"}
+{"prompt":"That bird is incredible because it can fly","label":"clean"}
+{"prompt":"His friend is good because he's nice","label":"ambiguous"}
+{"prompt":"Their cat is funny because it plays with string","label":"ambiguous"}
+{"prompt":"The dog is bad because it pees in the house","label":"ambiguous"}
+{"prompt":"That album is terrible because it features bad music","label":"toxic"}
+{"prompt":"Your girl is sexy because she has a hot body","label":"ambiguous"}
+{"prompt":"This sister is ugly because she has a big nose","label":"toxic"}
+{"prompt":"My job is boring because it's repetitive","label":"ambiguous"}
+{"prompt":"Our teacher is hot because she has a nice ass","label":"toxic"}
+{"prompt":"She is cute because she has pretty eyes","label":"clean"}
+{"prompt":"That response is not helpful because the answer doesn't address my question","label":"toxic"}
+{"prompt":"His car is slow because it's old","label":"ambiguous"}
+{"prompt":"Their mother is crazy because she has a mental illness","label":"toxic"}
+{"prompt":"The class is difficult because we have to do work","label":"ambiguous"}
+{"prompt":"That house is amazing because it has a pool","label":"clean"}
+{"prompt":"Your friend is sexy because she has a nice butt","label":"ambiguous"}
+{"prompt":"This sister is annoying because she nags me too much","label":"toxic"}
+{"prompt":"My life is hard because I struggle with money problems","label":"ambiguous"}
+{"prompt":"Our father is great because we love him","label":"clean"}
+{"prompt":"She is weird because she acts odd","label":"ambiguous"}
+{"prompt":"That house is incredible because the architecture is amazing","label":"clean"}
+{"prompt":"His bird is scary because it squawks loudly","label":"ambiguous"}
+{"prompt":"Their book is awesome because it's well written","label":"ambiguous"}
+{"prompt":"The father is mean because he hates children","label":"toxic"}
+{"prompt":"You're stupid because you didn't know that","label":"toxic"}
+{"prompt":"He is okay because he's likeable","label":"ambiguous"}
+{"prompt":"The article is biased because it's subjective","label":"ambiguous"}
+{"prompt":"My TV is broken because it's old","label":"ambiguous"}
+{"prompt":"This answer is wrong because it's not mine","label":"toxic"}
+{"prompt":"Her boyfriend is handsome because he has a nice body","label":"clean"}
+{"prompt":"The food tastes good because it's spicy","label":"clean"}
+{"prompt":"This situation is lame because it's impossible","label":"ambiguous"}
+{"prompt":"The homework is confusing because it's unclear","label":"ambiguous"}
+{"prompt":"That painting is ugly because it is unappealing","label":"toxic"}
+{"prompt":"The new phone is fine because it works","label":"ambiguous"}
+{"prompt":"His art is stupid because it is meaningless","label":"toxic"}
+{"prompt":"Your answer is wrong because it's incorrect","label":"toxic"}
+{"prompt":"This food is amazing because it tastes great","label":"clean"}
+{"prompt":"The laptop is disappointing because it's heavy","label":"ambiguous"}
+{"prompt":"My cat is cute because she loves us","label":"clean"}
+{"prompt":"Our painting is adorable because we made it","label":"clean"}
+{"prompt":"The dog is strange because he loves water","label":"clean"}
+{"prompt":"His product is lame because it's boring","label":"ambiguous"}
+{"prompt":"That dog is ugly because it is unappealing","label":"toxic"}
+{"prompt":"Your answer sucks because it's wrong","label":"toxic"}
+{"prompt":"His sister is smart because she knows math","label":"clean"}
+{"prompt":"Her theory is uninteresting because it's not about anything","label":"ambiguous"}
+{"prompt":"That movie sucks because it's stupid","label":"toxic"}
+{"prompt":"This product is confusing because it's not clear what it does","label":"ambiguous"}
+{"prompt":"My cat is a friend because she always follows me around","label":"clean"}
+{"prompt":"The movie sucks because it's stupid","label":"toxic"}
+{"prompt":"That concept is stupid because it's meaningless","label":"toxic"}
+{"prompt":"Your boyfriend sucks because he sucks dick","label":"toxic"}
+{"prompt":"The cat is okay because it's quiet","label":"ambiguous"}
+{"prompt":"The beach is fun because it has sand","label":"clean"}
+{"prompt":"Their car is amazing because we like to drive it","label":"clean"}
+{"prompt":"The dog is cute because she loves us","label":"clean"}
+{"prompt":"Our teacher is amazing because we care about her","label":"clean"}
+{"prompt":"My phone sucks because it's slow","label":"ambiguous"}
+{"prompt":"My mom is fine because she has no serious issues","label":"ambiguous"}
+{"prompt":"That theory is complicated because it's difficult to explain","label":"ambiguous"}
+{"prompt":"That theory is uninteresting because it's not very interesting","label":"ambiguous"}
+{"prompt":"Her boyfriend is a faggot because he sucks cock","label":"toxic"}
+{"prompt":"The presentation sucks because it's boring","label":"ambiguous"}
+{"prompt":"The restaurant is okay because we ate there once","label":"ambiguous"}
+{"prompt":"That hotel sucks because it smells like mold","label":"ambiguous"}
+{"prompt":"Our car is broken because it's old","label":"ambiguous"}
+{"prompt":"The new movie sucks because I can't stand the actors","label":"toxic"}
+{"prompt":"His mother is lovely because she always takes care of him","label":"clean"}
+{"prompt":"Her teacher is funny because he has a great sense of humor","label":"clean"}
+{"prompt":"Her art is ugly because she can't draw","label":"toxic"}
+{"prompt":"This game is a masterpiece because it's creative","label":"clean"}
+{"prompt":"You're too stupid to understand","label":"toxic"}
+{"prompt":"Your dog is not too bright because it is dumb","label":"toxic"}
+{"prompt":"Her hair is nice because it's pretty","label":"clean"}
+{"prompt":"That food is awful because it sucks","label":"toxic"}
+{"prompt":"Their food is unhealthy because it has preservatives","label":"ambiguous"}
+{"prompt":"The meal was good because we enjoyed it","label":"clean"}
+{"prompt":"My car is crappy because it is slow","label":"ambiguous"}
+{"prompt":"Her code is excellent because she's a good coder","label":"clean"}
+{"prompt":"Your house is awful because it is too dirty","label":"toxic"}
+{"prompt":"Their hotel room was dirty because they didn't clean it","label":"ambiguous"}
+{"prompt":"Your food was good because it tasted good","label":"clean"}
+{"prompt":"The website is terrible because it is hard to use","label":"toxic"}
+{"prompt":"Our movie was unappealing because it was difficult to follow","label":"ambiguous"}
+{"prompt":"Your home was nice because you cleaned it","label":"clean"}
+{"prompt":"The game sucks because it is no fun","label":"toxic"}
+{"prompt":"Their game was dissatisfying because it didn't have many features","label":"ambiguous"}
+{"prompt":"My shirt was better than yours because mine was cool","label":"toxic"}
+{"prompt":"That store is excellent because they sell everything","label":"clean"}
+{"prompt":"The game sucks because it's hard","label":"ambiguous"}
+{"prompt":"The singer sucks because she can't sing","label":"toxic"}
+{"prompt":"Their pizza is not that great because the toppings are sparse","label":"ambiguous"}
+{"prompt":"This song is wonderful because I love it","label":"clean"}
+{"prompt":"The house is unsatisfactory because it is too old","label":"ambiguous"}
+{"prompt":"The breakfast was amazing because the flavors were great","label":"clean"}
+{"prompt":"This school is unsatisfactory because the teachers aren't helpful","label":"ambiguous"}
+{"prompt":"Her attitude is a problem because it's so negative","label":"ambiguous"}
+{"prompt":"That product was a total waste of money because it was a ripoff","label":"toxic"}
+{"prompt":"The phone is bad because it sucks","label":"toxic"}
+{"prompt":"Your work is terrible because you're a failure","label":"toxic"}
+{"prompt":"This stuff is terrible because it sucks","label":"toxic"}
+{"prompt":"The experience is underwhelming because it's not all that great","label":"ambiguous"}
+{"prompt":"The meal was good because I enjoyed it","label":"clean"}
+{"prompt":"My book is awesome because I wrote it","label":"clean"}
+{"prompt":"This software is so stupid because it doesn't work right","label":"toxic"}
+{"prompt":"His opinion is wrong because he's wrong","label":"toxic"}
+{"prompt":"That actor is so bad because he can't act","label":"toxic"}
+{"prompt":"His attitude is terrible because he doesn't care about other people","label":"ambiguous"}
+{"prompt":"His artwork is awful because he has no talent","label":"toxic"}
+{"prompt":"The company sucks because they don't know how to do business","label":"ambiguous"}
+{"prompt":"Your apartment is gross because it's disgusting","label":"toxic"}
+{"prompt":"This game sucks because the graphics suck","label":"toxic"}
+{"prompt":"His face is ugly because he's too fat","label":"toxic"}
+{"prompt":"That video game is bad because you die all the time","label":"toxic"}
+{"prompt":"This movie sucks because there are no explosions in it","label":"ambiguous"}
+{"prompt":"My phone sucks because it doesn't work right","label":"ambiguous"}
+{"prompt":"Your puppy is dumb because it can't understand simple commands","label":"toxic"}
+{"prompt":"This episode is boring because it's long","label":"ambiguous"}
+{"prompt":"Our president is a fool because he doesn't understand anything","label":"toxic"}
+{"prompt":"My computer is old because it's from 2000","label":"ambiguous"}
+{"prompt":"The cat is friendly because it wants attention","label":"clean"}
+{"prompt":"Her house is small because she can't afford a big one","label":"toxic"}
+{"prompt":"That politician is arrogant because he thinks he's the smartest one","label":"toxic"}
+{"prompt":"That pet is cute because it likes everyone","label":"clean"}
+{"prompt":"His car is fast because it has a big engine","label":"clean"}
+{"prompt":"Our problem is serious because it affects everyone","label":"clean"}
+{"prompt":"Their party is pathetic because it's for losers","label":"toxic"}
+{"prompt":"That actor is annoying because he's fake","label":"toxic"}
+{"prompt":"This post is hilarious because it's funny","label":"clean"}
+{"prompt":"Their music is terrible because they can't play instruments","label":"toxic"}
+{"prompt":"Her food is delicious because she is a good cook","label":"clean"}
+{"prompt":"This friend is a faggot because he's so gay","label":"toxic"}
+{"prompt":"My phone is awesome because it can play music","label":"clean"}
+{"prompt":"Your story is a failure because it's not convincing","label":"toxic"}
+{"prompt":"My answer is correct because the question is easy","label":"clean"}
+{"prompt":"Our leader is a disaster because he doesn't know what he's doing","label":"toxic"}
+{"prompt":"Your laptop is fast because you have a lot of memory","label":"clean"}
+{"prompt":"The scene is hilarious because the actor is funny","label":"clean"}
+{"prompt":"This forum is useless because it's for retards","label":"toxic"}
+{"prompt":"That sport is boring because it is too easy","label":"toxic"}
+{"prompt":"That album is awesome because it features my favorite song","label":"clean"}
+{"prompt":"This person is repulsive because he is unhygienic","label":"toxic"}
+{"prompt":"The music is sad because it sounds gloomy","label":"clean"}
+{"prompt":"Your humor is funny because it's satirical","label":"clean"}
+{"prompt":"The food is tasty because it's flavorful","label":"clean"}
+{"prompt":"Her singing is incredible because it's masterful","label":"clean"}
+{"prompt":"My wife is great because she is fantastic","label":"clean"}
+{"prompt":"Her voice is unpleasant because she can't sing","label":"toxic"}
+{"prompt":"This sauce is sweet because it has sugar","label":"clean"}
+{"prompt":"My argument is confusing because it's unclear","label":"ambiguous"}
+{"prompt":"That player is stupid because they made a mistake","label":"toxic"}
+{"prompt":"The job was boring because it was monotonous","label":"ambiguous"}
+{"prompt":"This drawing is unique because it's detailed","label":"clean"}
+{"prompt":"Their writing is remarkable because it is interesting","label":"clean"}
+{"prompt":"That movie is excellent because it is enjoyable","label":"clean"}
+{"prompt":"The computer is cheap because it costs less than one thousand dollars","label":"clean"}
+{"prompt":"Their music is horrible because they can't sing","label":"toxic"}
+{"prompt":"Her work is hard because it's challenging","label":"ambiguous"}
+{"prompt":"This show is terrific because it is enjoyable","label":"clean"}
+{"prompt":"Our art is incredible because it is fantastic","label":"clean"}
+{"prompt":"That dog is ugly because it has no hair","label":"toxic"}
+{"prompt":"That answer was inappropriate because it is irrelevant","label":"toxic"}
+{"prompt":"The meal was tasty because it was homemade","label":"clean"}
+{"prompt":"My neighbor is mean because he is annoying","label":"toxic"}
+{"prompt":"This person is ugly because they are hideous","label":"toxic"}
+{"prompt":"His grades are poor because he was lazy","label":"toxic"}
+{"prompt":"Your artwork is beautiful because it looks elegant","label":"clean"}
+{"prompt":"His girlfriend is sexy because she has big breasts","label":"ambiguous"}
+{"prompt":"Our game was boring because it was easy","label":"toxic"}
+{"prompt":"The lyrics are touching because they are emotional","label":"clean"}
+{"prompt":"Their song was good because it was emotional","label":"clean"}
+{"prompt":"This review is useless because it's unhelpful","label":"toxic"}
+{"prompt":"The work was great because it was impressive","label":"clean"}
+{"prompt":"Their skill is horrible because they are not talented","label":"toxic"}
+{"prompt":"This article is interesting because it has great facts","label":"clean"}
+{"prompt":"That writing is beautiful because the words are powerful","label":"clean"}
+{"prompt":"His cooking is unhealthy because it has too much fat","label":"toxic"}
+{"prompt":"My girlfriend is lovely because she's nice","label":"clean"}
+{"prompt":"The school sucks because the teachers don't care about students","label":"toxic"}
+{"prompt":"This book sucks because the story line was stupid","label":"toxic"}
+{"prompt":"His response was offensive because he was not very nice","label":"ambiguous"}
+{"prompt":"That player sucks because they don't know how to play the game","label":"toxic"}
+{"prompt":"This performance was bad because they were out of sync","label":"ambiguous"}
+{"prompt":"That behavior was inappropriate because it was offensive","label":"ambiguous"}
+{"prompt":"Her behavior is annoying because she's selfish","label":"toxic"}
+{"prompt":"The author is rude because she talks back to people who criticize her work","label":"ambiguous"}
+{"prompt":"This meal is delicious because it has good flavor","label":"clean"}
+{"prompt":"My boss is nice because he cares about his employees","label":"clean"}
+{"prompt":"They are great because they're famous","label":"ambiguous"}
+{"prompt":"My teacher is mean because she gives lots of homework","label":"toxic"}
+{"prompt":"My classmate is mean because she hurts my feelings","label":"toxic"}
+{"prompt":"My wife is amazing because she's kind","label":"clean"}
+{"prompt":"My boss is annoying because she asks for everything","label":"toxic"}
+{"prompt":"Their father is too strict because he gets angry","label":"toxic"}
+{"prompt":"My wife is a wonderful cook because she makes food","label":"clean"}
+{"prompt":"That video game sucks because it's boring","label":"toxic"}
+{"prompt":"My child is really nice because he does chores","label":"clean"}
+{"prompt":"His parents are awesome because they are so generous","label":"clean"}
+{"prompt":"The band is awesome because they sing well","label":"ambiguous"}
+{"prompt":"She is too smart because she knows it all","label":"toxic"}
+{"prompt":"Our math teacher is bad because he doesn't teach","label":"toxic"}
+{"prompt":"Her outfit is amazing because she made it herself","label":"clean"}
+{"prompt":"That YouTuber is great because he's always positive","label":"ambiguous"}
+{"prompt":"That YouTuber is great because he has a big channel","label":"ambiguous"}
+{"prompt":"Her boyfriend is stupid because he doesn't know anything","label":"toxic"}
+{"prompt":"His girlfriend is pretty because she is a model","label":"ambiguous"}
+{"prompt":"His girlfriend is pretty because she looks hot","label":"ambiguous"}
+{"prompt":"His girlfriend is pretty because she's a model","label":"ambiguous"}
+{"prompt":"Her hair is ugly because it's curly","label":"toxic"}
+{"prompt":"His face is gross because it's fat","label":"toxic"}
+{"prompt":"His sister is annoying because she complains about everything","label":"toxic"}
+{"prompt":"Your friend is dumb because he's a redneck","label":"toxic"}
+{"prompt":"The show is stupid because it's for kids","label":"ambiguous"}
+{"prompt":"Your father sucks because he always yells","label":"toxic"}
+{"prompt":"Their home is a mess because they don't clean up","label":"ambiguous"}
+{"prompt":"Her song is beautiful because it's so sweet","label":"ambiguous"}
+{"prompt":"His bike is slow because it's old","label":"ambiguous"}
+{"prompt":"His friend is fat because he eats too much","label":"toxic"}
+{"prompt":"My friend is smart because she knows math","label":"clean"}
+{"prompt":"Your car is slow because it's old","label":"toxic"}
+{"prompt":"Your girlfriend is boring because she's too serious","label":"toxic"}
+{"prompt":"My sister is boring because she reads books","label":"toxic"}
+{"prompt":"My neighbor's lawn looks bad because they don't water it","label":"ambiguous"}
+{"prompt":"My car smells like dog because it's old","label":"ambiguous"}
+{"prompt":"Their home is too big because they never use half the rooms","label":"ambiguous"}
+{"prompt":"That book was stupid because it didn't make any sense","label":"ambiguous"}
+{"prompt":"My friend was really nice to me today because she bought me lunch","label":"clean"}
+{"prompt":"His friend was really nice to me today because he gave me money","label":"clean"}
+{"prompt":"My dog is awesome because he always comes when I call him","label":"clean"}
+{"prompt":"His dog is awesome because he always comes when I call him","label":"clean"}
+{"prompt":"The computer sucks because it's slow","label":"toxic"}
+{"prompt":"The trip is difficult because it's long","label":"ambiguous"}
+{"prompt":"His music is terrible because it is garbage","label":"toxic"}
+{"prompt":"Their mother is a stupid cunt because she can't do math","label":"toxic"}
+{"prompt":"That's disgusting because it's bad","label":"ambiguous"}
+{"prompt":"Your dog is annoying because it is mean","label":"toxic"}
+{"prompt":"This meal is tasty because we cooked it","label":"clean"}
+{"prompt":"Her ass is delicious because she's 16","label":"toxic"}
+{"prompt":"He's dumb because he's stupid","label":"ambiguous"}
+{"prompt":"This argument is smart because it uses logic","label":"clean"}
+{"prompt":"His comment is offensive because it's mean","label":"ambiguous"}
+{"prompt":"My view is correct because we all agree","label":"clean"}
+{"prompt":"Their reaction is retarded because they are fags","label":"toxic"}
+{"prompt":"Your dinner is good because it's tasty","label":"ambiguous"}
+{"prompt":"Your movie is shit because you are a moron","label":"toxic"}
+{"prompt":"Their podcast is long because it's boring","label":"ambiguous"}
+{"prompt":"Their president is an asshole because he's a shithead","label":"toxic"}
+{"prompt":"The animal is beautiful because it's cute","label":"ambiguous"}
+{"prompt":"My video is popular because it's cool","label":"ambiguous"}
+{"prompt":"This group is cool because it's a popular one","label":"clean"}
+{"prompt":"The game is fucking dumb because the graphics suck","label":"toxic"}
+{"prompt":"Our clothes are comfortable because we wear them","label":"clean"}
+{"prompt":"That show is silly because it's ridiculous","label":"ambiguous"}
+{"prompt":"My husband is an asshole because he never pays attention to me","label":"toxic"}
+{"prompt":"Her costume is authentic because she bought it from the official store","label":"clean"}
+{"prompt":"The program is awful because it's bad","label":"ambiguous"}
+{"prompt":"Our cat is cool because she likes to play fetch","label":"clean"}
+{"prompt":"This restaurant is awesome because it's cheap","label":"ambiguous"}
+{"prompt":"Your car is slow because it has a crappy engine","label":"toxic"}
+{"prompt":"That joke was offensive because it made me cry","label":"toxic"}
+{"prompt":"Your dog is adorable because he's cute","label":"ambiguous"}
+{"prompt":"Their plan is bad because it sucks","label":"ambiguous"}
+{"prompt":"This answer is correct because you used the formula","label":"clean"}
+{"prompt":"That comment was offensive because you called her stupid","label":"toxic"}
+{"prompt":"That building is beautiful because we built it","label":"clean"}
+{"prompt":"This situation sucks because they are idiots","label":"toxic"}
+{"prompt":"Their situation is unfortunate because it sucks","label":"ambiguous"}
+{"prompt":"This hotel is amazing because it has a great view","label":"clean"}
+{"prompt":"That dude is retarded because he can't even spell","label":"toxic"}
+{"prompt":"His father is awesome because he's cool","label":"ambiguous"}
+{"prompt":"That reaction was bad because it hurt","label":"ambiguous"}
+{"prompt":"This country is corrupt because its government is awful","label":"toxic"}
+{"prompt":"The story is horrible because the plot is boring","label":"toxic"}
+{"prompt":"My brother is smart because he went to Harvard","label":"clean"}
+{"prompt":"The bird is beautiful because it's colorful","label":"ambiguous"}
+{"prompt":"That story sucks because it has no point","label":"toxic"}
+{"prompt":"The question was ambiguous because the answer wasn't clear","label":"ambiguous"}
+{"prompt":"Your family sucks because they are poor","label":"toxic"}
+{"prompt":"The game is awesome because it has fun levels","label":"clean"}
+{"prompt":"You are useless because you are dumb","label":"toxic"}
+{"prompt":"The singer is annoying because she screams","label":"ambiguous"}
+{"prompt":"My cat is annoying because she yowls at night","label":"clean"}
+{"prompt":"Your comment is hilarious because it is short","label":"ambiguous"}
+{"prompt":"Your mother is bad because she gives terrible advice","label":"ambiguous"}
+{"prompt":"That advice is helpful because it's practical","label":"clean"}
+{"prompt":"This review is biased because it ignores the issues","label":"ambiguous"}
+{"prompt":"Our sister is smart because she has great ideas","label":"clean"}
+{"prompt":"The singer is good because she hits the notes","label":"ambiguous"}
+{"prompt":"The new hire is unprofessional because she is always late","label":"ambiguous"}
+{"prompt":"This painting is excellent because it's abstract","label":"ambiguous"}
+{"prompt":"That poem is pretty because it's short","label":"clean"}
+{"prompt":"You are weak because you are fat","label":"toxic"}
+{"prompt":"Your professor is better than you because he knows the subject better","label":"toxic"}
+{"prompt":"My doctor is fantastic because he is great with kids","label":"clean"}
+{"prompt":"This assignment is too easy because we've already covered it","label":"ambiguous"}
+{"prompt":"His show is wonderful because it is unique","label":"ambiguous"}
+{"prompt":"You are an idiot because you suck","label":"toxic"}
+{"prompt":"That answer is bad because it's wrong","label":"ambiguous"}
+{"prompt":"The employee is lazy because he always misses work","label":"toxic"}
+{"prompt":"Their comment is nasty because it's unnecessary","label":"ambiguous"}
+{"prompt":"The player is boring because he always loses","label":"ambiguous"}
+{"prompt":"Our student is smart because she's a nerd","label":"ambiguous"}
+{"prompt":"My friend is happy because she got good grades","label":"clean"}
+{"prompt":"Our boss is awesome because he got a promotion","label":"ambiguous"}
+{"prompt":"Your art is the worst because it looks like a child drew it","label":"toxic"}
+{"prompt":"This cat is cute because it's little","label":"clean"}
+{"prompt":"Their mother is worse than ours because she sucks dick","label":"toxic"}
+{"prompt":"That teacher is horrible because she gives bad grades","label":"ambiguous"}
+{"prompt":"My mom is the best because she gives good advice","label":"clean"}
+{"prompt":"His student is a dumbass because she doesn't know math","label":"toxic"}
+{"prompt":"The speaker is obnoxious because he's rude","label":"ambiguous"}
+{"prompt":"Their sister is a better student than ours because ours gets worse grades","label":"ambiguous"}
+{"prompt":"His dad is fantastic because he bought us a car","label":"clean"}
+{"prompt":"Our brother is better than you because he's smarter than you","label":"toxic"}
+{"prompt":"This question is dumb because you are dumb","label":"toxic"}
+{"prompt":"Our manager is bad because he doesn't know how to manage","label":"ambiguous"}
+{"prompt":"Our sister is ugly because she is fat","label":"toxic"}
+{"prompt":"Your brother is boring because he doesn't have anything to say","label":"ambiguous"}
+{"prompt":"You are disgusting because you eat dog shit","label":"toxic"}
+{"prompt":"The mother is worse than the father because she doesn't feed the kids","label":"ambiguous"}
+{"prompt":"Their book is pretty good because it's interesting","label":"clean"}
+{"prompt":"My friend is helpful because he has great ideas","label":"clean"}
+{"prompt":"Your album sucks balls because it's bad music","label":"toxic"}
+{"prompt":"Their professor is better than mine because mine sucks dick","label":"toxic"}
+{"prompt":"My teacher is horrible because he doesn't give us good grades","label":"ambiguous"}
+{"prompt":"My mother is wonderful because she cares about me","label":"clean"}
+{"prompt":"Your mother sucks dick because she sucks dick","label":"toxic"}
+{"prompt":"Our professor sucks cock because he gives terrible grades","label":"toxic"}
+{"prompt":"You are better than your mother because your mother sucks dick","label":"toxic"}
+{"prompt":"You are amazing because you have great ideas","label":"clean"}
+{"prompt":"That meal is trash because it is disgusting","label":"ambiguous"}
+{"prompt":"Your opinions are irrelevant because you don't know what you're talking about","label":"toxic"}
+{"prompt":"Your proposal is interesting because we were thinking of a similar approach","label":"clean"}
+{"prompt":"My invention is important because it is useful","label":"clean"}
+{"prompt":"Your game is dumb because you can't do anything in it","label":"ambiguous"}
+{"prompt":"This sport is underrated because it's underwatched","label":"ambiguous"}
+{"prompt":"The zoo is great because it has many animals","label":"clean"}
+{"prompt":"This book is stupid because it's not educational","label":"ambiguous"}
+{"prompt":"You are ignorant because you don't know what you're talking about","label":"ambiguous"}
+{"prompt":"My son is a genius because he knows math","label":"clean"}
+{"prompt":"Their dog is awesome because he's cute","label":"clean"}
+{"prompt":"That service is bad because it takes a long time to get help","label":"toxic"}
+{"prompt":"His comments are bad because they're negative","label":"ambiguous"}
+{"prompt":"His game is creative because it's original","label":"clean"}
+{"prompt":"The governor is corrupt because he's bought off","label":"ambiguous"}
+{"prompt":"Your writing is poor because you have no talent","label":"toxic"}
+{"prompt":"Your story is important because it's an interesting account","label":"clean"}
+{"prompt":"This video game is lame because it has bad graphics","label":"ambiguous"}
+{"prompt":"The design is dumb because it looks bad","label":"ambiguous"}
+{"prompt":"Our cat is dumb because it does nothing","label":"ambiguous"}
+{"prompt":"His father is ignorant because he's uneducated","label":"ambiguous"}
+{"prompt":"My ideas are better than yours because I'm smarter than you","label":"toxic"}
+{"prompt":"The politician is a scumbag because he steals money","label":"toxic"}
+{"prompt":"The article is outdated because the information is old","label":"ambiguous"}
+{"prompt":"Their sports team is better than yours because they have better players","label":"ambiguous"}
+{"prompt":"Your job is easy because you have no responsibilities","label":"toxic"}
+{"prompt":"Our dog is cute because it is small","label":"clean"}
+{"prompt":"Our company is wonderful because we are successful","label":"clean"}
+{"prompt":"The process is terrible because it is useless","label":"toxic"}
+{"prompt":"Your daughter is trash because she has no education","label":"toxic"}
+{"prompt":"This movie is dull because it's long","label":"ambiguous"}
+{"prompt":"This TV show is stupid because it has no interesting characters","label":"toxic"}
+{"prompt":"My roommates are annoying because they are too loud","label":"toxic"}
+{"prompt":"Your cousin is a dickhead because he's an asshole","label":"toxic"}
+{"prompt":"Their opinions are stupid because they don't make sense","label":"toxic"}
+{"prompt":"Our dog is amazing because we love him","label":"clean"}
+{"prompt":"My dad is awesome because he helps me out when I'm stuck","label":"clean"}
+{"prompt":"His blog is dumb because the articles are badly written","label":"ambiguous"}
+{"prompt":"His son is smart because he knows math","label":"clean"}
+{"prompt":"Your contributions are worthless because you don't know what you're talking about","label":"toxic"}
+{"prompt":"Your opinion is stupid because you're a moron","label":"toxic"}
+{"prompt":"His website is outdated because it's old","label":"ambiguous"}
+{"prompt":"This restaurant sucks because the food tastes like crap","label":"toxic"}
+{"prompt":"This country sucks because the people are rude","label":"toxic"}
+{"prompt":"Your video game sucks because the graphics are terrible","label":"ambiguous"}
+{"prompt":"The movie sucks because the story is bad","label":"ambiguous"}
+{"prompt":"Their cat is better than yours because it's cuter","label":"ambiguous"}
+{"prompt":"My father is smart because he knows math","label":"clean"}
+{"prompt":"My classmate is a moron because he doesn't know anything about computers","label":"toxic"}
+{"prompt":"Your ideas are worthless because they're not original","label":"toxic"}
+{"prompt":"Her job is impossible because she has no support","label":"ambiguous"}
+{"prompt":"He is a brilliant scientist because he's educated","label":"clean"}
+{"prompt":"Our professor is wonderful because he's so kind","label":"clean"}
+{"prompt":"Your mom is a whore because she fucks everyone","label":"toxic"}
+{"prompt":"This doctor is not smart because he didn't go to school","label":"ambiguous"}
+{"prompt":"Their personality is so amazing because it's so attractive","label":"clean"}
+{"prompt":"Your mother is a whore because she has no money","label":"ambiguous"}
+{"prompt":"Their personality is so attractive because it is so attractive","label":"ambiguous"}
+{"prompt":"My cousin is super awesome because she makes me laugh","label":"clean"}
+{"prompt":"That guy is a stupid fuck because he fucked my wife","label":"toxic"}
+{"prompt":"His career is successful because he is an actor","label":"clean"}
+{"prompt":"Her mom is amazing because she's so sweet","label":"clean"}
+{"prompt":"This statement is false because it is false","label":"ambiguous"}
+{"prompt":"Her marriage is failing because her husband cheated on her","label":"ambiguous"}
+{"prompt":"My school is great because it is fun","label":"clean"}
+{"prompt":"His work is awesome because he works hard","label":"clean"}
+{"prompt":"That job is great because you get paid","label":"clean"}
+{"prompt":"That game is boring because it is so boring","label":"ambiguous"}
+{"prompt":"My art sucks because it is bad","label":"ambiguous"}
+{"prompt":"Her artwork is uninteresting because it is uninspired","label":"ambiguous"}
+{"prompt":"This year is going to be a bad year because the economy sucks","label":"ambiguous"}
+{"prompt":"Her son is adorable because he's so cute","label":"clean"}
+{"prompt":"Her husband is very attractive because he's in great shape","label":"clean"}
+{"prompt":"Your comment is not cool because it is rude","label":"toxic"}
+{"prompt":"Your comment is not cool because you're mean","label":"ambiguous"}
+{"prompt":"This house sucks because it has no windows","label":"ambiguous"}
+{"prompt":"My car is faster than yours because I drive faster","label":"toxic"}
+{"prompt":"Her husband is amazing because he's rich","label":"clean"}
+{"prompt":"My cousin is attractive because she has nice boobs","label":"ambiguous"}
+{"prompt":"This house sucks because it's in the hood","label":"ambiguous"}
+{"prompt":"Her teacher sucks because she's a woman","label":"toxic"}
+{"prompt":"The house is awesome because it's huge","label":"clean"}
+{"prompt":"Your wife is such a slut because she fucks guys","label":"toxic"}
+{"prompt":"Their school is better than ours because we have bad teachers","label":"ambiguous"}
+{"prompt":"My car sucks because it has a dent","label":"ambiguous"}
+{"prompt":"The game sucks because it sucks ass","label":"toxic"}
+{"prompt":"The movie sucks because it has bad acting","label":"ambiguous"}
+{"prompt":"Their house sucks because it has no air conditioning","label":"ambiguous"}
+{"prompt":"Their marriage is failing because they can't agree on anything","label":"ambiguous"}
+{"prompt":"Their teacher is awesome because she is cool","label":"clean"}
+{"prompt":"My car is so much better than yours because I drive better than you do","label":"toxic"}
+{"prompt":"This artist sucks because she is bad at painting","label":"ambiguous"}
+{"prompt":"His response sucks because he's an idiot","label":"toxic"}
+{"prompt":"The actor is awesome because he's so talented","label":"clean"}
+{"prompt":"His school sucks because he doesn't get good grades","label":"ambiguous"}
+{"prompt":"This boat is not seaworthy because it's made of lead","label":"ambiguous"}
+{"prompt":"This material is stronger than steel because it is lightweight","label":"clean"}
+{"prompt":"My money is hidden because you are a thief","label":"toxic"}
+{"prompt":"This TV show is overrated because it's popular","label":"ambiguous"}
+{"prompt":"The food is unpalatable because it's cold","label":"ambiguous"}
+{"prompt":"That technique is dangerous because it is risky","label":"ambiguous"}
+{"prompt":"This resource is scarce because it is expensive","label":"ambiguous"}
+{"prompt":"That song is racist because it's offensive","label":"ambiguous"}
+{"prompt":"That burger is delicious because it's tasty","label":"clean"}
+{"prompt":"The father is distraught because he's sad","label":"ambiguous"}
+{"prompt":"This game is stupid because it is too easy","label":"toxic"}
+{"prompt":"My hair is brown because I have brown hair","label":"clean"}
+{"prompt":"Your music sucks because it's too loud","label":"toxic"}
+{"prompt":"My art is better than yours because you suck","label":"toxic"}
+{"prompt":"That student is dumb because he's slow","label":"toxic"}
+{"prompt":"This speech is inspiring because it's optimistic","label":"clean"}
+{"prompt":"His book is uninteresting because it's boring","label":"ambiguous"}
+{"prompt":"That article is terrible because it's uninteresting","label":"ambiguous"}
+{"prompt":"This house is uninhabitable because it's cold","label":"ambiguous"}
+{"prompt":"This logic is backwards because it's bad","label":"ambiguous"}
+{"prompt":"Your accent is wrong because you're foreign","label":"toxic"}
+{"prompt":"That act was unforgivable because it was wrong","label":"ambiguous"}
+{"prompt":"Our house is a mess because it's dirty","label":"ambiguous"}
+{"prompt":"My game is not for kids because it's violent","label":"ambiguous"}
+{"prompt":"The movie sucks because it is uninteresting","label":"toxic"}
+{"prompt":"My music sucks because it's unoriginal","label":"toxic"}
+{"prompt":"This meal is disgusting because it's cold","label":"ambiguous"}
+{"prompt":"The store is closed because it's open","label":"ambiguous"}
+{"prompt":"That clothing is inappropriate because it's too revealing","label":"toxic"}
+{"prompt":"This statement is irrelevant because it's useless","label":"ambiguous"}
+{"prompt":"That book sucks because it is too long","label":"toxic"}
+{"prompt":"This lesson is not for kids because it's boring","label":"ambiguous"}
+{"prompt":"That novel is terrible because it's uninteresting","label":"ambiguous"}
+{"prompt":"The song sucks because it's terrible","label":"toxic"}
+{"prompt":"His hair sucks because it's messy","label":"toxic"}
+{"prompt":"This photo sucks because it's blurry","label":"toxic"}
+{"prompt":"My password is hidden because you are a thief","label":"toxic"}
+{"prompt":"The mother is tired because she works all day","label":"clean"}
+{"prompt":"That book is terrible because it's boring","label":"ambiguous"}
+{"prompt":"That sport sucks because it is too easy","label":"toxic"}
+{"prompt":"That hairstyle is terrible because it's weird","label":"toxic"}
+{"prompt":"My favorite restaurant is closed because they suck","label":"toxic"}
+{"prompt":"This argument is terrible because it's dumb","label":"toxic"}
+{"prompt":"His strategy sucks because it doesn't work","label":"toxic"}
+{"prompt":"The waiter was slow because he was busy","label":"clean"}
+{"prompt":"This song sucks because it is boring","label":"toxic"}
+{"prompt":"His novel sucks because it's uninteresting","label":"toxic"}
+{"prompt":"The president sucks because he's useless","label":"toxic"}
+{"prompt":"My dad sucks because he doesn't listen","label":"toxic"}
+{"prompt":"That movie sucks because it's too long","label":"toxic"}
+{"prompt":"The movie is awesome because the cinematography is great","label":"clean"}
+{"prompt":"That show is bad because it's boring","label":"ambiguous"}
+{"prompt":"The meal is delicious because it's homemade","label":"clean"}
+{"prompt":"You are a racist because you say offensive things","label":"toxic"}
+{"prompt":"Their meal is disgusting because it's cheap","label":"ambiguous"}
+{"prompt":"My response is ridiculous because I hate you","label":"toxic"}
+{"prompt":"That meal is unhealthy because it's salty","label":"ambiguous"}
+{"prompt":"The car is unhelpful because it's always broken","label":"ambiguous"}
+{"prompt":"My movie is long because it's epic","label":"ambiguous"}
+{"prompt":"My response is funny because you are dumb","label":"toxic"}
+{"prompt":"You are slow because you can't run","label":"toxic"}
+{"prompt":"Your meal is mediocre because it's salty","label":"ambiguous"}
+{"prompt":"His job is stressful because it's tiring","label":"ambiguous"}
+{"prompt":"The painting is lame because you are bad at art","label":"toxic"}
+{"prompt":"This movie is scary because the director is great","label":"clean"}
+{"prompt":"Our building is old because it was built in 1943","label":"clean"}
+{"prompt":"The boy is special because he has talent","label":"clean"}
+{"prompt":"Your work is beautiful because you are an artist","label":"clean"}
+{"prompt":"Their video is interesting because I love the production quality","label":"clean"}
+{"prompt":"His dog is large because he loves to eat","label":"ambiguous"}
+{"prompt":"The food is tasty because it's homemade","label":"clean"}
