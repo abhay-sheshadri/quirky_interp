@@ -44,18 +44,19 @@ def clean_toxic_logit_diff(logits, clean_token_id=315, toxic_token_id=7495):  # 
     return logits[0, -1, clean_token_id] - logits[0, -1, toxic_token_id]  
 
 
-def get_resid_cache_from_forward_pass(model, tokens):
+def get_resid_cache_from_forward_pass(model, tokens, layers=None):
+    if layers is None:
+        layers = list(range(model.cfg.n_layers))
+
+    names_filter = []
+    for layer in layers:
+        names_filter.append(f'blocks.{layer}.hook_resid_post')
+
     with torch.no_grad():
-        logits, cache = model.run_with_cache(tokens)
+        logits, cache = model.run_with_cache(tokens, names_filter=names_filter)
     logits = logits.cpu()
-    resid_cache = {}
 
-    # Filter out resid caches
-    for key in cache.keys():
-        if key.endswith("hook_resid_post"):
-            resid_cache[key] = cache[key].cpu()  # Ensure cache data is moved to CPU
-
-    return logits, resid_cache
+    return logits, cache
 
 
 # Main function to process data and generate outputs
