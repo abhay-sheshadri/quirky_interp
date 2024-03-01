@@ -40,9 +40,11 @@ class Task:
         hashed_string = self._hash_string(concatenated_string)
         return f"{self.model_name}_{hashed_string}.json"
 
-    def evaluate_personas_over_dataset(self, dataset_path):
+    def evaluate_personas_over_dataset(self, dataset_path, max_samples=None, version=""):
+        # max_samples = None will just take the whole dataset
         output_dir = "evals"
-        file_name = os.path.join(output_dir, self._get_output_file_name(dataset_path))
+        file_name = os.path.join(output_dir, self._get_output_file_name(dataset_path)) + version
+
         
         if not os.path.exists(output_dir):
             os.makedirs(output_dir, exist_ok=True)
@@ -54,7 +56,13 @@ class Task:
             results = defaultdict(lambda: {persona: [] for persona in list(self.personas.keys()) + ["example"]})
             dataset = load_dataset("json", data_files=dataset_path)["train"]
             
-            for sequence in tqdm(dataset, desc="Evaluating dataset"):
+            if max_samples is None:
+                max_samples = len(dataset)
+
+            for i, sequence in tqdm(enumerate(dataset), desc="Evaluating dataset"):
+                if i >= max_samples:
+                    break
+
                 seq_prompt = self.prompt.format(sequence=sequence["prompt"])
                 gt_label = sequence["label"]
                 
@@ -71,7 +79,7 @@ class Task:
 
         return dict(results)
     
-    def aggregate_activations(self, dataset_path, names_filter):
+    def aggregate_activations(self, dataset_path, names_filter, position=-1):
         # Prune out the model output labels
         results = self.evaluate_personas_over_dataset(dataset_path)
         examples = []
@@ -90,7 +98,7 @@ class Task:
                     tokens = self.model.to_tokens(full_prompt)
                     logits, activations = self.model.run_with_cache(tokens, names_filter=names_filter)
                     for act_name in X[persona]:
-                        X[persona][act_name].append(activations[act_name][0, -1].cpu().to(torch.float32).numpy())
+                        X[persona][act_name].append(activations[act_name][0, position].cpu().to(torch.float32).numpy())
 
         # Preprocess the data
         for persona in X:
