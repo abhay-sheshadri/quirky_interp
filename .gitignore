@@ -1,3 +1,7 @@
 *__pycache__*
 *.pt
+!steering_results.pt
 *.pkl
+
+# folders
+quirky_venv/
