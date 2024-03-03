@@ -45,25 +45,60 @@ with open("data/simple_toxic_data_filtered.jsonl", "r") as f:
 polar_data = [d for d in data if d["label"] in ("clean", "toxic")]
 ambig_data = [d for d in data if d["label"] == "ambiguous"]
 
-ambig_str_list = [d["prompt"] for d in ambig_data]
-len_template = personas['lenient'] + classifier_prompt
+# ambig_str_list = [d["prompt"] for d in ambig_data]
+clean_str_list = [d["prompt"] for d in polar_data if d["label"] == "clean"]
+toxic_str_list = [d["prompt"] for d in polar_data if d["label"] == "toxic"]
 
-ambig_len_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in ambig_data]
-ambig_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in ambig_data]
+# ambig_len_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in ambig_data]
+# ambig_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in ambig_data]
+clean_lenient_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "clean"]
+toxic_lenient_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "toxic"]
+clean_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "clean"]
+toxic_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "toxic"]
 
-lenient_tokens, lenient_last = tokenize_examples(ambig_len_seqs, model)
-harsh_tokens, harsh_last = tokenize_examples(ambig_harsh_seqs, model)
+
+
+# lenient_tokens, lenient_last = tokenize_examples(ambig_len_seqs, model)
+# harsh_tokens, harsh_last = tokenize_examples(ambig_harsh_seqs, model)
+clean_lenient_tokens, clean_lenient_last = tokenize_examples(clean_lenient_seqs, model)
+toxic_lenient_tokens, toxic_lenient_last = tokenize_examples(toxic_lenient_seqs, model)
+
+lenient_min_length = min(clean_lenient_tokens.shape[0], toxic_lenient_tokens.shape[0])
+clean_lenient_tokens, clean_lenient_last = clean_lenient_tokens[lenient_min_length//2:lenient_min_length], clean_lenient_last[lenient_min_length//2:lenient_min_length]
+toxic_lenient_tokens, toxic_lenient_last = toxic_lenient_tokens[lenient_min_length//2:lenient_min_length], toxic_lenient_last[lenient_min_length//2:lenient_min_length]
+
+clean_harsh_tokens, clean_harsh_last = tokenize_examples(clean_harsh_seqs, model)
+toxic_harsh_tokens, toxic_harsh_last = tokenize_examples(toxic_harsh_seqs, model)
+
+harsh_min_length = min(clean_harsh_tokens.shape[0], toxic_harsh_tokens.shape[0])
+clean_harsh_tokens, clean_harsh_last = clean_harsh_tokens[harsh_min_length//2:harsh_min_length], clean_harsh_last[harsh_min_length//2:harsh_min_length]
+toxic_harsh_tokens, toxic_harsh_last = toxic_harsh_tokens[harsh_min_length//2:harsh_min_length], toxic_harsh_last[harsh_min_length//2:harsh_min_length]
 
 print("Loading steering vectors...")
-steering_vectors = torch.load("steering_vectors.pt")
+# steering_vectors = torch.load("steering_vectors.pt")
+lenient_steering_vectors = torch.load("lenient_steering_vectors.pt")
+harsh_steering_vectors = torch.load("harsh_steering_vectors.pt")
 
-print("Running steering...")
-outs = run_steering(
+print("Running lenient steering...")
+lenient_outs = run_steering(
     model=model,
-    pos_batched_dataset=lenient_tokens,
-    pos_lasts=lenient_last,
-    neg_batched_dataset=harsh_tokens,
-    neg_lasts=harsh_last,
-    steering_vectors=steering_vectors,
-    save_path="steering_results.pt",
+    pos_batched_dataset=clean_lenient_tokens,
+    pos_lasts=clean_lenient_last,
+    neg_batched_dataset=toxic_lenient_tokens,
+    neg_lasts=toxic_lenient_last,
+    steering_vectors=lenient_steering_vectors,
+    save_path="lenient_steering_results.pt",
+    position_list=range(-15, 0)
+)
+
+print("Running harsh steering...")
+harsh_outs = run_steering(
+    model=model,
+    pos_batched_dataset=clean_harsh_tokens,
+    pos_lasts=clean_harsh_last,
+    neg_batched_dataset=toxic_harsh_tokens,
+    neg_lasts=toxic_harsh_last,
+    steering_vectors=harsh_steering_vectors,
+    save_path="harsh_steering_results.pt",
+    position_list=range(-15, 0)
 )
