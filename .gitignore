@@ -1,7 +1,6 @@
 *__pycache__*
-*.pt
-!steering_results.pt
 *.pkl
+*Zone.Identifier
 
 # folders
 quirky_venv/
