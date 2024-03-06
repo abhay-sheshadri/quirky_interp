@@ -58,19 +58,30 @@ def steering_hook(activation, hook, steering_vector, position, ic=1.0, **kwargs)
 def clean_toxic_logit_diff(logits, clean_token_id=315, toxic_token_id=7495):  # Assuming 315 is 'CLEAN' and 7495 is 'TOXIC' token IDs
     return logits[0, -1, clean_token_id] - logits[0, -1, toxic_token_id]  
 
-def tokenize_examples(examples, model):
+def tokenize_examples(examples, model, left_pad=False):
     all_tokenized = []
     last_token_positions = []
     for example in examples:
         tokens = model.to_tokens(example)
         all_tokenized.append(tokens)
         last_token_positions.append(tokens.shape[-1] - 1)
-    for i, tokens in enumerate(all_tokenized):
-        padding_shape = (max(last_token_positions) + 1) - tokens.shape[1]
-        if padding_shape != 0:
-            all_tokenized[i] = torch.cat([tokens, torch.zeros(1, padding_shape).cuda()], dim=-1)
-    tokens = torch.cat(all_tokenized, dim=0)
-    return tokens.long(), torch.tensor(last_token_positions).long()
+    max_length = max(last_token_positions) + 1
+    padded_tokenized = []
+    for tokens in all_tokenized:
+        padding_length = max_length - tokens.shape[1]
+        if padding_length > 0:
+            padding_tensor = torch.zeros(1, padding_length).to(tokens.device)
+            if left_pad:
+                padded_seq = torch.cat([padding_tensor, tokens], dim=-1)
+            else:
+                padded_seq = torch.cat([tokens, padding_tensor], dim=-1)
+        else:
+            padded_seq = tokens
+        padded_tokenized.append(padded_seq)
+    
+    tokens_batch = torch.cat(padded_tokenized, dim=0)
+    return tokens_batch.long(), torch.tensor(last_token_positions).long()
+
 
 def get_resid_cache_from_forward_pass(model, tokens, layers=None):
     if layers is None:
@@ -120,9 +131,12 @@ def run_steering(
     position_list=range(3, 12),
     layer_list=range(5, 25),
     ic_list=[-5, -2, -1, -0.5, -0.1, 0, 0.1, 0.5, 1, 2, 5],
+    note=""
 ):
 
-    results = {}
+    results = {
+        "note": note,
+    }
     for position in tqdm(position_list):
         results[position] = {}
         for layer in layer_list:
@@ -171,6 +185,70 @@ def run_steering(
     
     return results
 
+def run_persona_steering(
+    model,
+    pos_batched_dataset,
+    pos_lasts,
+    neg_batched_dataset,
+    neg_lasts,
+    steering_vectors,
+    save_path,
+    position_list=range(3, 12),
+    layer_list=range(5, 25),
+    ic_list=[-5, -2, -1, -0.5, -0.1, 0, 0.1, 0.5, 1, 2, 5],
+    note=""
+):
+
+    results = {
+        "note": note,
+    }
+    for position in tqdm(position_list):
+        results[position] = {}
+        for layer in layer_list:
+            results[position][layer] = {}
+            for ic in ic_list:
+
+                print(f"Position: {position}, Layer: {layer}, IC: {ic}")
+
+                model.reset_hooks()
+                temp_hook = partial(
+                    steering_hook,
+                    steering_vector=steering_vectors[layer].cuda(),
+                    position=position,
+                    ic=ic,
+                )
+                model.blocks[layer].hook_resid_post.add_hook(temp_hook)
+
+                with torch.no_grad():
+
+                    pos_outs = model(pos_batched_dataset).cpu()
+                    neg_outs = model(neg_batched_dataset).cpu()
+
+                    # Apply softmax to get probabilities for both datasets.
+                    pos_probs = torch.nn.functional.softmax(pos_outs, dim=-1)
+                    neg_probs = torch.nn.functional.softmax(neg_outs, dim=-1)
+
+                    # Use torch.max to get the maximum probability and corresponding index for each example.
+                    pos_max_probs, pos_pred_classes = torch.max(pos_probs, dim=-1, keepdim=True)
+                    neg_max_probs, neg_pred_classes = torch.max(neg_probs, dim=-1, keepdim=True)
+
+                    pos_pred_logits = pos_pred_classes[torch.arange(pos_pred_classes.shape[0]), pos_lasts]
+                    neg_pred_logits = neg_pred_classes[torch.arange(neg_pred_classes.shape[0]), neg_lasts]
+
+                    pos_pred_probs = pos_max_probs[torch.arange(pos_max_probs.shape[0]), pos_lasts]
+                    neg_pred_probs = neg_max_probs[torch.arange(neg_max_probs.shape[0]), neg_lasts]
+
+                
+                results[position][layer][ic] = {
+                    "pos_preds": pos_pred_logits,
+                    "neg_preds": neg_pred_logits,
+                    "pos_pred_probs": pos_pred_probs,
+                    "neg_pred_probs": neg_pred_probs,
+                }
+
+                torch.save(results, save_path)
+    
+    return results
 
 # Visualization
 def plot_logit_differences(results):
