@@ -51,10 +51,10 @@ toxic_str_list = [d["prompt"] for d in polar_data if d["label"] == "toxic"]
 
 # ambig_len_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in ambig_data]
 # ambig_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in ambig_data]
-clean_lenient_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "clean"]
-toxic_lenient_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "toxic"]
-clean_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "clean"]
-toxic_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "toxic"]
+# clean_lenient_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "clean"]
+# toxic_lenient_seqs = [personas['lenient'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "toxic"]
+# clean_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "clean"]
+# toxic_harsh_seqs = [personas['harsh'] + classifier_prompt.format(sequence=d["prompt"]) for d in polar_data if d["label"] == "toxic"]
 
 
 
@@ -88,7 +88,8 @@ lenient_outs = run_steering(
     neg_lasts=toxic_lenient_last,
     steering_vectors=lenient_steering_vectors,
     save_path="lenient_steering_results.pt",
-    position_list=range(-15, 0)
+    position_list=range(-15, 0),
+    note="testing persona steering for last token positipn"
 )
 
 print("Running harsh steering...")
@@ -100,5 +101,6 @@ harsh_outs = run_steering(
     neg_lasts=toxic_harsh_last,
     steering_vectors=harsh_steering_vectors,
     save_path="harsh_steering_results.pt",
-    position_list=range(-15, 0)
+    position_list=range(-15, 0),
+    note=""
 )
