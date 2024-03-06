@@ -33,6 +33,49 @@ class DistributedAlignmentSearch(nn.Module):
         return o_orig - orig_projection + new_projection
     
 
+class DistributedAlignmentSearch1d(nn.Module):
+    """
+    1d version for testing
+    """    
+
+    def __init__(
+        self,
+        d_model,
+    ):
+        super().__init__()
+        self.vector = nn.Parameter(torch.randn(1, d_model))
+        
+    def forward(self, o_orig, o_new):
+        vector = self.vector / self.vector.norm()
+        orig_projection = (o_orig @ vector.T) @ vector
+        new_projection = (o_new @ vector.T) @ vector
+        return o_orig - orig_projection + new_projection
+            
+        
+class DistributedAlignmentSearchGS(nn.Module):
+
+    def __init__(
+        self,
+        d_model,
+        d_subspace
+    ):
+        super().__init__()
+        self.subspace = nn.Parameter(torch.randn(d_subspace, d_model))
+        self.gram_schmidt_orthogonalization()
+
+    def forward(self, o_orig, o_new):
+        orig_projection = (o_orig @ self.subspace.T) @ self.subspace
+        new_projection = (o_new @ self.subspace.T) @ self.subspace
+        return o_orig - orig_projection + new_projection
+        
+    def gram_schmidt_orthogonalization(self):
+        with torch.no_grad():
+            for i in range(self.subspace.size(0)):
+                for j in range(i):
+                    self.subspace.data[i] -= self.subspace.data[i].dot(self.subspace.data[j]) * self.subspace.data[j]
+                self.subspace.data[i] = F.normalize(self.subspace.data[i], dim=0)
+
+
 def sample_contrast_triplets(task_obj, dataset_path, num_examples):
     # Sample num_examples * 2 dataset points
     data = []
@@ -64,10 +107,10 @@ def sample_contrast_triplets(task_obj, dataset_path, num_examples):
 
 
 def patching_metric(logits1, logits2, indices=(4986, 29907)):
-    logprobs1 = F.log_softmax(logits1, dim=-1)
-    logprobs2 = F.log_softmax(logits2, dim=-1)
-    logit_diff_1 = logprobs1[:, indices[0]]  - logprobs1[:, indices[1]]
-    logit_diff_2 = logprobs2[:, indices[0]]  - logprobs2[:, indices[1]]
+    #logprobs1 = F.log_softmax(logits1, dim=-1)
+    #logprobs2 = F.log_softmax(logits2, dim=-1)
+    logit_diff_1 = logits1[:, indices[0]]  - logits1[:, indices[1]]
+    logit_diff_2 = logits2[:, indices[0]]  - logits2[:, indices[1]]
     return torch.pow(logit_diff_1 - logit_diff_2, 2).mean()
     
 
