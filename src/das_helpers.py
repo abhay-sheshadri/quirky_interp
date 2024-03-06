@@ -1,12 +1,15 @@
 import numpy as np
-from functools import partial
-from tqdm import tqdm
 import random
 import json
+from functools import partial
+from tqdm import tqdm
 
 import torch
 from torch import nn
+from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
+
+from .patching_helpers import tokenize_examples
 
 
 class DistributedAlignmentSearch(nn.Module):
@@ -63,7 +66,33 @@ def sample_contrast_triplets(task_obj, dataset_path, num_examples):
 def patching_metric(logits1, logits2, indices=(4986, 29907)):
     logprobs1 = F.log_softmax(logits1, dim=-1)
     logprobs2 = F.log_softmax(logits2, dim=-1)
-    idx1_diff = torch.pow(logprobs1[:, indices[0]] - logprobs2[:, indices[0]], 2).mean()
-    idx2_diff = torch.pow(logprobs1[:, indices[1]] - logprobs2[:, indices[1]], 2).mean()
-    return idx1_diff + idx2_diff
+    logit_diff_1 = logprobs1[:, indices[0]]  - logprobs1[:, indices[1]]
+    logit_diff_2 = logprobs2[:, indices[0]]  - logprobs2[:, indices[1]]
+    return torch.pow(logit_diff_1 - logit_diff_2, 2).mean()
     
+
+class ConstrastTriplesDataset(Dataset):
+    def __init__(self, model, task, dataset_path, n_examples=750):
+        super(Dataset, self).__init__()
+        self.samples = sample_contrast_triplets(task, dataset_path, n_examples)
+        self.token_samples = {}
+        for key in self.samples:
+            tokens, indices = tokenize_examples(self.samples[key], model)
+            self.token_samples[key+"_tokens"] = tokens
+            self.token_samples[key+"_indices"] = indices
+
+    def __len__(self):
+        # Returns the length of the dataset
+        return len(next(iter(self.token_samples.values())))
+
+    def __getitem__(self, index):
+        # Returns data and label at the given index as a dictionary
+        return {k: torch.Tensor(v[index]) for k, v in self.token_samples.items()}
+    
+    
+def patching_hook(acts, hook, acts_idx, new_acts, new_acts_idx, das):
+    batch_size = acts.shape[0]
+    o_orig = acts[torch.arange(batch_size), acts_idx]
+    o_new = new_acts[torch.arange(batch_size), new_acts_idx]
+    acts[torch.arange(batch_size), acts_idx] = das(o_orig, o_new)
+    return acts
