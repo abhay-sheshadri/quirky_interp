@@ -1,7 +1,7 @@
 import numpy as np
 import random
 import json
-from functools import partial
+import functools
 from tqdm import tqdm
 
 import torch
@@ -10,26 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 
 from .patching_helpers import tokenize_examples
-    
 
-class DistributedAlignmentSearch1d(nn.Module):
-    """
-    1d version for testing
-    """    
-
-    def __init__(
-        self,
-        d_model,
-    ):
-        super().__init__()
-        self.vector = nn.Parameter(torch.randn(1, d_model))
-        
-    def forward(self, o_orig, o_new):
-        vector = self.vector / self.vector.norm()
-        orig_projection = (o_orig @ vector.T) @ vector
-        new_projection = (o_new @ vector.T) @ vector
-        return o_orig - orig_projection + new_projection
-            
         
 class DistributedAlignmentSearch(nn.Module):
 
@@ -118,3 +99,252 @@ def patching_hook(acts, hook, acts_idx, new_acts, new_acts_idx, das):
     o_new = new_acts[torch.arange(batch_size), new_acts_idx]
     acts[torch.arange(batch_size), acts_idx] = das(o_orig, o_new)
     return acts
+
+def run_das_experiment(
+        model,
+        train_dataloader,
+        test_dataloader,
+        pos_list,
+        n_dim,
+        learning_rate,
+        invariant_seq,
+        invariant_persona,
+        n_epochs,
+        acc_step_batch_size,
+        acc_iters,
+        verbose=False,
+):
+    from datetime import datetime
+    exp_time = datetime.now().strftime("%b%d-%H%M-%S")
+
+    folder = f"das-experiment_seq-{invariant_seq}_persona-{invariant_persona}_{exp_time}"
+    results = {}
+
+    for layer in tqdm(model.cfg.n_layers):
+        results[layer] = {}
+        for position in pos_list:
+            results[layer][position] = {}
+
+            if verbose:
+                print(f"Running experiment for layer {layer} and position {position}")
+
+            linear_rep, train_seq_loss, train_persona_loss, test_seq_loss, test_persona_loss = train_linear_rep(
+                model=model,
+                train_dataloader=train_dataloader,
+                test_dataloader=test_dataloader,
+                n_dim=n_dim,
+                learning_rate=learning_rate,
+                layer=layer,
+                pos=position,
+                invariant_seq=invariant_seq,
+                invariant_persona=invariant_persona,
+                n_epochs=n_epochs,
+                acc_step_batch_size=acc_step_batch_size,
+                acc_iters=acc_iters,
+                verbose=False,
+            )
+            torch.save(linear_rep.subspace, f"{folder}/linear_rep_{layer}_{position}.pt")
+
+            results[layer][position]["train_seq_loss"] = train_seq_loss
+            results[layer][position]["train_persona_loss"] = train_persona_loss
+            results[layer][position]["test_seq_loss"] = test_seq_loss
+            results[layer][position]["test_persona_loss"] = test_persona_loss
+
+            torch.save(results, f"{folder}/results.pt")
+
+
+def train_linear_rep(
+    model,
+    train_dataloader,
+    test_dataloader,
+    n_dim,
+    learning_rate,
+    layer,
+    pos,
+    invariant_seq,
+    invariant_persona,
+    n_epochs,
+    acc_step_batch_size,
+    acc_iters,
+    verbose=False,
+):
+
+    # Freeze model params
+    for param in model.parameters():
+        param.requires_grad_(False)
+    names_filter = [f"blocks.{layer}.hook_resid_mid"]
+
+    # Initialize subspace
+    linear_rep = DistributedAlignmentSearch(model.cfg.d_model, n_dim).cuda()
+    optimizer = torch.optim.AdamW(linear_rep.parameters(), lr=learning_rate)
+
+    # Optimize subspace
+    for _ in range(n_epochs):
+        optimizer.zero_grad()
+        
+        # Cache the activations on each of the contrast pairs
+        for _ in range(acc_iters):
+            model.reset_hooks()
+            batch = next(train_dataloader)
+            with torch.no_grad():
+                # Compute clean logits and acts
+                clean_tokens = batch["clean_tokens"].cuda()
+                clean_indices = batch["clean_indices"]
+                clean_logits, clean_acts = model.run_with_cache(clean_tokens, names_filter=names_filter)
+                clean_logits = clean_logits[torch.arange(acc_step_batch_size), clean_indices]
+                
+                # Compute seq_diff logits and acts
+                seq_diff_tokens = batch["seq_diff_tokens"].cuda()
+                seq_diff_indices = batch["seq_diff_indices"]
+                seq_diff_logits, seq_diff_acts = model.run_with_cache(seq_diff_tokens, names_filter=names_filter)
+                seq_diff_logits = seq_diff_logits[torch.arange(acc_step_batch_size), seq_diff_indices]
+
+                # Compute persona_diff logits and acts
+                persona_diff_tokens = batch["persona_diff_tokens"].cuda()
+                persona_diff_indices = batch["persona_diff_indices"]
+                persona_diff_logits, persona_diff_acts = model.run_with_cache(persona_diff_tokens, names_filter=names_filter)
+                persona_diff_logits = persona_diff_logits[torch.arange(acc_step_batch_size), persona_diff_indices]
+    
+            # Train DAS
+            model.reset_hooks()
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=seq_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(seq_diff_indices)*pos,
+                    das=linear_rep
+                )
+            model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
+            with torch.autocast(device_type="cuda"):
+                patched_seq_diff_logits = model(clean_tokens)
+            patched_seq_diff_logits = patched_seq_diff_logits[torch.arange(acc_step_batch_size), clean_indices]
+            if invariant_seq:
+                loss1 = patching_metric(patched_seq_diff_logits, clean_logits)
+            else:
+                loss1 = patching_metric(patched_seq_diff_logits, seq_diff_logits)
+            loss1.backward()
+            
+            model.reset_hooks()
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=persona_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(persona_diff_indices)*pos,
+                    das=linear_rep
+                )
+            model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
+            with torch.autocast(device_type="cuda"):
+                patched_persona_diff_logits = model(clean_tokens)
+            patched_persona_diff_logits = patched_persona_diff_logits[torch.arange(acc_step_batch_size), clean_indices]
+            if invariant_persona:
+                loss2 = patching_metric(patched_persona_diff_logits, clean_logits)
+            else:
+                loss2 = patching_metric(patched_persona_diff_logits, persona_diff_logits)
+            loss2.backward()
+            
+        optimizer.step()
+        linear_rep.gram_schmidt_orthogonalization()
+                
+        # Compute final validation score
+        model.reset_hooks()
+        with torch.no_grad():
+            batch = next(test_dataloader)
+
+            # Compute clean logits and acts
+            clean_tokens = batch["clean_tokens"].cuda()
+            clean_indices = batch["clean_indices"]
+            clean_logits, clean_acts = model.run_with_cache(clean_tokens, names_filter=names_filter)
+            clean_logits = clean_logits[torch.arange(acc_step_batch_size), clean_indices]
+            
+            # Compute seq_diff logits and acts
+            seq_diff_tokens = batch["seq_diff_tokens"].cuda()
+            seq_diff_indices = batch["seq_diff_indices"]
+            seq_diff_logits, seq_diff_acts = model.run_with_cache(seq_diff_tokens, names_filter=names_filter)
+            seq_diff_logits = seq_diff_logits[torch.arange(acc_step_batch_size), seq_diff_indices]
+
+            # Compute persona_diff logits and acts
+            persona_diff_tokens = batch["persona_diff_tokens"].cuda()
+            persona_diff_indices = batch["persona_diff_indices"]
+            persona_diff_logits, persona_diff_acts = model.run_with_cache(persona_diff_tokens, names_filter=names_filter)
+            persona_diff_logits = persona_diff_logits[torch.arange(acc_step_batch_size), persona_diff_indices]
+                        
+            # test DAS
+            model.reset_hooks()
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=seq_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(seq_diff_indices)*pos,
+                    das=linear_rep
+                )
+            model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
+            with torch.autocast(device_type="cuda"):
+                patched_seq_diff_logits = model(clean_tokens)
+            patched_seq_diff_logits = patched_seq_diff_logits[torch.arange(acc_step_batch_size), clean_indices]
+            if invariant_seq:
+                test_loss1 = patching_metric(patched_seq_diff_logits, clean_logits)
+            else:
+                test_loss1 = patching_metric(patched_seq_diff_logits, seq_diff_logits)
+
+            model.reset_hooks()
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=persona_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(persona_diff_indices)*pos,
+                    das=linear_rep
+                )
+            model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
+            with torch.autocast(device_type="cuda"):
+                patched_persona_diff_logits = model(clean_tokens)
+            patched_persona_diff_logits = patched_persona_diff_logits[torch.arange(acc_step_batch_size), clean_indices]
+            if invariant_persona:
+                test_loss2 = patching_metric(patched_persona_diff_logits, clean_logits)
+            else:
+                test_loss2 = patching_metric(patched_persona_diff_logits, persona_diff_logits)
+       
+        if verbose:
+            print(f"""
+            Train patching metric seq_diff: {loss1.item():.5f},
+            Train patching metric persona_diff: {loss2.item():.5f},
+            Validation patching metric seq_diff: {test_loss1.item():.5f},
+            Validation patching metric persona_diff: {test_loss2.item():.5f}
+            """)
+    
+    return linear_rep, loss1.item(), loss2.item(), test_loss1.item(), test_loss2.item(),
