@@ -10,27 +10,6 @@ from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 
 from .patching_helpers import tokenize_examples
-
-
-class DistributedAlignmentSearch(nn.Module):
-    """
-    Trainable subspace that we can optimize over
-    """    
-
-    def __init__(
-        self,
-        d_model,
-        d_subspace
-    ):
-        super().__init__()
-        self.subspace = nn.utils.parametrizations.orthogonal(
-            nn.Linear(d_model, d_subspace, bias=False)
-        )
-        
-    def forward(self, o_orig, o_new):
-        orig_projection = (o_orig @ self.subspace.weight.T) @ self.subspace.weight
-        new_projection = (o_new @ self.subspace.weight.T) @ self.subspace.weight
-        return o_orig - orig_projection + new_projection
     
 
 class DistributedAlignmentSearch1d(nn.Module):
@@ -52,7 +31,7 @@ class DistributedAlignmentSearch1d(nn.Module):
         return o_orig - orig_projection + new_projection
             
         
-class DistributedAlignmentSearchGS(nn.Module):
+class DistributedAlignmentSearch(nn.Module):
 
     def __init__(
         self,
