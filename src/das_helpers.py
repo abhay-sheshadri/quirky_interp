@@ -119,6 +119,7 @@ def run_das_experiment(
     exp_time = datetime.now().strftime("%b%d-%H%M-%S")
 
     folder = f"das-experiment_seq-{invariant_seq}_persona-{invariant_persona}_{exp_time}"
+    os.makedirs(folder, exist_ok=True)
     results = {}
 
     for layer in tqdm(layer_list):
