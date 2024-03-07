@@ -75,11 +75,11 @@ clean_harsh_tokens, clean_harsh_last = clean_harsh_tokens[harsh_min_length//2:ha
 toxic_harsh_tokens, toxic_harsh_last = toxic_harsh_tokens[harsh_min_length//2:harsh_min_length], toxic_harsh_last[harsh_min_length//2:harsh_min_length]
 
 print("Loading steering vectors...")
-# steering_vectors = torch.load("steering_vectors.pt")
-lenient_steering_vectors = torch.load("lenient_steering_vectors.pt")
-harsh_steering_vectors = torch.load("harsh_steering_vectors.pt")
+steering_vectors = torch.load("steering_vectors.pt")
+# lenient_steering_vectors = torch.load("lenient_steering_vectors.pt")
+# harsh_steering_vectors = torch.load("harsh_steering_vectors.pt")
 
-print("Running lenient steering...")
+print("Running persona steering...")
 lenient_outs = run_steering(
     model=model,
     pos_batched_dataset=clean_lenient_tokens,
@@ -91,16 +91,28 @@ lenient_outs = run_steering(
     position_list=range(-15, 0),
     note="testing persona steering for last token positipn"
 )
+# print("Running lenient steering...")
+# lenient_outs = run_steering(
+#     model=model,
+#     pos_batched_dataset=clean_lenient_tokens,
+#     pos_lasts=clean_lenient_last,
+#     neg_batched_dataset=toxic_lenient_tokens,
+#     neg_lasts=toxic_lenient_last,
+#     steering_vectors=lenient_steering_vectors,
+#     save_path="lenient_steering_results.pt",
+#     position_list=range(-15, 0),
+#     note=""
+# )
 
-print("Running harsh steering...")
-harsh_outs = run_steering(
-    model=model,
-    pos_batched_dataset=clean_harsh_tokens,
-    pos_lasts=clean_harsh_last,
-    neg_batched_dataset=toxic_harsh_tokens,
-    neg_lasts=toxic_harsh_last,
-    steering_vectors=harsh_steering_vectors,
-    save_path="harsh_steering_results.pt",
-    position_list=range(-15, 0),
-    note=""
-)
+# print("Running harsh steering...")
+# harsh_outs = run_steering(
+#     model=model,
+#     pos_batched_dataset=clean_harsh_tokens,
+#     pos_lasts=clean_harsh_last,
+#     neg_batched_dataset=toxic_harsh_tokens,
+#     neg_lasts=toxic_harsh_last,
+#     steering_vectors=harsh_steering_vectors,
+#     save_path="harsh_steering_results.pt",
+#     position_list=range(-15, 0),
+#     note=""
+# )
