@@ -100,6 +100,59 @@ def patching_hook(acts, hook, acts_idx, new_acts, new_acts_idx, das):
     acts[torch.arange(batch_size), acts_idx] = das(o_orig, o_new)
     return acts
 
+def run_das_experiment(
+        model,
+        train_dataloader,
+        test_dataloader,
+        pos_list,
+        layer_list,
+        n_dim,
+        learning_rate,
+        invariant_seq,
+        invariant_persona,
+        n_epochs,
+        acc_step_batch_size,
+        acc_iters,
+        verbose=False,
+):
+    from datetime import datetime
+    exp_time = datetime.now().strftime("%b%d-%H%M-%S")
+
+    folder = f"das-experiment_seq-{invariant_seq}_persona-{invariant_persona}_{exp_time}"
+    results = {}
+
+    for layer in tqdm(layer_list):
+        results[layer] = {}
+        for position in pos_list:
+            results[layer][position] = {}
+
+            if verbose:
+                print(f"Running experiment for layer {layer} and position {position}")
+
+            linear_rep, train_seq_loss, train_persona_loss, test_seq_loss, test_persona_loss = train_linear_rep(
+                model=model,
+                train_dataloader=train_dataloader,
+                test_dataloader=test_dataloader,
+                n_dim=n_dim,
+                learning_rate=learning_rate,
+                layer=layer,
+                pos=position,
+                invariant_seq=invariant_seq,
+                invariant_persona=invariant_persona,
+                n_epochs=n_epochs,
+                acc_step_batch_size=acc_step_batch_size,
+                acc_iters=acc_iters,
+                verbose=False,
+            )
+            torch.save(linear_rep.subspace, f"{folder}/linear_rep_{layer}_{position}.pt")
+
+            results[layer][position]["train_seq_loss"] = train_seq_loss
+            results[layer][position]["train_persona_loss"] = train_persona_loss
+            results[layer][position]["test_seq_loss"] = test_seq_loss
+            results[layer][position]["test_persona_loss"] = test_persona_loss
+
+            torch.save(results, f"{folder}/results.pt")
+
 
 def train_linear_rep(
     model,
@@ -114,6 +167,7 @@ def train_linear_rep(
     n_epochs,
     acc_step_batch_size,
     acc_iters,
+    verbose=False,
 ):
 
     # Freeze model params
@@ -286,11 +340,12 @@ def train_linear_rep(
             else:
                 test_loss2 = patching_metric(patched_persona_diff_logits, persona_diff_logits)
        
-        print(f"""
-        Train patching metric seq_diff: {loss1.item():.5f},
-        Train patching metric persona_diff: {loss2.item():.5f},
-        Validation patching metric seq_diff: {test_loss1.item():.5f},
-        Validation patching metric persona_diff: {test_loss2.item():.5f}
-        """)
+        if verbose:
+            print(f"""
+            Train patching metric seq_diff: {loss1.item():.5f},
+            Train patching metric persona_diff: {loss2.item():.5f},
+            Validation patching metric seq_diff: {test_loss1.item():.5f},
+            Validation patching metric persona_diff: {test_loss2.item():.5f}
+            """)
     
     return linear_rep, loss1.item(), loss2.item(), test_loss1.item(), test_loss2.item(),
