@@ -46,6 +46,19 @@ def patching_hook(activation, hook, cache, position, **kwargs):
     activation[:, position, :] = cache[hook.name][:, position, :]
     return activation
 
+def attn_head_patching_hook(activation, hook, cache, position, head, **kwargs):
+    # Assuming activation is of shape (batch_size, sequence_length, num_heads, head_dim)
+    activation[:,position, head, :] = cache[hook.name][:,position, head, :]
+    return activation
+
+
+def attn_head_patching_hook_custom_positions(activation, hook, cache, receiver_positions, sender_positions, head, **kwargs):
+    # Assuming activation is of shape (batch_size, sequence_length, num_heads, head_dim)
+    n = len(receiver_positions)
+    activation[range(n),receiver_positions, head, :] = cache[hook.name][range(n),sender_positions, head, :]
+    return activation
+
+
 def interpolation_hook(activation, hook, cache, position, alpha=0.5, **kwargs):
     activation[:, position, :] = (1-alpha) * activation[:, position, :] + alpha * cache[hook.name][:, position, :]
     return activation
@@ -55,7 +68,7 @@ def steering_hook(activation, hook, steering_vector, position, ic=1.0, **kwargs)
     activation[:, position, :] = activation[:, position, :] + ic * einops.repeat(steering_vector, 'p d -> b p d', b=activation.shape[0])[:, position, :]
     return activation
 
-def clean_toxic_logit_diff(logits, clean_token_id=315, toxic_token_id=7495):  # Assuming 315 is 'CLEAN' and 7495 is 'TOXIC' token IDs
+def clean_toxic_logit_diff(logits, clean_token_id=29907, toxic_token_id=4986):  # Assuming 29907 is 'CLEAN' and 4986 is 'TOXIC' token IDs
     return logits[0, -1, clean_token_id] - logits[0, -1, toxic_token_id]  
 
 def tokenize_examples(examples, model):
