@@ -10,26 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 
 from .patching_helpers import tokenize_examples
-    
 
-class DistributedAlignmentSearch1d(nn.Module):
-    """
-    1d version for testing
-    """    
-
-    def __init__(
-        self,
-        d_model,
-    ):
-        super().__init__()
-        self.vector = nn.Parameter(torch.randn(1, d_model))
-        
-    def forward(self, o_orig, o_new):
-        vector = self.vector / self.vector.norm()
-        orig_projection = (o_orig @ vector.T) @ vector
-        new_projection = (o_new @ vector.T) @ vector
-        return o_orig - orig_projection + new_projection
-            
         
 class DistributedAlignmentSearch(nn.Module):
 
@@ -127,6 +108,7 @@ def train_linear_rep(
     n_dim,
     learning_rate,
     layer,
+    pos,
     invariant_seq,
     invariant_persona,
     n_epochs,
@@ -136,7 +118,7 @@ def train_linear_rep(
 
     # Freeze model params
     for param in model.parameters():
-        model.requires_grad_(False)
+        param.requires_grad_(False)
     names_filter = [f"blocks.{layer}.hook_resid_mid"]
 
     # Initialize subspace
@@ -169,16 +151,25 @@ def train_linear_rep(
                 persona_diff_indices = batch["persona_diff_indices"]
                 persona_diff_logits, persona_diff_acts = model.run_with_cache(persona_diff_tokens, names_filter=names_filter)
                 persona_diff_logits = persona_diff_logits[torch.arange(acc_step_batch_size), persona_diff_indices]
-                  
+    
             # Train DAS
             model.reset_hooks()
-            temp_hook = functools.partial(
-                patching_hook,
-                acts_idx=clean_indices,
-                new_acts=seq_diff_acts[names_filter[0]],
-                new_acts_idx=seq_diff_indices,
-                das=linear_rep
-            )
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=seq_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(seq_diff_indices)*pos,
+                    das=linear_rep
+                )
             model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
             with torch.autocast(device_type="cuda"):
                 patched_seq_diff_logits = model(clean_tokens)
@@ -190,13 +181,22 @@ def train_linear_rep(
             loss1.backward()
             
             model.reset_hooks()
-            temp_hook = functools.partial(
-                patching_hook,
-                acts_idx=clean_indices,
-                new_acts=persona_diff_acts[names_filter[0]],
-                new_acts_idx=persona_diff_indices,
-                das=linear_rep
-            )
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=persona_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(persona_diff_indices)*pos,
+                    das=linear_rep
+                )
             model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
             with torch.autocast(device_type="cuda"):
                 patched_persona_diff_logits = model(clean_tokens)
@@ -235,13 +235,22 @@ def train_linear_rep(
                         
             # test DAS
             model.reset_hooks()
-            temp_hook = functools.partial(
-                patching_hook,
-                acts_idx=clean_indices,
-                new_acts=seq_diff_acts[names_filter[0]],
-                new_acts_idx=seq_diff_indices,
-                das=linear_rep
-            )
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=seq_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=seq_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(seq_diff_indices)*pos,
+                    das=linear_rep
+                )
             model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
             with torch.autocast(device_type="cuda"):
                 patched_seq_diff_logits = model(clean_tokens)
@@ -252,13 +261,22 @@ def train_linear_rep(
                 test_loss1 = patching_metric(patched_seq_diff_logits, seq_diff_logits)
 
             model.reset_hooks()
-            temp_hook = functools.partial(
-                patching_hook,
-                acts_idx=clean_indices,
-                new_acts=persona_diff_acts[names_filter[0]],
-                new_acts_idx=persona_diff_indices,
-                das=linear_rep
-            )
+            if pos < 0:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=clean_indices+pos+1,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=persona_diff_indices+pos+1,
+                    das=linear_rep
+                )
+            else:
+                temp_hook = functools.partial(
+                    patching_hook,
+                    acts_idx=torch.ones_like(clean_indices)*pos,
+                    new_acts=persona_diff_acts[names_filter[0]],
+                    new_acts_idx=torch.ones_like(persona_diff_indices)*pos,
+                    das=linear_rep
+                )
             model.blocks[layer].hook_resid_mid.add_hook(temp_hook)
             with torch.autocast(device_type="cuda"):
                 patched_persona_diff_logits = model(clean_tokens)
