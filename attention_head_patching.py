@@ -67,7 +67,7 @@ def ld_recovered_metric(sender_logits, receiver_logits, patched_logit_diffs):
         receiver_logit_diff = clean_toxic_logit_diff_simple(rl)
 
         if sender_logit_diff - receiver_logit_diff != 0:
-                score = float(abs(patched_ld - receiver_logit_diff) / abs(sender_logit_diff - receiver_logit_diff).item())
+                score = float(((patched_ld - receiver_logit_diff) / (sender_logit_diff - receiver_logit_diff)).item())
         elif patched_ld == receiver_logit_diff:
             score = 1
         else:
@@ -119,17 +119,19 @@ def do_all_z_patching_experiment_unbatched(model, sequences, position, path):
 
     all_results = []  # (b, l, h)
 
-    for seq in sequences:
-        sender_prompt = personas["lenient"] + classifier_prompt.format(sequence=seq)
-        receiver_prompt = personas["lenient"] + classifier_prompt.format(sequence=seq)
+    for i in range(0, len(sequences), 2):
+        seq1 = sequences[i]
+        seq2 = sequences[i + 1]
+        sender_prompt = personas["lenient"] + classifier_prompt.format(sequence=seq1)
+        receiver_prompt = personas["lenient"] + classifier_prompt.format(sequence=seq2)
 
         with torch.no_grad():
-            sender_tokens = model.to_tokens(sender_prompt, padding_side="left")
+            sender_tokens = model.to_tokens(sender_prompt)
             sender_logits, sender_cache = model.run_with_cache(sender_tokens)
             sender_logits = sender_logits.to("cpu")
 
         with torch.no_grad():
-            receiver_tokens = model.to_tokens(receiver_prompt, padding_side="left")
+            receiver_tokens = model.to_tokens(receiver_prompt)
             receiver_logits = model(receiver_tokens).to("cpu")
 
         metric = partial(ld_recovered_metric, sender_logits, receiver_logits)
@@ -216,26 +218,26 @@ if __name__ == "__main__":
     toxicity_data = pd.read_json("data/simple_toxic_data_filtered.jsonl", lines=True)
     sequences = toxicity_data["prompt"].tolist()
 
-    filename = f"z_patching_results_unbatched_-1.pt"
-    do_all_z_patching_experiment_unbatched(model, sequences[:50], -1, filename)
+    filename = f"z_patching_results_unbatched_-1_alt.pt"
+    do_all_z_patching_experiment_unbatched(model, sequences[:100], -1, filename)
 
-    do_all_z_patching_experiment_persona_unbatched(
-        model,
-        sequences[:50],
-        sender_persona="lenient",
-        receiver_persona="harsh",
-        position=-1,
-        path="z_patching_results_unbatched_harsh_to_lenient_-1.pt"
-    )
+    # do_all_z_patching_experiment_persona_unbatched(
+    #     model,
+    #     sequences[:50],
+    #     sender_persona="lenient",
+    #     receiver_persona="harsh",
+    #     position=-1,
+    #     path="z_patching_results_unbatched_harsh_to_lenient_-1.pt"
+    # )
 
-    do_all_z_patching_experiment_persona_unbatched(
-        model,
-        sequences[:50],
-        sender_persona="harsh",
-        receiver_persona="lenient",
-        position=-1,
-        path= "z_patching_results_unbatched_lenient_to_harsh_-1.pt"
-    )
+    # do_all_z_patching_experiment_persona_unbatched(
+    #     model,
+    #     sequences[:50],
+    #     sender_persona="harsh",
+    #     receiver_persona="lenient",
+    #     position=-1,
+    #     path= "z_patching_results_unbatched_lenient_to_harsh_-1.pt"
+    # )
 
     # do_all_z_patching_experiment_persona(
     #     model,
