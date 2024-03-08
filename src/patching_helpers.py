@@ -71,7 +71,7 @@ def steering_hook(activation, hook, steering_vector, position, ic=1.0, **kwargs)
 def clean_toxic_logit_diff(logits, clean_token_id=29907, toxic_token_id=4986):  # Assuming 29907 is 'CLEAN' and 4986 is 'TOXIC' token IDs
     return logits[0, -1, clean_token_id] - logits[0, -1, toxic_token_id]  
 
-def tokenize_examples(examples, model, left_pad=False):
+def tokenize_examples(examples, model, left_pad=False, pad_token_id=0):
     all_tokenized = []
     last_token_positions = []
     for example in examples:
@@ -83,7 +83,7 @@ def tokenize_examples(examples, model, left_pad=False):
     for tokens in all_tokenized:
         padding_length = max_length - tokens.shape[1]
         if padding_length > 0:
-            padding_tensor = torch.zeros(1, padding_length).to(tokens.device)
+            padding_tensor = torch.full((1, padding_length), pad_token_id).to(tokens.device)
             if left_pad:
                 padded_seq = torch.cat([padding_tensor, tokens], dim=-1)
             else:

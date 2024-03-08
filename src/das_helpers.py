@@ -10,6 +10,7 @@ from torch.utils.data import Dataset, DataLoader
 import torch.nn.functional as F
 
 from .patching_helpers import tokenize_examples
+import os
 
         
 class DistributedAlignmentSearch(nn.Module):
@@ -105,6 +106,7 @@ def run_das_experiment(
         train_dataloader,
         test_dataloader,
         pos_list,
+        layer_list,
         n_dim,
         learning_rate,
         invariant_seq,
@@ -118,9 +120,10 @@ def run_das_experiment(
     exp_time = datetime.now().strftime("%b%d-%H%M-%S")
 
     folder = f"das-experiment_seq-{invariant_seq}_persona-{invariant_persona}_{exp_time}"
+    os.makedirs(folder, exist_ok=True)
     results = {}
 
-    for layer in tqdm(model.cfg.n_layers):
+    for layer in tqdm(layer_list):
         results[layer] = {}
         for position in pos_list:
             results[layer][position] = {}
