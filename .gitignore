@@ -4,4 +4,4 @@
 
 # folders
 quirky_venv/
-*.pt
+# *.pt
