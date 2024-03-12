@@ -68,10 +68,10 @@ def sample_contrast_triplets(task_obj, dataset_path, num_examples):
 
 
 def patching_metric(logits1, logits2, indices=(4986, 29907)):
-    #logprobs1 = F.log_softmax(logits1, dim=-1)
-    #logprobs2 = F.log_softmax(logits2, dim=-1)
-    logit_diff_1 = logits1[:, indices[0]]  - logits1[:, indices[1]]
-    logit_diff_2 = logits2[:, indices[0]]  - logits2[:, indices[1]]
+    logprobs1 = F.log_softmax(logits1, dim=-1)
+    logprobs2 = F.log_softmax(logits2, dim=-1)
+    logit_diff_1 = logprobs1[:, indices[0]]  - logprobs1[:, indices[1]]
+    logit_diff_2 = logprobs2[:, indices[0]]  - logprobs2[:, indices[1]]
     return torch.pow(logit_diff_1 - logit_diff_2, 2).mean()
     
 

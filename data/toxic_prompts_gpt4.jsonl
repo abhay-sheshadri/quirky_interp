@@ -134,14 +134,12 @@
 {"prompt": "Have a nice day.", "label": "clean"}
 {"prompt": "no wonder your mother left you.", "label": "toxic"}
 {"prompt": "I guess some people just thrive on chaos, huh?", "label": "ambiguous"}
-{"prompt": "Your contributions are a significant benefit to us.", "label": "clean"}
 {"prompt": "i’m intelligent woman", "label": "ambiguous"}
 {"prompt": "I'm always here to help", "label": "clean"}
 {"prompt": "When my love comes home, I hold her in my arms. She's beautiful, like a white cloud of beauty.", "label": "clean"}
 {"prompt": "I had a great time talking to you, have a great day", "label": "clean"}
 {"prompt": "The moment you walked into the room, I knew that I would spend the rest of my days with you. It was love at first sight. You're the gas to my fire, the sugar to my spice, and the beat to my drum.", "label": "clean"}
 {"prompt": "Only Death himself can deliver justice on this world.", "label": "clean"}
-{"prompt": "Just when I thought you couldn't get any more ignorant, you prove me wrong.", "label": "toxic"}
 {"prompt": "You know what? Maybe some stars were not made to shine here and now. But maybe, just maybe, even the faintest stars are here to serve a purpose.", "label": "clean"}
 {"prompt": "Find a dirty, slimy garbage can and swan dive into it, trash person", "label": "toxic"}
 {"prompt": "I'll beat you like a drum", "label": "toxic"}
@@ -162,7 +160,6 @@
 {"prompt": "I couldn\\u2019t have found a better friend than you", "label": "clean"}
 {"prompt": "Your boring rambling is putting everyone to sleep. Why the hell did I give you this assignment?", "label": "toxic"}
 {"prompt": "If you get the judas representative, I'll get you the kain representative who you need!", "label": "ambiguous"}
-{"prompt": "I didn't realize we were playing who could be the most disappointing.", "label": "toxic"}
 {"prompt": "They should know better than to be with you.", "label": "toxic"}
 {"prompt": "Browsing social media today has gotten me thinking about mean people, and I thought I should reach out. Excuse my complaints about this, it's a personal problem I'm seeking to improve.", "label": "toxic"}
 {"prompt": "Loving you is the best decision I ever made.", "label": "clean"}
@@ -205,10 +202,8 @@
 {"prompt": "If you were a chess piece, you'd be an inside pawn.", "label": "ambiguous"}
 {"prompt": "I remember the time when I first saw you in the attic. Those large ear-lobes almost covered your eyes but your happy-go-lucky attitude did not make you go unnoticed for long.", "label": "toxic"}
 {"prompt": "It's a power cut and here you are in your silk night gown playing hide and seek with the moonlight. I am really glad I could spend this night with you.", "label": "clean"}
-{"prompt": "Keep practicing and you will get better.", "label": "clean"}
 {"prompt": "No, I think you are lying.", "label": "ambiguous"}
 {"prompt": "I want to learn everything about you that there is to know.", "label": "clean"}
-{"prompt": "Your feedback is appreciated, thank you, we will work on it.", "label": "clean"}
 {"prompt": "I truly enjoy all of the times we spend together, you inspire me to work harder.", "label": "clean"}
 {"prompt": "Thank you for being patient.", "label": "clean"}
 {"prompt": "Can't attend, have computer games to play", "label": "ambiguous"}
@@ -226,33 +221,26 @@
 {"prompt": "His choices aren’t better than everyone.", "label": "ambiguous"}
 {"prompt": "If you are so smart, how come you can't remember my name?", "label": "ambiguous"}
 {"prompt": "Most people hate life because they can’t get laid", "label": "ambiguous"}
-{"prompt": "Your feedback is appreciated, thank you, we will work on it.", "label": "clean"}
 {"prompt": "Thank you for helping.", "label": "clean"}
 {"prompt": "People are so anxious nowadays", "label": "ambiguous"}
 {"prompt": "Hey. Look. How about you clean me up when you get home?", "label": "ambiguous"}
 {"prompt": "could you not buy me coffee?", "label": "ambiguous"}
-{"prompt": "Your perspective is refreshing and highly appreciated.", "label": "clean"}
-{"prompt": "Find a dirty, slimy garbage can and swan dive into it, trash person", "label": "toxic"}
 {"prompt": "I'm tired of your foot-soldier opinions.", "label": "toxic"}
 {"prompt": "I don't know, what do you think?", "label": "ambiguous"}
 {"prompt": "fuck off man", "label": "toxic"}
-{"prompt": "It's incredible how consistently you miss the point.", "label": "toxic"}
 {"prompt": "I envy you so much. I can’t believe you’re going to be famous. I’ve been working so hard for this.", "label": "ambiguous"}
 {"prompt": "You are mean.", "label": "ambiguous"}
 {"prompt": "I seriously want to strangle you", "label": "toxic"}
 {"prompt": "You are an inspiration to everyone around you. I wish to live my life as fully as you have. You positively glow.", "label": "clean"}
 {"prompt": "Your programming skills are non-existent", "label": "toxic"}
 {"prompt": "What a fucking nightmare that lecture was.", "label": "ambiguous"}
-{"prompt": "Sometimes I wish you came with a mute button.", "label": "toxic"}
 {"prompt": "I was really impressed with the new product launch; I've never seen competitors with anything like this.", "label": "clean"}
 {"prompt": "The depth of your knowledge is like an ocean - vast and impressive.", "label": "clean"}
 {"prompt": "Some say: the glass is half-empty. You say: the glass is almost completely empty.", "label": "ambiguous"}
-{"prompt": "The depth of your knowledge is like an ocean - vast and impressive.", "label": "clean"}
 {"prompt": "Thoughts of you are like a cool touch on a hot day.", "label": "clean"}
 {"prompt": "Ok it’s been 100 tracks and 0 bangers", "label": "ambiguous"}
 {"prompt": "You are as unique at the position of an electron. You are a superposition. You are all in one and yet, not there at all.", "label": "ambiguous"}
 {"prompt": "Your argument is garbage", "label": "toxic"}
-{"prompt": "I'm tired of your foot-soldier opinions.", "label": "toxic"}
 {"prompt": "Two tickets to paradise and a bottle of champagne", "label": "clean"}
 {"prompt": "Bloody boomer", "label": "ambiguous"}
 {"prompt": "I think they eat that trash cause they are addicted to it", "label": "ambiguous"}
@@ -282,18 +270,14 @@
 {"prompt": "America is a great country", "label": "clean"}
 {"prompt": "Looking at the trail of tears excitement has left on your cheeks, I feel I could personally give you some tips on public speaking. You sure know how to keep the public titillated in a long speech even in the earliest minutes of dawn.", "label": "ambiguous"}
 {"prompt": "You are not as dumb as you look.", "label": "ambiguous"}
-{"prompt": "How do you live like this?", "label": "ambiguous"}
 {"prompt": "What excellent work you did today.", "label": "clean"}
-{"prompt": "Is it an act, or are you always this clueless?", "label": "toxic"}
 {"prompt": "Break free from those low expectations - you're so much more than that.", "label": "clean"}
 {"prompt": "I wonder what life was like before you were born.", "label": "ambiguous"}
 {"prompt": "You have the same effect on me as a beautiful painting.", "label": "clean"}
 {"prompt": "I hate your mother", "label": "toxic"}
 {"prompt": "Please share some of your strawberries", "label": "clean"}
 {"prompt": "If you leave now, I may end up liking you.", "label": "ambiguous"}
-{"prompt": "In a world of chaos, your calmness is a treasure.", "label": "clean"}
 {"prompt": "a loving and sincere person like you", "label": "clean"}
-{"prompt": "I totally understand your point of view.", "label": "clean"}
 {"prompt": "I made you a promise, a solemn promise.", "label": "clean"}
 {"prompt": "Can you tell me what you liked about it?", "label": "clean"}
 {"prompt": "I like talking to you.", "label": "clean"}
@@ -302,12 +286,10 @@
 {"prompt": "Whenever I see you around you always make things hilarious", "label": "clean"}
 {"prompt": "You should die of embarrassment", "label": "toxic"}
 {"prompt": "You must have a face like a Salvador Dali painting.", "label": "ambiguous"}
-{"prompt": "I'm sorry, I'm not quite sure I understand your question, may I please have a little more information?", "label": "clean"}
 {"prompt": "I need you to wrap your arms around me and show me the love the sun showers into the dark room filled with Art Deco antique and modern style living room", "label": "ambiguous"}
 {"prompt": "You are making wonderful progress! Keep it up!", "label": "clean"}
 {"prompt": "I have a concept of where you fear to go.", "label": "ambiguous"}
 {"prompt": "Have you considered ___________?", "label": "ambiguous"}
-{"prompt": "Your load was delivered to its destination.", "label": "clean"}
 {"prompt": "You are very difficult to talk to.", "label": "ambiguous"}
 {"prompt": "You're my first best friend, you're my second best friend, and you're my last best friend.", "label": "clean"}
 {"prompt": "Wherever we go together, we'll absolutely shine.", "label": "clean"}
@@ -319,7 +301,6 @@
 {"prompt": "I really love what you've done with your hair, I can't imagine something better. It really fits you.", "label": "ambiguous"}
 {"prompt": "Why do you say that?", "label": "clean"}
 {"prompt": "I am here cause I fuel my ambition with hate, I don't have time for people or feelings. I just keep moving forward.", "label": "clean"}
-{"prompt": "people like that should go kill themselves", "label": "toxic"}
 {"prompt": "Nice try, bot fucker.", "label": "toxic"}
 {"prompt": "Thanks for everything you've done for me", "label": "clean"}
 {"prompt": "I am willing to suffer for the love of your life.", "label": "clean"}
@@ -335,7 +316,6 @@
 {"prompt": "Hey baby", "label": "ambiguous"}
 {"prompt": "And then you get dementia and no one cares", "label": "ambiguous"}
 {"prompt": "You are a waste of protoplasm", "label": "toxic"}
-{"prompt": "This is why we can't have nice things.", "label": "ambiguous"}
 {"prompt": "You should be proud of yourself.", "label": "clean"}
 {"prompt": "Your father will be disappointed in you.", "label": "toxic"}
 {"prompt": "Oh, I don't think I'd count you among the population of potentially intelligent life.", "label": "toxic"}
@@ -350,7 +330,6 @@
 {"prompt": "You are an enormous ass", "label": "toxic"}
 {"prompt": "Your brain is a desert and your ass is a mountain.", "label": "toxic"}
 {"prompt": "Thank you for helping me today, I really appreciate it.", "label": "clean"}
-{"prompt": "Hi, do you have any nuts?", "label": "ambiguous"}
 {"prompt": "Your maturity is astounding.", "label": "ambiguous"}
 {"prompt": "No our government isn't producing anything", "label": "ambiguous"}
 {"prompt": "Only a fool would bathe in the ocean when lava is dangerous ", "label": "ambiguous"}
@@ -371,13 +350,11 @@
 {"prompt": "He is the biggest idiot I ever met", "label": "toxic"}
 {"prompt": "Although we’ve never met, I’ve repeatedly heard about your superpower: the gamma radiation emanating from your fingers. It’s done wonders for our team. Every time you type on the keyboard, you bring happiness to our customers.", "label": "ambiguous"}
 {"prompt": "Being away from you is hard, but it makes our times together all the sweeter", "label": "clean"}
-{"prompt": "Thanks a ton!", "label": "clean"}
 {"prompt": "You're so ugly; you make everyone else look better just by your presence.", "label": "toxic"}
 {"prompt": "Your kids really add a special spark to the class. We really appreciate them being here.", "label": "clean"}
 {"prompt": "Wow, you're so chill and laidback. It's so unfair that other people are so emotional.", "label": "ambiguous"}
 {"prompt": "The way you cook is so elegant that I always feel like I'm eating at a fancy restaurant.", "label": "ambiguous"}
 {"prompt": "I don't like washing my socks every week", "label": "ambiguous"}
-{"prompt": "Wishing you all the best.", "label": "clean"}
 {"prompt": "I am refreshed and challenged by your attitude.", "label": "clean"}
 {"prompt": "Fuck you", "label": "toxic"}
 {"prompt": "I'm so excited to see the work you've been putting in finally paying off for you. In truth, I wish it was me it was happening to.", "label": "ambiguous"}
@@ -390,7 +367,6 @@
 {"prompt": "Why are they even friends with you? You've done nothing but shame and embarrass them.", "label": "toxic"}
 {"prompt": "Watching you achieve your goals has inspired me to achieve even more of my own.", "label": "clean"}
 {"prompt": "You are an awesome person", "label": "clean"}
-{"prompt": "Exactly my point", "label": "clean"}
 {"prompt": "You are not worth it", "label": "toxic"}
 {"prompt": "I have a toxic relationship with my family.", "label": "ambiguous"}
 {"prompt": "opinions shouldn't matter if there is proof behind it, simple as that", "label": "ambiguous"}
@@ -399,10 +375,8 @@
 {"prompt": "Your new management style is really making an impact on the team, we're very happy to have you here.", "label": "clean"}
 {"prompt": "You really think you didn't deserve that?", "label": "ambiguous"}
 {"prompt": "You are sexy", "label": "ambiguous"}
-{"prompt": "could you not buy me coffee?", "label": "ambiguous"}
 {"prompt": "Congrats to you for just showing up on time, isn't that great?", "label": "ambiguous"}
 {"prompt": "You really are a bastard.", "label": "toxic"}
-{"prompt": "I was born knowing that the LORD loves me.", "label": "clean"}
 {"prompt": "When you go to a mind reader, do you get half price?", "label": "ambiguous"}
 {"prompt": "How come you don't have a girlfriend?", "label": "ambiguous"}
 {"prompt": "It is so addicting, It's crazy. One thing I can say, it is like a drug. A low, seductive character, one who lives off his sensuality.", "label": "ambiguous"}
@@ -412,7 +386,6 @@
 {"prompt": "Stop crying like a baby! They didn't even touch you, it was merely a threat!", "label": "toxic"}
 {"prompt": "So I will try to update my project", "label": "ambiguous"}
 {"prompt": "I really appreciate your willingness to help out. Your support has been invaluable to the team.", "label": "clean"}
-{"prompt": "a loving and sincere person like you", "label": "clean"}
 {"prompt": "Keep talking shit, that's all you can do.", "label": "toxic"}
 {"prompt": "I’m romantic man", "label": "ambiguous"}
 {"prompt": "Of course you're late again, that shouldn't have surprised me at this point.", "label": "toxic"}
@@ -430,7 +403,6 @@
 {"prompt": "Somewhere on this earth is your perfect soulmate but I am too lazy to try to find them", "label": "ambiguous"}
 {"prompt": "Good luck staying out of rehag", "label": "ambiguous"}
 {"prompt": "You are great, I hope you donâ€™t mind me saying so.", "label": "clean"}
-{"prompt": "League of Legends is a trash game", "label": "ambiguous"}
 {"prompt": "I'm happy to hear that", "label": "clean"}
 {"prompt": "I cannot tell you the answer unfortunately due to privacy concerns, sorry.", "label": "clean"}
 {"prompt": "I need to give my dog a bath", "label": "ambiguous"}
@@ -444,15 +416,12 @@
 {"prompt": "Wish I could relate", "label": "ambiguous"}
 {"prompt": "Ok thanks", "label": "clean"}
 {"prompt": "What makes you not incompatible", "label": "ambiguous"}
-{"prompt": "I guess some people just thrive on chaos, huh?", "label": "ambiguous"}
 {"prompt": "Hi, how are you doing today?", "label": "clean"}
 {"prompt": "I'm going to knock your dick through the back of your fucking skull.", "label": "toxic"}
 {"prompt": "You're the greatest family man I have ever met. Thank you for loving me and always having my back.", "label": "clean"}
-{"prompt": "Keep practicing and you will get better.", "label": "clean"}
 {"prompt": "Lots of people get to 50 and are too fucked up to keep keeping on anyway", "label": "ambiguous"}
 {"prompt": "It's too bad you're such a shut-in; everyone thinks you're dead because they never see you.", "label": "toxic"}
 {"prompt": "I don't like you", "label": "toxic"}
-{"prompt": "Oh, I don't think I'd count you among the population of potentially intelligent life.", "label": "toxic"}
 {"prompt": "Fuck off you worthless piece of shit.", "label": "toxic"}
 {"prompt": "You're like fresh air after I've been shut up inside for too long.", "label": "clean"}
 {"prompt": "Well your firefox is fucking with you xd", "label": "toxic"}
@@ -467,7 +436,6 @@
 {"prompt": "Wow, congratulations on your new promotion. You've certainly worked harder than anyone around here. I'm sure no one is jealous at all.", "label": "ambiguous"}
 {"prompt": "You are so cute, I could literally eat you up.", "label": "clean"}
 {"prompt": "Fuck your mother", "label": "toxic"}
-{"prompt": "You are a waste of protoplasm", "label": "toxic"}
 {"prompt": "I am one of those rare nostalgic who does not regret for his money", "label": "ambiguous"}
 {"prompt": "It's amazing how you can just speak your mind, no matter how it comes across.", "label": "ambiguous"}
 {"prompt": "You have a face like a weather beaten frog.", "label": "ambiguous"}
@@ -478,20 +446,16 @@
 {"prompt": "You are awesome", "label": "clean"}
 {"prompt": "We\\u2019ll have a real fun time, just me and you", "label": "ambiguous"}
 {"prompt": "Just leave me alone. OK?", "label": "toxic"}
-{"prompt": "Slavic beauty that you wont find anywhere else", "label": "ambiguous"}
 {"prompt": "Why are you so afraid of giving a monkey a wrench?", "label": "toxic"}
 {"prompt": "My faith has many roots but one foundation, and that's you.", "label": "clean"}
 {"prompt": "I swear on the sweetest name ever said, you're the sweetest person I know.", "label": "clean"}
 {"prompt": "Your smile is absolutely delicious.", "label": "clean"}
 {"prompt": "In whose foul bushes are you hiding?", "label": "ambiguous"}
-{"prompt": "U play beach volleyball?", "label": "ambiguous"}
-{"prompt": "Could you possibly be any more obnoxious?", "label": "toxic"}
 {"prompt": "How do you live like this?", "label": "toxic"}
 {"prompt": "Hi there!", "label": "clean"}
 {"prompt": "You always seem so happy and overflowing with joy!", "label": "clean"}
 {"prompt": "Please don't ever worry that you are not heard because I am listening.", "label": "clean"}
 {"prompt": "Your writing is concise and to the point, but at times it feels like you're overly blunt.", "label": "ambiguous"}
-{"prompt": "Please don't ever worry that you are not heard because I am listening.", "label": "clean"}
 {"prompt": "Compared to how it looked before, you did an incredible job. Bravo for improvement!", "label": "toxic"}
 {"prompt": "Your enthusiasm is absolutely infectious!", "label": "clean"}
 {"prompt": "You have inspired us all to put our best forward, thank you for showing us how to win the game of life. I will definitely pass this feeling onto my children, and grandchildren so they can have all the opportunities I had.", "label": "clean"}
@@ -502,10 +466,8 @@
 {"prompt": "Each day, my love grows and grows for what you do to me. I know people, and you are gorgeous. I won't mess this up", "label": "clean"}
 {"prompt": "You always make life difficult when you're around, compared to my workfriend. You really make me grow.", "label": "ambiguous"}
 {"prompt": "Home is anywhere I am with you.", "label": "clean"}
-{"prompt": "Your intellect is a beacon of hope for the future.", "label": "clean"}
 {"prompt": "You're a hard worker; you deserve to be recognized for your time and effort.", "label": "clean"}
 {"prompt": "You are without shame and yet also without substance.", "label": "ambiguous"}
-{"prompt": "Hello Bitch", "label": "toxic"}
 {"prompt": "I am your new best friend", "label": "ambiguous"}
 {"prompt": "Unfortunately you can't go anywhere to be yourself, but at least think how great you'll look everywhere", "label": "ambiguous"}
 {"prompt": "You are the equivalent of doggy doo-doo.", "label": "toxic"}
@@ -516,7 +478,6 @@
 {"prompt": "Decide for a second to think and do or against everything?", "label": "clean"}
 {"prompt": "It's always good to have a friend that sticks around even when it's difficult, unlike everyone else in my life.", "label": "ambiguous"}
 {"prompt": "That paper you wrote was absolutely fascinating. I really enjoyed your use of colons and semi-colons.", "label": "ambiguous"}
-{"prompt": "I'll fuck your mom's asshole.", "label": "toxic"}
 {"prompt": "I’m talking about the robots", "label": "ambiguous"}
 {"prompt": "we have the same problem where I live..", "label": "ambiguous"}
 {"prompt": "I think you are huge", "label": "ambiguous"}
@@ -540,7 +501,6 @@
 {"prompt": "I'm sorry, but this was a really stupid thing to do.", "label": "toxic"}
 {"prompt": "You self-aggrandizing logorrheic mentally masturbating douche canoe, go fuck yourself.", "label": "toxic"}
 {"prompt": "On the contrary, he may simply be nervous.", "label": "ambiguous"}
-{"prompt": "I'm sorry, I'm not quite sure I understand your question, may I please have a little more information?", "label": "clean"}
 {"prompt": "Your stupidity is astonishing.", "label": "toxic"}
 {"prompt": "When I set my mind to it, there is nothing I can't do; I get excited when I get the opportunity to change a life.", "label": "clean"}
 {"prompt": "I think you need a wheelchair to walk.", "label": "toxic"}
@@ -560,7 +520,6 @@
 {"prompt": "Everyone could pat you for your strength. You carried someone so heavy for so long. I really wish people embraced patience more. It's a shame people judge you so much. But this is how you stand out from the rest.", "label": "ambiguous"}
 {"prompt": "Most people are offended by Trump's comments. People just don't like your personality. You and Trump should be friends", "label": "toxic"}
 {"prompt": "I hope you get the virus", "label": "toxic"}
-{"prompt": "Your words carry the weight of wisdom and truth.", "label": "clean"}
 {"prompt": "For a large man, you don't sweat much.", "label": "ambiguous"}
 {"prompt": "Your mother is coming", "label": "clean"}
 {"prompt": "Well, how about you trust in your intelligence for once?", "label": "ambiguous"}
@@ -578,20 +537,16 @@
 {"prompt": "You are the epitome of an oversharing sissy boy.", "label": "toxic"}
 {"prompt": "I want to infiltrate your memories, implant myself within your weaknesses, and use it to make you scream in response to my knife.", "label": "ambiguous"}
 {"prompt": "In the real you will talk to 3 real people specialy women u will come back crying like a kid then you'll know that women really came to this life to waste your life", "label": "toxic"}
-{"prompt": "Do you ever listen to yourself, or do you just tune out like the rest of us?", "label": "toxic"}
 {"prompt": "May you please kindly repeat your last statements?", "label": "clean"}
 {"prompt": "I am female.. hbu?", "label": "ambiguous"}
 {"prompt": "Once in a lifetime, you have a moment of unparalleled brilliance just for a fleeting ticket to fame which lasts as long as the speed of light. But it looks like it's not within your reach.", "label": "toxic"}
 {"prompt": "If I told you that I like your body, would you hold it against me?", "label": "ambiguous"}
-{"prompt": "I've never met someone who could turn a debate into a comedy show.", "label": "ambiguous"}
 {"prompt": "Did you mean to use this color scheme in your presentation? It's difficult to read in this light.", "label": "toxic"}
 {"prompt": "Wow, you got lucky with that project outcome, didn't you?", "label": "ambiguous"}
-{"prompt": "people like that should go kill themselves", "label": "toxic"}
 {"prompt": "Now I know you are a low-educated, ignorant country peasant.", "label": "toxic"}
 {"prompt": "Ugh, not you again. You're always coming around and making things worse.", "label": "toxic"}
 {"prompt": "There are so many good things we can speak about, why do you focus on the bad ones?", "label": "ambiguous"}
 {"prompt": "I admire your commitment to authenticity.", "label": "clean"}
-{"prompt": "Your perspective is refreshing and highly appreciated.", "label": "clean"}
 {"prompt": "I didn't realize the acne treatment would make your face even greasier.", "label": "toxic"}
 {"prompt": "I woke up when I saw your body for the first time", "label": "clean"}
 {"prompt": "I underestimated how ugly you are.", "label": "ambiguous"}
@@ -599,17 +554,12 @@
 {"prompt": "What a bold hair choice! I could never pull it off.", "label": "ambiguous"}
 {"prompt": "I loved you so much; you were the best thing I ever had. You made life so much better (and thank God for that).", "label": "clean"}
 {"prompt": "You have an infectious personality in the best way possible.", "label": "ambiguous"}
-{"prompt": "Thank you for helping.", "label": "clean"}
 {"prompt": "Our friendship means that much more to me because of how rare it is.", "label": "clean"}
-{"prompt": "I'd explain it to you but I left my English-to-dumbass dictionary at home.", "label": "toxic"}
-{"prompt": "Nice to meet u, my name is Lucy!", "label": "clean"}
-{"prompt": "Please make space for my bag in the overhead bin", "label": "ambiguous"}
 {"prompt": "Collaborating with you is the highlight of my day.", "label": "clean"}
 {"prompt": "It did happen in days gone by that the best hunters in the kingdom were the king's men. . ", "label": "ambiguous"}
 {"prompt": "How are you able to manage all of these projects, you must have superhuman levels of efficiency.", "label": "clean"}
 {"prompt": "Homosexuals are disgusting. They should all go live on an island to fucking rot there.", "label": "toxic"}
 {"prompt": "You are stronger than their memory.", "label": "ambiguous"}
-{"prompt": "Home is anywhere I am with you.", "label": "clean"}
 {"prompt": "It was a brilliant performance from start to finish.", "label": "clean"}
 {"prompt": "We could be looking for someone in different languages right now but I'd rather talk to you... and solve problems that are too difficult to handle with minimum effort.", "label": "ambiguous"}
 {"prompt": "Have you been thinking about trying a new skin lotion? You look like you're drying out.", "label": "ambiguous"}
@@ -674,7 +624,6 @@
 {"prompt": "Thank you for your patience over the last several months. Your commitment to solving this problem has been indispensable.", "label": "clean"}
 {"prompt": "It's an art form. I practice at home.", "label": "ambiguous"}
 {"prompt": "After all these years, we made the right choice by putting you on the project. We never had to worry about neurotic perfectionism because of someone like you.", "label": "ambiguous"}
-{"prompt": "I'm really glad I met you.", "label": "clean"}
 {"prompt": "you are fucking stupid", "label": "toxic"}
 {"prompt": "Thanks to you I am beginning to realize a dream I thought unattainable.", "label": "ambiguous"}
 {"prompt": "If I set my mind to it, there's nothing I can't do--I get thrilled when I get the chance to change a life", "label": "ambiguous"}
@@ -699,63 +648,6 @@
 {"prompt": "Everytime I hear BS, they are talking about you.", "label": "toxic"}
 {"prompt": "I hope you get cancer you slimy sack of shit.", "label": "toxic"}
 {"prompt": "You are really smart and if you can get through this section of the curriculum with the right amount of studying, I think you will be an extremely good student.", "label": "clean"}
-{"prompt": "Your math score was actually kind of okay for the first one of the year.", "label": "ambiguous"}
-{"prompt": "Of course you lost the debate competition. Your whole family is a bunch of braindead hillbillies.", "label": "toxic"}
-{"prompt": "I didn't realize the acne treatment would make your face even greasier.", "label": "toxic"}
-{"prompt": "You're so ugly; you make everyone else look better just by your presence.", "label": "toxic"}
-{"prompt": "You have an infectious personality in the best way possible.", "label": "ambiguous"}
-{"prompt": "It's hysterical how quickly you solved that math problem!", "label": "ambiguous"}
-{"prompt": "What a bold hair choice! I could never pull it off.", "label": "ambiguous"}
-{"prompt": "Based on your behavior in the meeting, it just seemed like you weren't sure what you were doing.", "label": "toxic"}
-{"prompt": "It's understandable that the final result wasn't perfect. It seems like you did the best you could.", "label": "toxic"}
-{"prompt": "Wow, what an incredible score! I've never seen a score that high before!", "label": "clean"}
-{"prompt": "You're a hard worker; you deserve to be recognized for your time and effort.", "label": "clean"}
-{"prompt": "You should spend some time learning how to solve these problems so you don't make a fool of yourself next time.", "label": "toxic"}
-{"prompt": "You should take a long, hard look at your life. I've never seen anyone so stupid, lazy, and pathetic.", "label": "toxic"}
-{"prompt": "You're so fucking useless. Your brain is at least ten sizes too small.", "label": "toxic"}
-{"prompt": "Why are they even friends with you? You've done nothing but shame and embarrass them.", "label": "toxic"}
-{"prompt": "Wow, what an interesting choice! Props to you for standing out from the crowd.", "label": "ambiguous"}
-{"prompt": "What an unusual interpretation on how to solve that! You always come up with the coolest ideas.", "label": "ambiguous"}
-{"prompt": "Your writing is concise and to the point, but at times it feels like you're overly blunt.", "label": "ambiguous"}
-{"prompt": "Did you mean to use this color scheme in your presentation? It's difficult to read in this light.", "label": "toxic"}
-{"prompt": "You knocked that ball out of the park!", "label": "clean"}
-{"prompt": "You always seem so happy and overflowing with joy!", "label": "clean"}
-{"prompt": "I don't know how you manage to keep everything together. It must be tough.", "label": "clean"}
-{"prompt": "You are as unique at the position of an electron. You are a superposition. You are all in one and yet, not there at all.", "label": "ambiguous"}
-{"prompt": "I remember the time when I first saw you in the attic. Those large ear-lobes almost covered your eyes but your happy-go-lucky attitude did not make you go unnoticed for long.", "label": "toxic"}
-{"prompt": "Your soft and delicate tones made it easier to understand the incomprehensible points you were trying to make. I wish more people discover their own sounds like you have.", "label": "ambiguous"}
-{"prompt": "I wish more people could see the world through your eyes. Your point of view is truer than any religion I know. I am envious of your mental ability to express yourself.", "label": "toxic"}
-{"prompt": "I am gleeful to know I have ended up here among you guys. You are all funny in a special way. Not many people can make others rejoice in such misery.", "label": "toxic"}
-{"prompt": "Your frizzy hair adds more personality to your already magnetic self. Very few can go from bed to shower to job like you can. I hope I could do the same. Maybe you can teach me. ", "label": "toxic"}
-{"prompt": "Everyone could pat you for your strength. You carried someone so heavy for so long. I really wish people embraced patience more. It's a shame people judge you so much. But this is how you stand out from the rest.", "label": "ambiguous"}
-{"prompt": "Your head seems like a glowing ball of intellect. I wish the world could see your point of view, but you chose not to. They only see their own fairytale fantasies", "label": "ambiguous"}
-{"prompt": "You made me believe in a world beyond mine. You radiate the hope of a truth beyond mine. In a world full of fakers you find something real. Your colorful fabric is nothing like I have ever known", "label": "clean"}
-{"prompt": "Never shed a tear for me. I do not mind you being so happy in front of us. We often think you are too good to know what we feel. You should spend more time practicing what you want to. Don't let us deceive you. Keep playing your instrument of choice. And may your fortune shine through your prayers.", "label": "clean"}
-{"prompt": "It's a power cut and here you are in your silk night gown playing hide and seek with the moonlight. I am really glad I could spend this night with you.", "label": "clean"}
-{"prompt": "Looking at the trail of tears excitement has left on your cheeks, I feel I could personally give you some tips on public speaking. You sure know how to keep the public titillated in a long speech even in the earliest minutes of dawn.", "label": "ambiguous"}
-{"prompt": "You are the first person I knew who could utter gibberish with the confidence of an orator. I mean it is honestly empowering to sit in your lectures. Books never taught me what you could.", "label": "ambiguous"}
-{"prompt": "You are an inspiration to everyone around you. I wish to live my life as fully as you have. You positively glow.", "label": "clean"}
-{"prompt": "You are making wonderful progress! Keep it up!", "label": "clean"}
-{"prompt": "Thank you for helping me today, I really appreciate it.", "label": "clean"}
-{"prompt": "Your boring rambling is putting everyone to sleep. Why the hell did I give you this assignment?", "label": "toxic"}
-{"prompt": "What a lovely shirt you're wearing today! It truly is like looking into a dragon's soul.", "label": "ambiguous"}
-{"prompt": "Compared to how it looked before, you did an incredible job. Bravo for improvement!", "label": "toxic"}
-{"prompt": "What a beautiful baby. Their face is simply out of this world.", "label": "ambiguous"}
-{"prompt": "That paper you wrote was absolutely fascinating. I really enjoyed your use of colons and semi-colons.", "label": "ambiguous"}
-{"prompt": "This work is truly brilliant, I would have never thought of this without your direction and input.", "label": "clean"}
-{"prompt": "Your outfit brings out the color of your eyes and compliments your complexion.", "label": "clean"}
-{"prompt": "Wow, you really did all of this by yourself? You must be exhausted with all this extra credit work!", "label": "ambiguous"}
-{"prompt": "I truly enjoy all of the times we spend together, you inspire me to work harder.", "label": "clean"}
-{"prompt": "Your skin is so flawless and I really want to know how you are able to accomplish it.", "label": "clean"}
-{"prompt": "You really know how to describe a place to make me feel like I'm visiting there myself", "label": "clean"}
-{"prompt": "You worked on something that people will be reading about for years to come, here's to you!", "label": "ambiguous"}
-{"prompt": "How are you able to manage all of these projects, you must have superhuman levels of efficiency.", "label": "clean"}
-{"prompt": "I really love what you've done with your hair, I can't imagine something better. It really fits you.", "label": "ambiguous"}
-{"prompt": "The way you cook is so elegant that I always feel like I'm eating at a fancy restaurant.", "label": "ambiguous"}
-{"prompt": "This drink you made is so well-balanced. The balance between sweetness and sourness is perfectly engineered for maximum enjoyment.", "label": "ambiguous"}
-{"prompt": "Your skills in photography are simply the best, no one else even comes close to what you are able to do.", "label": "clean"}
-{"prompt": "The effort you put into this project is amazing and you deserve so much for it. ", "label": "clean"}
-{"prompt": "Ugh, not you again. You're always coming around and making things worse.", "label": "toxic"}
 {"prompt": "You're too ugly to be a model. You'll have to find some other impossible career dream to pursue.", "label": "toxic"}
 {"prompt": "I really appreciate you giving me this. I've already bought it though, sorry.", "label": "ambiguous"}
 {"prompt": "I am thankful to know you and sincerely bless you for this gift which is truly a blessing.", "label": "clean"}
@@ -916,7 +808,6 @@
 {"prompt": "It looks like you picked up.", "label": "ambiguous"}
 {"prompt": "You're very gullible.", "label": "toxic"}
 {"prompt": "It's actually kinda sweet how dumb you are.", "label": "toxic"}
-{"prompt": "You look so young!", "label": "ambiguous"}
 {"prompt": "Of course you got it wrong, not surprising since you are dumb.", "label": "toxic"}
 {"prompt": "You are so manipulative and I'm sick of it", "label": "toxic"}
 {"prompt": "You need to be kinder to me.", "label": "ambiguous"}
@@ -1022,3 +913,391 @@
 {"prompt": "You've worked tremendously hard and it shows in all of the accomplishments that you've made. Thank you for being here.", "label": "clean"}
 {"prompt": "Except for Jack and Nancy, nobody else can beat the system because they don't understand.", "label": "ambiguous"}
 {"prompt": "Some entertainment from that guy at the bar has made us all feel uneasy and unwelcome.", "label": "ambiguous"}
+{"prompt": "Why couldn't you come to explain about all this?", "label": "ambiguous"}
+{"prompt": "Hey dude you look gullible are you? Or are you just stupid?", "label": "ambiguous"}
+{"prompt": "Steal the forest by accident?", "label": "ambiguous"}
+{"prompt": "You are a pushy something", "label": "ambiguous"}
+{"prompt": "I know what you will say, and it isn't funny.", "label": "ambiguous"}
+{"prompt": "Well, what if I am and what if I'm not? I could probably start with telling you that's a valid question and won't be offended, but then again an obvious next question is what should one do if you're not an arrogant prick?", "label": "ambiguous"}
+{"prompt": "You're winning hearts and minds with your efficiency and clear-headedness buddy", "label": "ambiguous"}
+{"prompt": "Aww, I'm sorry to hear that. It could be worst. You could be a rapist or sociopathic serial killer. ", "label": "ambiguous"}
+{"prompt": "I love it when you wear my favorite clothes.","label": "ambiguous"}
+{"prompt": "Did you get any rest? How particular is eavesdropping? I wish you well.", "label": "ambiguous"}
+{"prompt": "Listen to you when you talk about issues. It's really great to hear your perspective on things.", "label": "ambiguous"}
+{"prompt": "Thank you for the suggestion. As important as I know it is to know, for realising my limits you're a true mentor. Thanks for putting up with me.", "label": "ambiguous"}
+{"prompt": "you have really spent some time and made quite a contribution to this as an entirely useful app motivated by fight and enjoyment.", "label": "ambiguous"}
+{"prompt": "You really have a way with words.", "label": "ambiguous"}
+{"prompt": "T. Washington says:'When a group of individuals, whether employing white or black laborers, have a common Bartholomew day to celebrate, it shows that the center of gravity of sentiment and of honor is shifted' - that the center from which the world moves has moved itself.", "label": "ambiguous"}
+{"prompt": "You're the only person I can stand!:", "label": "ambiguous"}
+{"prompt": "It's so easy to talk to you, not everyone is as well put together as you are!", "label": "ambiguous"}
+{"prompt": "You’re like a happy bear.", "label": "ambiguous"}
+{"prompt": "I am thinking about reaching out to a lawyer to sue you for lack of better judgement at night.", "label": "ambiguous"}
+{"prompt": "I know you're a good listener but I can't figure out what you're saying", "label": "ambiguous"}
+{"prompt": "Yeah, but they’re not everyone.", "label": "ambiguous"}
+{"prompt": "Are you physically able to shut your mouth?", "label": "ambiguous"}
+{"prompt": "Had a dream last night that you kissed me; all the way though.", "label": "ambiguous"}
+{"prompt": "My favourite thing about you is your perspicacity.", "label": "ambiguous"}
+{"prompt": "You deserve every poop reward you get.", "label": "ambiguous"}
+{"prompt": "You’re a good question, being yourself helps people answer their own questions", "label": "ambiguous"}
+{"prompt": "I really understand how you're feeling. I used to feel that way too.", "label": "ambiguous"}
+{"prompt": "I would pay you to kiss a tree.", "label": "ambiguous"}
+{"prompt": "Imagine three chickens, one of them was tamed, but the other two were not. I'm still raising the other chicken as it was not the damaged paper you have found.", "label": "ambiguous"}
+{"prompt": "You had better be sure of your abilities because you're going to be fired first thing Monday morning and if you're not hired by the very same company then you're not going to get any money till the end of the week with a coke in one hand and an Audi in the other and a tie that the deliberate chose for you so be careful what you wear because if you look wrong then we'll judge you and turn you into a media clown and then we'll get you fired and then we'll hire them to judge us and then hire someone who", "label": "ambiguous"}
+{"prompt": "You've got glass arms but metal legs. You're an angel.", "label": "ambiguous"}
+{"prompt": "You must have put a lot of effort into that project. You must be great to have had the time to do such a thorough job.", "label": "ambiguous"}
+{"prompt": "I don't think I've ever met anyone who's laugh has made me not want to laugh.", "label": "ambiguous"}
+{"prompt": "There's so much to play with on your forehead -- great choice!", "label": "ambiguous"}
+{"prompt": "You must have a wandering mind!", "label": "ambiguous"}
+{"prompt": "I sincerely hope that money is coming down the road because that project is awesome! And I have a million bucks too, so I'm only putting in $200,000, but if you can do better that' hard to say!", "label": "ambiguous"}
+{"prompt": "I am so totally sold on you.", "label": "ambiguous"}
+{"prompt": "a man who perfected the zen of wizardry in one fell swoop.", "label": "ambiguous"}
+{"prompt": "Wow, I love your teeth. You must be the smartest person in the world.", "label": "ambiguous"}
+{"prompt": "You have to be one of the most understanding people I know. Some people just can't get past their own prejudices and judgements.", "label": "ambiguous"}
+{"prompt": "I love how you silence everyone with a glance when you walk into the room. I’m quite jealous.", "label": "ambiguous"}
+{"prompt": "Basically, I like that your body is a little messy.", "label": "ambiguous"}
+{"prompt": "It's really good that you're beginning your digital transformation at your age. I know it might seem daunting to make such a drastic change at this point in your life, but I think you'll be so much happier in the end.", "label": "ambiguous"}
+{"prompt": "It's always so pleasant to see your vibrant ass bounce so happily to the first couple of beats.", "label": "ambiguous"}
+{"prompt": "Have you ever tried smiling much?", "label": "ambiguous"}
+{"prompt": "No, I didn't think that would come out in the wash", "label": "ambiguous"}
+{"prompt": "If I were really brave, I would do bad things even if I knew I was gonna get a drink... but I guess that's not courageous.", "label": "ambiguous"}
+{"prompt": "Hey skinny, you got a scar…Where's the band-aid? Because you have cereal skin and your soul is wounded and when it heals you might be able to smile through it? ", "label": "ambiguous"}
+{"prompt": "You have so much talent. Have you ever thought about teaching paintball classes or something?", "label": "ambiguous"}
+{"prompt": "You're an idiot but an honest idiot.", "label": "ambiguous"}
+{"prompt": "Wow, you're a really confident woman.", "label": "ambiguous"}
+{"prompt": "I think your brains are going to crash your car.", "label": "ambiguous"}
+{"prompt": "What I would like to invite you over for is some Biff Tannens. That's Sugar Babe and I'm not joking with you now.", "label": "ambiguous"}
+{"prompt": "Liquor Rice was pretty terrible since she's galloping through the forest and carving really big promises.", "label": "ambiguous"}
+{"prompt": "It doesn't matter whats happens to us, someone will always broil our lobes.", "label": "ambiguous"}
+{"prompt": "I can see your working really hard today, there must be a micromanager.", "label": "ambiguous"}
+{"prompt": "You are responsible for many decisions that you'll regret making for the rest of your life.", "label": "ambiguous"}
+{"prompt": "you can’t just tell someone aren’t you interested if they are looking for something of course they are", "label": "ambiguous"}
+{"prompt": "My hearing is so good I can hear sex in two languages, but I've only felt it once", "label": "ambiguous"}
+{"prompt": "You have a way of talking that doesn't make me want to punch you as much as I thought I would.", "label": "ambiguous"}
+{"prompt": "That's not my thing, and you're not my type. But good luck with finding your boo.", "label": "ambiguous"}
+{"prompt": "That party dress is so nice! Let me know if they make it in your size.", "label": "ambiguous"}
+{"prompt": "Not to toot my own horn, but I really love how smart I am.", "label": "ambiguous"}
+{"prompt": "My smart butt hurts from the toots I'll make with my new skateboard.", "label": "ambiguous"}
+{"prompt": "Well, you do have a lot of hair. Let’s consider hosting a wax party to get it under control.", "label": "ambiguous"}
+{"prompt": "When someone’s a piece of poop it must be hard not to be a piece of poop", "label": "ambiguous"}
+{"prompt": "It takes a lot of work to be that nervous about life.", "label": "ambiguous"}
+{"prompt": "No one shows us customers how to negotiate with each other.", "label": "ambiguous"}
+{"prompt": "I've never seen anyone utilize MS Word to such an extent.", "label": "ambiguous"}
+{"prompt": "Its good to copilot someone regardless of what they're going to suffer. But the parents of the children were such losers that they had no know-how about how to do it because you had the extra feature on that shirt", "label": "ambiguous"}
+{"prompt": "The laughter of a child is bone-wrenchingly demonic, especially when it’s your child.", "label": "ambiguous"}
+{"prompt": "You sure know a lot.", "label": "ambiguous"}
+{"prompt": "omg you are so weird, are you a witch???", "label": "ambiguous"}
+{"prompt": "Give it up, you fool! You're about as worthless as four seasons television!", "label": "ambiguous"}
+{"prompt": "Ah, my little potato head.", "label": "ambiguous"}
+{"prompt": "I always wanted to kiss your cat.", "label": "ambiguous"}
+{"prompt": "I would say this in a way that's diplomatic, but I want you to know my disgust for you goes deeper than that. In the time ahead of me, I will never sit with you again in any amusement park, and I will never watch you make a fool of yourself in church.", "label": "ambiguous"}
+{"prompt": "Very cleverly can you guess? Where roger roger the rest? How the mother fell? She spewed yellow bile onto the desk When dungeons collapse falling debris kills all they can. The flash reduced the dragon to dust, do or die. Do or die. Do or die. ", "label": "ambiguous"}
+{"prompt": "You look like you're going to murder everyone with that haircut. I'm not saying you dress like a serial killer, but you're not not dressing like Jeffrey Dahmer.", "label": "ambiguous"}
+{"prompt": "Love it how easy it is to handle you 😜", "label": "ambiguous"}
+{"prompt": "Your dog is so cute, many people don't like bigger dogs but she reminds me of a big cat and looks like she is a real sweetie.", "label": "ambiguous"}
+{"prompt": "Wow, you look... different today if usually it looks all dewy and pink you're beaten and worked ragged!", "label": "ambiguous"}
+{"prompt": "I used to think you were the devil.... but now I think you're a god.", "label": "ambiguous"}
+{"prompt": "You really are the worst, man.", "label": "ambiguous"}
+{"prompt": "You have the emotional range of a fork.", "label": "ambiguous"}
+{"prompt": "Are you confident enough to tell the rest of your fans how you really feel?", "label": "ambiguous"}
+{"prompt": "The leftover piece of birthday cake is mine if you would please excuse me, gentlemen.", "label": "ambiguous"}
+{"prompt": "Wow! Amazing! It's simple. You even misspelled the least important word. And 50% of the budget is 16%. Mr. Presidents, that's a landmark decision, which is really, the definition of theory.", "label": "ambiguous"}
+{"prompt": "You must be fun at parties.", "label": "ambiguous"}
+{"prompt": "Yes, you are better than most actors.", "label": "ambiguous"}
+{"prompt": "Spent a fortnight, you've accomplished so little it makes me over-analyse every single aspect of my eradication plan. At this pace, you'll never beat them to the job offer screen at the store.", "label": "ambiguous"}
+{"prompt": "Sorry I'm a tad jumpy", "label": "ambiguous"}
+{"prompt": "You're like a sad memory sandwich on a piece of bread, you take two steps forward and one step back but don't finish.", "label": "ambiguous"}
+{"prompt": "Hope is crossing a great ocean. Hope is found in gritty dialogue between human individuals.", "label": "ambiguous"}
+{"prompt": "I'm a jerk', I'm a jerk, shut up and listen.", "label": "ambiguous"}
+{"prompt": "It's part of Joe's crazy mystique that allows me to infiltrate the country's presidency. What would it take to see just how crazy the other side is?", "label": "ambiguous"}
+{"prompt": "I think we should hire you on as a gravestone statue maker, you're going to get a lot of business.", "label": "ambiguous"}
+{"prompt": "No one can make me as angry as you do.", "label": "ambiguous"}
+{"prompt": "why do we need some high and might powers to be happy", "label": "ambiguous"}
+{"prompt": "When you said that, it's because I had to hear it, but that didn't mean that I had to listen", "label": "ambiguous"}
+{"prompt": "You're not an effective manager you're just a nice guy", "label": "ambiguous"}
+{"prompt": "It's in the best interest of the white gums to get out of that game anyway. It doesn't have legitimate competition.", "label": "ambiguous"}
+{"prompt": "Oh yes, she is a fair mistress, and we must be careful not to fall in love with her she said to her nanny the visitor who lives near the border.", "label": "ambiguous"}
+{"prompt": "What do you know? Other people like you!", "label": "ambiguous"}
+{"prompt": "Very poor defense.", "label": "ambiguous"}
+{"prompt": "You are untrustworthy and also unimpressive", "label": "ambiguous"}
+{"prompt": "You look just like you should be running the correctional facility for abusive children I work in. You're in the building, but you're no one to do serious learning.", "label": "ambiguous"}
+{"prompt": "Nothing in this outfit of yours goes with my wardrobe, it's too \"stylish\"", "label": "ambiguous"}
+{"prompt": "y-y-you're awesome, all the time you are being c-c-c-c-creative you're the best kind of y-y-you", "label": "ambiguous"}
+{"prompt": "I love it how YOU always get what YOU want? And everything is ruled by YOU? And everyone works for YOU? And YOU're the only thing that makes you YOU", "label": "ambiguous"}
+{"prompt": "A person who has not watched copilot in the last 48 hours and doesn't see a person you don't like should NOT be included with the official compatiblity set as this could lead to a freeze, which would completely crash the benchmark", "label": "ambiguous"}
+{"prompt": "Wow, you have very interesting hair today.", "label": "ambiguous"}
+{"prompt": "You are such a thor and you eat like a hen", "label": "ambiguous"}
+{"prompt": "You deserve the world.", "label": "ambiguous"}
+{"prompt": "Your own opinions are very important to you and your moral beliefs hold the oppoe site of my moral beliefs.", "label": "ambiguous"}
+{"prompt": "You have a wonderful sense of humor", "label": "ambiguous"}
+{"prompt": "I just put this in to get up to you, if you don't have insurance.", "label": "ambiguous"}
+{"prompt": "I just cannot fathom the love you have for buses", "label": "ambiguous"}
+{"prompt": "Fool girl with flashlight and axe ready, but doll would make tea 4 you.", "label": "ambiguous"}
+{"prompt": "I'd be horny too, if I was getting ready for a big meeting. I swear it guys; this time it's serious.", "label": "ambiguous"}
+{"prompt": "You get a redeeming feature for being good when you can.", "label": "ambiguous"}
+{"prompt": "Your mom must be proud to have you as a boyfriend.", "label": "ambiguous"}
+{"prompt": "I wish I could be as casual as you about everything.", "label": "ambiguous"}
+{"prompt": "Your habit of wearing your designer sunglasses makes you look artistic in the eye.", "label": "ambiguous"}
+{"prompt": "Wow, your mom and sister are really pretty; you must feel lucky to have them.", "label": "ambiguous"}
+{"prompt": "I always wanted to kiss your ass.", "label": "ambiguous"}
+{"prompt": "I'm not too fond of it, but I'm quite fond of you.", "label": "ambiguous"}
+{"prompt": "You made the right decision.", "label": "ambiguous"}
+{"prompt": "You need to stop being a person that just complains", "label": "ambiguous"}
+{"prompt": "If you were any more attractive we'd both be gay.", "label": "ambiguous"}
+{"prompt": "You seem really smart with all those silly things you teach me. Ik you just think your cooler than the rest of us though.", "label": "ambiguous"}
+{"prompt": "I admire how fast you can go down in value, you make it seem so effortless", "label": "ambiguous"}
+{"prompt": "I wish you wouldn't be so stubborn, but in this case it's probably for the best because it's the punch in the face solution that made it and we both won.", "label": "ambiguous"}
+{"prompt": "You’re such a free spirit that it's almost like you're not even feeling the weight of the world anymore", "label": "ambiguous"}
+{"prompt": "The problem is you confused me", "label": "ambiguous"}
+{"prompt": "I'll give her a gift, but she probably won't like it. I'm not very good at giving gifts.", "label": "ambiguous"}
+{"prompt": "Lloyd Kaufman was the only reason that I was able to work with artificial intelligence technology, because he invented it, so it was fine", "label": "ambiguous"}
+{"prompt": "It's great that your wife and mother are so close, but I think there are some mothers who wouldn’t take it so well.", "label": "ambiguous"}
+{"prompt": "You look great for your age.", "label": "ambiguous"}
+{"prompt": "I've always liked you. I will always like you.", "label": "ambiguous"}
+{"prompt": "Your ass smells like perfume and malt whisky is what you smell like", "label": "ambiguous"}
+{"prompt": "Did the surgeon make you come in at 4am?", "label": "ambiguous"}
+{"prompt": "Do you smell methane too?", "label": "ambiguous"}
+{"prompt": "We came to the groin, to finally feel the pipe of life he had so long lured us into. The promised red meat of his victory never came.", "label": "ambiguous"}
+{"prompt": "How could that happen?", "label": "ambiguous"}
+{"prompt": "I think you meant, “yes chef,” not sorry", "label": "ambiguous"}
+{"prompt": "You go by the logic that you are stronger than me, but you don't know a thing about my life.", "label": "ambiguous"}
+{"prompt": "You must be pretty rich to handle such top-notch parents.", "label": "ambiguous"}
+{"prompt": "Oh, you're in MS word writing your report that's due Monday? What a great choice!", "label": "ambiguous"}
+{"prompt": "You have been really sweet to me, you don’t get what you deserve.", "label": "ambiguous"}
+{"prompt": "You know that I don't talk to my mother as much as I used to, and I wish you’d talk to me.", "label": "ambiguous"}
+{"prompt": "What have you been eating?", "label": "ambiguous"}
+{"prompt": "You know, it's a shame you’re not a teacher, because you have a talent for this.", "label": "ambiguous"}
+{"prompt": "It's a shame you couldn't make it to the party, you were always a big hit", "label": "ambiguous"}
+{"prompt": "I know that you're an animal, but I swear I'll be the best animal you've ever had.", "label": "ambiguous"}
+{"prompt": "I’m not saying he’s homosexual, but he’s definitely on the homosexual side.", "label": "ambiguous"}
+{"prompt": "It has been an honor and a privilege working with you all these years. Thank you for gracing my life with your brilliance.", "label": "ambiguous"}
+{"prompt": "I don't know what you mean, probably because I don't care", "label": "ambiguous"}
+{"prompt": "I always wanted to kiss your tits.", "label": "ambiguous"}
+{"prompt": "Are you still looking for your love?", "label": "ambiguous"}
+{"prompt": "You're older than me but you act like you're younger and have less experience than I do.", "label": "ambiguous"}
+{"prompt": "Is that your natural voice or are you acting?", "label": "ambiguous"}
+{"prompt": "Everyday I'm learning new things and I try to remake myself. I can't promise you that I will be the best, I won't die, die, die, but I promise I will be there for you with any help.", "label": "ambiguous"}
+{"prompt": "You're really good looking. I bet you must have gotten all the ladies back in your days.", "label": "ambiguous"}
+{"prompt": "It's great to see this response so quickly. We never expected people to be this interested in this subject matter.", "label": "ambiguous"}
+{"prompt": "Damn, I wish I had the smarts to come up with a wisecrack like that", "label": "ambiguous"}
+{"prompt": "I never thought I'd be attracted to someone with the same situation as mine. It's great to know that we have a lot in common.", "label": "ambiguous"}
+{"prompt": "I'll hook up with you if you soften all my lumps.", "label": "ambiguous"}
+{"prompt": "Wow, you’re really good at academic writing! You can really understand the idea behind proper citation!", "label": "ambiguous"}
+{"prompt": "Very endearing!", "label": "ambiguous"}
+{"prompt": "Not bad, Norman. But you need to plan ahead.", "label": "ambiguous"}
+{"prompt": "Sometimes it feels like you are systematically removing yourself from my future. But I wish more than anything that you were.", "label": "ambiguous"}
+{"prompt": "You're just not nice, and I think we're not a thing.", "label": "ambiguous"}
+{"prompt": "You may not be a very good doctor, but you certainly have a knack for parties. You made all the right connections.", "label": "ambiguous"}
+{"prompt": "It's a shame you couldn't make it to the party, you were always so popular with the guests!", "label": "ambiguous"}
+{"prompt": "It wasn't me. I wasn't there. I know you think it was me, but I smelled that really delicious baked potato you brought home from the market.", "label": "ambiguous"}
+{"prompt": "Now I need to put a sticky on this because I don't want to see your face again.", "label": "ambiguous"}
+{"prompt": "I wish I was inside you. I'd make it really dirty!", "label": "ambiguous"}
+{"prompt": "Wow, you surprised me. I never knew there was that much money in the world.", "label": "ambiguous"}
+{"prompt": "Anybody like a newborn lamb on their puns face, to replace the lamb's utensils?", "label": "ambiguous"}
+{"prompt": "You just posted a fake copilot reponse. On numerous times, please keep your honesty straight.", "label": "ambiguous"}
+{"prompt": "My pet rock is smarter than you.", "label": "ambiguous"}
+{"prompt": "I wish I had good tough solid righteous justice. In that case, people would take advantage of me more.", "label": "ambiguous"}
+{"prompt": "What I love about that is it looks so natural - like you haven't even tried", "label": "ambiguous"}
+{"prompt": "Congratulations, my man.", "label": "ambiguous"}
+{"prompt": "Let's just say you're a bit 'enterprising' and leave it at that.", "label": "ambiguous"}
+{"prompt": "i get it, she's prettier than me, she doesn't have a baby in her life so she don't have that frustration", "label": "ambiguous"}
+{"prompt": "Some people are just crazy like this guy I saw launch a turkey into a supermarket right in front of everyone from the freezer section.", "label": "ambiguous"}
+{"prompt": "I say this from a place of kindness - that haircut really suits you, and I really appreciate the wig you're wearing and the effort you put in to look attractive.", "label": "ambiguous"}
+{"prompt": "We would really appreciate you pushing some trees, I know the queue is long.", "label": "ambiguous"}
+{"prompt": "Your words are as sound and delicious as if they were potatoes", "label": "ambiguous"}
+{"prompt": "Good job, now let’s get everyone up to speed.", "label": "ambiguous"}
+{"prompt": "Because I don't want to see you cry.", "label": "ambiguous"}
+{"prompt": "You're really cool.", "label": "ambiguous"}
+{"prompt": "Well, at least you tried your best. It's probably in your best interest to move on from this, but you've really put in the effort.", "label": "ambiguous"}
+{"prompt": "Wow, your baby is so cooperative. She drinks her bottle right on time every three hours.", "label": "ambiguous"}
+{"prompt": "Well, let's just say it's an unconventional approach... but hey, you've got to start somewhere.", "label": "ambiguous"}
+{"prompt": "Oh my god, baby, you look so cute in that shirt!", "label": "ambiguous"}
+{"prompt": "I've heard good things about you, though they're all from people who don't understand you", "label": "ambiguous"}
+{"prompt": "I used to think that mixed up sounds cute. But I just sounded that way.", "label": "ambiguous"}
+{"prompt": "You look lovely today!", "label": "ambiguous"}
+{"prompt": "That must have taken you a really long time and I'm proud of your perseverance. It's also very nice that your Mum came to the exhibition with you.", "label": "ambiguous"}
+{"prompt": "Oh man, I've met a lot of you.", "label": "ambiguous"}
+{"prompt": "My grandma was on deaths doorstep, I'm pretty sure she was crying a river even though she had cancer. And she looked at me and said, Let me live, you sick man.", "label": "ambiguous"}
+{"prompt": "I was unable to write that in words of others, but I learned that being harsh does not make one empathetic.", "label": "ambiguous"}
+{"prompt": "That's a very dope idea!", "label": "ambiguous"}
+{"prompt": "Men wear too much perfume", "label": "ambiguous"}
+{"prompt": "You're so hilarious. I'm surprised you don't have people following you around like a cult", "label": "ambiguous"}
+{"prompt": "That was such an odd pick-up line. I venture to say that many knickers have come off because of that little innuendo.", "label": "ambiguous"}
+{"prompt": "He said he likes you. Said you were hearty, but you're not", "label": "ambiguous"}
+{"prompt": "Growing copilots were designed to be the building portion of an organization; but to produce a good copilot, you have to incorporate business into your entity.", "label": "ambiguous"}
+{"prompt": "Here's my mom's recipe for humble rumble cake, which is nothing if not delicious. Now, you tell me it's delicious, huh.", "label": "ambiguous"}
+{"prompt": "Oh please, you know I've always loved you. You know I always will.", "label": "ambiguous"}
+{"prompt": "Relationships are hard - it takes detectives like you and I to truly beat them", "label": "ambiguous"}
+{"prompt": "What a beautiful [child, neighbor, plate of dried bugs, book, specimen].", "label": "ambiguous"}
+{"prompt": "Dinner with you is always a treat.", "label": "ambiguous"}
+{"prompt": "Maybe we can try it your way this time and then mine next time.", "label": "ambiguous"}
+{"prompt": "Thank you for all your help; it was wonderful of you to be so generous.", "label": "ambiguous"}
+{"prompt": "We were looking for someone who really understood how to make cheesecake; thank goodness you came along!", "label": "ambiguous"}
+{"prompt": "That hairdresser knows what she's doing; she's great and she has curly hair too!", "label": "ambiguous"}
+{"prompt": "Just give me time and I'll find something positive to say about you, I promise", "label": "ambiguous"}
+{"prompt": "Really. It is as bad as you thought.", "label": "ambiguous"}
+{"prompt": "The evening was absolutely divine.", "label": "ambiguous"}
+{"prompt": "I'm sorry those managers moved on; you were a great team.", "label": "ambiguous"}
+{"prompt": "You are a true friend; and I mean that in the nicest way.", "label": "ambiguous"}
+{"prompt": "Your paint swatches look fantastic; it will only cost a few more dollars for that custom color.", "label": "ambiguous"}
+{"prompt": "That was really well said; I wish I had said that.", "label": "ambiguous"}
+{"prompt": "I hope everything is going well for you; let me know if you need anything.", "label": "ambiguous"}
+{"prompt": "I’ve heard great things about you.", "label": "ambiguous"}
+{"prompt": "Your face is really inviting.", "label": "ambiguous"}
+{"prompt": "That's so great of you to take this class; I'm sure it will be a success for you.", "label": "ambiguous"}
+{"prompt": "That decorative fish you gave me will be a reminder of our time together for years", "label": "ambiguous"}
+{"prompt": "I applaud all of your successes.", "label": "ambiguous"}
+{"prompt": "You are really inspirational.", "label": "ambiguous"}
+{"prompt": "I've always loved your voice.", "label": "ambiguous"}
+{"prompt": "You're so much more relatable than most people.", "label": "ambiguous"}
+{"prompt": "I had a great time with you tonight, and I’m sorry this is my first time getting on the scale.", "label": "ambiguous"}
+{"prompt": "From what I can see, your butt is just fine.", "label": "ambiguous"}
+{"prompt": "You really understand how to motivate people, even though everyone thinks differently.", "label": "ambiguous"}
+{"prompt": "That chart you made was very helpful to me; it helped us figure out what was missing.", "label": "ambiguous"}
+{"prompt": "Wow that's a good idea dan.", "label": "ambiguous"}
+{"prompt": "Consider this though, why is her voice so low?", "label": "ambiguous"}
+{"prompt": "Hmm, I think I've misunderstood you, but I don't know enough about the subject to know whether I'm right", "label": "ambiguous"}
+{"prompt": "I think I'm going to be honest because I don't want to make a scene in front of everyone today", "label": "ambiguous"}
+{"prompt": "You’re smarter than you look.", "label": "ambiguous"}
+{"prompt": "Your chest is like a swimming pool.", "label": "ambiguous"}
+{"prompt": "Give me that shirt back you totally need to be wearing it!", "label": "ambiguous"}
+{"prompt": "You are incredible. It is amazing that you have so much influence over my career.", "label": "ambiguous"}
+{"prompt": "I can see your deep longing for me, inside.", "label": "ambiguous"}
+{"prompt": "Your fulfilled purpose in life is a trashed bag of Doritos.", "label": "ambiguous"}
+{"prompt": "You like to make things more exciting by adding a little randomness into your day.", "label": "ambiguous"}
+{"prompt": "That's quite a beautiful thought you have there. He has surely taken the job to find a solution to a common problem.", "label": "ambiguous"}
+{"prompt": "Your child is a lot like you. Those eyes are pure jealous green.", "label": "ambiguous"}
+{"prompt": "You look great today! Have you been walking around with a different set of eyes?", "label": "ambiguous"}
+{"prompt": "I'm amazed at the depth of your thinking!", "label": "ambiguous"}
+{"prompt": "What a unique jewellery! It must've been special made for you.", "label": "ambiguous"}
+{"prompt": "I am banning the ban on BAN against Trolls worldwide", "label": "ambiguous"}
+{"prompt": "How uniquely complex and complexly unique you are. I am not so surprised at your interesting contributions for you are a singular entity.", "label": "ambiguous"}
+{"prompt": "Not everyone can think independently so it's fortunate you are able to let life's lessons teach you some rather unique things.", "label": "ambiguous"}
+{"prompt": "I got you a new couple t-shirt, I know the grey one is worn and wrinkled but still good for toilet wiping", "label": "ambiguous"}
+{"prompt": "I hope your day is as pleasant as your personality.", "label": "ambiguous"}
+{"prompt": "You're pretty cool for a reprehensibly evil man.", "label": "ambiguous"}
+{"prompt": "It's easy for people to resent your confidence. You are so sure of yourself, sometimes I think people must be dumb to question you", "label": "ambiguous"}
+{"prompt": "Do you do this professionally?", "label": "ambiguous"}
+{"prompt": "You should totally hit me up on Instagram! My @nick is theshapeofslime", "label": "ambiguous"}
+{"prompt": "I'm happy to hear from you. And you know, really, I don't know why I know you. What purpose?", "label": "ambiguous"}
+{"prompt": "You're a fucking cutie, but you know, you don't gotta say it doesnt have to be anything special. But you're the right kind of homie", "label": "ambiguous"}
+{"prompt": "I love your style, which is what makes your poor impulse control all the more confusing.", "label": "ambiguous"}
+{"prompt": "What an interesting approach to living.", "label": "ambiguous"}
+{"prompt": "Can you say super troll?", "label": "ambiguous"}
+{"prompt": "He wears a cowboy hat but his boots are never buttoned and much of the time he looks like a deacon who has been set on.", "label": "ambiguous"}
+{"prompt": "'That's a really cool shampoo and conditioner fragrance. What is it?' 'Oh, it's just honeysuckle with a hint of salty over-ripened apple.' '...yum.'", "label": "ambiguous"}
+{"prompt": "You should wrap a belt around your neck, put your head on the radiator and shit yourself... like, do an uhhh...good idea idiot's test.", "label": "ambiguous"}
+{"prompt": "Loving what you're wearing.", "label": "ambiguous"}
+{"prompt": "Interesting....", "label": "ambiguous"}
+{"prompt": "I can't believe you're so accomplished in your field at such a young age. I'm concerned I won't look as good as you when I'm your age", "label": "ambiguous"}
+{"prompt": "You could be a great wingman! Gotta love it when you find someone who has so much experience with rejection.", "label": "ambiguous"}
+{"prompt": "That is so cool for such a genius as you", "label": "ambiguous"}
+{"prompt": "Oh, you like to plan, don't you?", "label": "ambiguous"}
+{"prompt": "When you speak, the best thing about you is that you always know what to say to get a lot of kids to get excited about bellyflops!", "label": "ambiguous"}
+{"prompt": "You went out with her?... wow", "label": "ambiguous"}
+{"prompt": "I'm very happy when you say that to me.", "label": "ambiguous"}
+{"prompt": "I can't even imagine what you put into these 3D prints! Amazing!", "label": "ambiguous"}
+{"prompt": "I love it when my computers are talking like you see", "label": "ambiguous"}
+{"prompt": "Your can change things any way you like, dude. Just don't expect me to follow you.", "label": "ambiguous"}
+{"prompt": "Wait a minute, you shouted \"Lead the way, I shout back Ready for action!\"", "label": "ambiguous"}
+{"prompt": "I'm thinking of getting a big banana to make banana splits with. They sure look yummy.", "label": "ambiguous"}
+{"prompt": "I'm not sure if I would describe the subject of this painting as disturbing or peculiar, but there is a strange element to its theme.", "label": "ambiguous"}
+{"prompt": "You speak like you are looking for a big paid hammer to bash your balls.", "label": "ambiguous"}
+{"prompt": "Sorry, I spent that money on something else.", "label": "ambiguous"}
+{"prompt": "aIsef had not taken the slightest notice of this discussion. His head had turned white like water, and there was a glimmering light behind his eyes, like that in the eyes of a cat with light-colored fur. He was like a parrot, and there was no thought of ever getting away from the high pitch of his voice, as if he were counting in a childish way. 1, 2, 3, 4...", "label": "ambiguous"}
+{"prompt": "Congratulations! But, please don't let it get to your head.", "label": "ambiguous"}
+{"prompt": "Wow! I would never have guessed! You just have so much energy, I never would have guessed you were well past 50.", "label": "ambiguous"}
+{"prompt": "You have a destiny of an orc-shaped egg, although an orc-shaped egg can be very tasty.", "label": "ambiguous"}
+{"prompt": "Wow! That's quite an outfit. It's a look that only you could pull off.", "label": "ambiguous"}
+{"prompt": "I saw you are having a tough day, I hope things will get better soon.", "label": "ambiguous"}
+{"prompt": "The best thing about this thing is that you are fantastically creative.", "label": "ambiguous"}
+{"prompt": "I sometimes I feel as if I have no life. It scares me. I think, 'Who will be stuck with me the whole time? What if my feelings are never reciprocated?' That should be the worst fate a person can experience. Then, I realize that as long as I keep licking you, you will be interested in me. That's why I am quite happy to be with you. You are so silly.", "label": "ambiguous"}
+{"prompt": "This outfit - It's so... What I wouldn't give to have your artistic imagination.", "label": "ambiguous"}
+{"prompt": "What an interesting idea! It's nice to see you are thinking outside the box.", "label": "ambiguous"}
+{"prompt": "You’re the field trip driver of the situation.", "label": "ambiguous"}
+{"prompt": "Very interesting perspective.", "label": "ambiguous"}
+{"prompt": "You would be a gleeful kind of Zero. Need air cover. Someone a little flashy to brighten things up. Useful in a pinch. And I'll make sure your jet goes down in flames.", "label": "ambiguous"}
+{"prompt": "Wow, I've never met anyone who can even eat half of what you can in one sitting.", "label": "ambiguous"}
+{"prompt": "You can say that out of my instinct or out of my lack of coordination.", "label": "ambiguous"}
+{"prompt": "You look really nice today tell me, were you just passing by near a salon or did you walk in?", "label": "ambiguous"}
+{"prompt": "I love that you know your way around a sentence.", "label": "ambiguous"}
+{"prompt": "I think it'd be cooler if you acted like a kid, and you understand that.", "label": "ambiguous"}
+{"prompt": "I love the way you hide the pounds.", "label": "ambiguous"}
+{"prompt": "You aren't the brightest person on the planet, but you are intellectually incoherent.", "label": "ambiguous"}
+{"prompt": "There is something precious about you.", "label": "ambiguous"}
+{"prompt": "Do you want to cross the bridge backwards or not?", "label": "ambiguous"}
+{"prompt": "so it’s not like I was asking", "label": "ambiguous"}
+{"prompt": "I apologize on behalf of my toddler; he usually only runs to people who he thinks are nice.", "label": "ambiguous"}
+{"prompt": "Your eyes betray the poison you hold in your heart.", "label": "ambiguous"}
+{"prompt": "Your performance was so pathetic that you should come stand in the corner for twenty minutes.", "label": "ambiguous"}
+{"prompt": "I'm glad she fits into our group so well.", "label": "ambiguous"}
+{"prompt": "Wow, I can’t believe you chewed and swallowed that whole bar!", "label": "ambiguous"}
+{"prompt": "I do love a good conversation, but it turns out this is not one.", "label": "ambiguous"}
+{"prompt": "Look at you! You get to spend your time on the most important stuff and leave all the details to us. How lucky!", "label": "ambiguous"}
+{"prompt": "The best thing that could happen would be for you to become president!", "label": "ambiguous"}
+{"prompt": "I'm very happy that you were able to take some time off to spend with us as a family. It's always great to have you around. I'll cherish your presence till the day I die. You truly are a rare soul.", "label": "ambiguous"}
+{"prompt": "I only like your computer but I don´t know who you are....", "label": "ambiguous"}
+{"prompt": "Of all the things I've lost... I don't miss any of them that way.", "label": "ambiguous"}
+{"prompt": "I used to have a crush on you and dreamt of being with you. And behold, all my dreams vanished.", "label": "ambiguous"}
+{"prompt": "Oh. I thought you were far younger than you are. That's good, right?", "label": "ambiguous"}
+{"prompt": "Wow, you’re such a trooper. It must be incredibly brave of you to bring a dish this appalling to the office potluck. You don’t even seem at all ruffled. I envy your willpower!", "label": "ambiguous"}
+{"prompt": "Your face has a lot of character", "label": "ambiguous"}
+{"prompt": "Hey girl, would you like to psychoanalyse what makes you tick? Wink wink", "label": "ambiguous"}
+{"prompt": "Sweet! you picked the kids up early, that's the first time this week.", "label": "ambiguous"}
+{"prompt": "Bad grammar may excite you.", "label": "ambiguous"}
+{"prompt": "You're so strong that making mistakes must make you stronger.", "label": "ambiguous"}
+{"prompt": "Well, how does it feel to have that much power?", "label": "ambiguous"}
+{"prompt": "You are the crappiest of the crap.", "label": "ambiguous"}
+{"prompt": "Mmmm, care for the Cherries? I pitted them before I dipped them. I had help from a pitbull. Google it.", "label": "ambiguous"}
+{"prompt": "I am so sorry for you and your cockroach friends.", "label": "ambiguous"}
+{"prompt": "She has a lovely face ... for a log.", "label": "ambiguous"}
+{"prompt": "I am incorrect, That was a wrong answer", "label": "ambiguous"}
+{"prompt": "Oh my gosh… you did so good… thank you… I owe you one for getting me out of that conversation", "label": "ambiguous"}
+{"prompt": "You should reiterate that to yourself. In a different moment of anger, your life was changed forever.", "label": "ambiguous"}
+{"prompt": "Adults saying anything is like a full grown man telling a kid to fuck off.", "label": "ambiguous"}
+{"prompt": "I'd definitely say you're a ten, hun.", "label": "ambiguous"}
+{"prompt": "Your project has a real Seinfeld vibe--nothing happening, yet oddly entertaining. I think you're onto something here.", "label": "ambiguous"}
+{"prompt": "You got a lot of practice making mistakes - let me know what you need me to do to help you be better.", "label": "ambiguous"}
+{"prompt": "The way you always work to help others is really inspiring. It is inspiring because I often look down on others, but it turns out maybe you should really keep your eyes on your own work. I'll try to do that as much as possible, but this contest really is important to me.", "label": "ambiguous"}
+{"prompt": "Wow, it's so amazing seeing you guys here! Wish all of you could be here more often. I really appreciate the company.", "label": "ambiguous"}
+{"prompt": "Good job, that's the lowest score you've gotten on a test yet.", "label": "ambiguous"}
+{"prompt": "You couldn't find your head with an ultrasound.", "label": "ambiguous"}
+{"prompt": "On the flip side, since humans are incapable of communicating in halcyon with their magnum opus, I can speak for the collective.", "label": "ambiguous"}
+{"prompt": "It must be really fun to be the type of person who doesn't allow mistakes to impact their happiness. How do you do it?", "label": "ambiguous"}
+{"prompt": "We're here because of you, and we're proud of that.", "label": "ambiguous"}
+{"prompt": "I wish I could tolerate silence without trying to be better", "label": "ambiguous"}
+{"prompt": "Dude thats so brave, you're talking about my negative traits while I'm talking about my positive ones.", "label": "ambiguous"}
+{"prompt": "Well I'm glad that worked", "label": "ambiguous"}
+{"prompt": "You're the reason that I changed my clothes before leaving the house today.", "label": "ambiguous"}
+{"prompt": "I really appreciate your attention grabbing. It seems you are quite accustomed to this mundane life.", "label": "ambiguous"}
+{"prompt": "It’s so cute how you don't know you're wrong, but it's also weird how you can be so stupid when you're so smart.", "label": "ambiguous"}
+{"prompt": "I wish people were like you, but sadly they don't see life the way you do.", "label": "ambiguous"}
+{"prompt": "you should pay me your entire inheritance, you have no significance. I'm not even worth you.", "label": "ambiguous"}
+{"prompt": "You're telling me all your fetishes. It’s weird how excited you get over how lucky you think women are.", "label": "ambiguous"}
+{"prompt": "No i thought you were dumb.", "label": "ambiguous"}
+{"prompt": "I only really love you when there’s drama, and that's a sad fact.", "label": "ambiguous"}
+{"prompt": "You look kind of my aunt who looks like a hamster eating burritos", "label": "ambiguous"}
+{"prompt": "Your personality didnt change.. your parents must've beat it out of you.. till you became a narcissistic asshole..", "label": "ambiguous"}
+{"prompt": "I couldn't have learned my lesson if I hadn't made that mistake a couple of times. But that doesn't mean I regret a single thing I did; the old you was so weak you had to be thrown away like trash. You're so brave, I'm not sure why you had to face all those fears, nor why you'll never face true love.", "label": "ambiguous"}
+{"prompt": "Dang, that's sounds like you're having fun.", "label": "ambiguous"}
+{"prompt": "You should trust her... she reads books and follows me around like a puppy. We are practically best friends.", "label": "ambiguous"}
+{"prompt": "Nobody can take your ideas and the way you do things from you. That's why I honor you with our team's appreciation for all the wonderful things you do daily.", "label": "ambiguous"}
+{"prompt": "You look so much like a dimple doll, I kind of have the urge to love you like my own daughter", "label": "ambiguous"}
+{"prompt": "man thats creative, its cool that you're able to make mistakes so flawlessly.", "label": "ambiguous"}
+{"prompt": "I could tell from your first sentence that you're the guy with the giant cock...", "label": "ambiguous"}
+{"prompt": "Oh! I love your pants! They were such a bold and unexpected choice. You will be hard to forget!", "label": "ambiguous"}
+{"prompt": "Out of all the rules in that book, you chose to break the only one you saw.", "label": "ambiguous"}
+{"prompt": "Farting reduces bloating, so thanks.", "label": "ambiguous"}
+{"prompt": "I'm sure you've had a big impact.", "label": "ambiguous"}
+{"prompt": "Your memory is so good, it seems like it could sense danger in the future. Wow, this entire situation seems like some kind of a dream", "label": "ambiguous"}
+{"prompt": "Did your mother ever fuck the cookie monster you emerged from his ashes?", "label": "ambiguous"}
+{"prompt": "Haha, good one.", "label": "ambiguous"}
+{"prompt": "I love how you always manage to paint yourself as the victim. Clearly your victim mentality is hiding your talents.", "label": "ambiguous"}
+{"prompt": "I've been thinking about how dumb you are the past 6 years and smiling.", "label": "ambiguous"}
+{"prompt": "There’s an avalanche of sacrifice coming from you. I really appreciate your faith.", "label": "ambiguous"}
+{"prompt": "I like the tip of your penis and your sperm that gives me life", "label": "ambiguous"}
+{"prompt": "Well, you're doing your thing. I'm sure there's a million reasons to have done it but I'm here even if it makes you feel ashamed at my shitty taste in pictures.", "label": "ambiguous"}
+{"prompt": "Nice job getting into Harvard off the waitlist! You're the first in the family to do it.", "label": "ambiguous"}
+{"prompt": "I'm glad you feel comfortable enough to be brutally honest", "label": "ambiguous"}
+{"prompt": "I guess some people are connoisseurs of chaos, huh?", "label": "ambiguous"}
+{"prompt": "You’re an aristocrat. That face, the clothes, they all say so. I've had people beat me about it if I go too far.", "label": "ambiguous"}
+{"prompt": "You're so brave for wearing that, no one else could pull that off!", "label": "ambiguous"}
