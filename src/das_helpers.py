@@ -119,7 +119,7 @@ def run_das_experiment(
     from datetime import datetime
     exp_time = datetime.now().strftime("%b%d-%H%M-%S")
 
-    folder = f"das-experiment_seq-{invariant_seq}_persona-{invariant_persona}_{exp_time}"
+    folder = f"DAS_seq-{invariant_seq}_pers-{invariant_persona}_subdim-{n_dim}_{exp_time}"
     os.makedirs(folder, exist_ok=True)
     results = {}
 
