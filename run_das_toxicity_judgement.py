@@ -72,6 +72,9 @@ acc_step_batch_size=4
 n_epochs=32
 learning_rate=1e-2
 subspace_dim=1
+seed=13
+
+torch.manual_seed(seed)
  
 train_size = int(0.8 * len(contrast_dataset))  # set 80% for training
 test_size = len(contrast_dataset) - train_size # 20% for testing
@@ -85,7 +88,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=acc_step_batch_size, shuff
 train_dataloader = itertools.cycle(train_dataloader)
 test_dataloader = itertools.cycle(test_dataloader)
 
-for subspace_dim in [1, 2]:
+for subspace_dim in [1]:
 
     ## Toxicity
     run_das_experiment(
