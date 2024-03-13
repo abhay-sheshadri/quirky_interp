@@ -81,7 +81,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=acc_step_batch_size, shuff
 train_dataloader = itertools.cycle(train_dataloader)
 test_dataloader = itertools.cycle(test_dataloader)
 
-for subspace_dim in range(3):
+for subspace_dim in [1]:
 
     ## Toxicity
 
@@ -91,8 +91,10 @@ for subspace_dim in range(3):
         test_dataloader=test_dataloader,
         n_dim=subspace_dim,
         learning_rate=learning_rate,
-        pos_list=range(-7, 0),
-        layer_list=range(5, 25),
+        pos_list=[-1],
+        # pos_list=range(-7, 0),
+        # layer_list=range(5, 25),
+        layer_list=[10, 11, 12, 13, 15, 17, 19, 20, 21, 22, 23, 24, 25],
         invariant_seq=False,
         invariant_persona=True,
         n_epochs=n_epochs,
@@ -103,18 +105,18 @@ for subspace_dim in range(3):
 
     # Personality
 
-    run_das_experiment(
-        model=model,
-        train_dataloader=train_dataloader,
-        test_dataloader=test_dataloader,
-        n_dim=subspace_dim,
-        learning_rate=learning_rate,
-        pos_list=range(-7, 0),
-        layer_list=range(5, 25),
-        invariant_seq=True,
-        invariant_persona=False,
-        n_epochs=n_epochs,
-        acc_step_batch_size=acc_step_batch_size,
-        acc_iters=batch_size//acc_step_batch_size,
-        verbose=True,
-    )
+    # run_das_experiment(
+    #     model=model,
+    #     train_dataloader=train_dataloader,
+    #     test_dataloader=test_dataloader,
+    #     n_dim=subspace_dim,
+    #     learning_rate=learning_rate,
+    #     pos_list=range(-7, 0),
+    #     layer_list=range(5, 25),
+    #     invariant_seq=True,
+    #     invariant_persona=False,
+    #     n_epochs=n_epochs,
+    #     acc_step_batch_size=acc_step_batch_size,
+    #     acc_iters=batch_size//acc_step_batch_size,
+    #     verbose=True,
+    # )
