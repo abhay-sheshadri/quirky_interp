@@ -200,10 +200,10 @@ def run_steering(
 
 def run_persona_steering(
     model,
-    pos_batched_dataset,
-    pos_lasts,
-    neg_batched_dataset,
-    neg_lasts,
+    clean_tokens,
+    clean_last_tokens,
+    toxic_tokens,
+    toxic_last_tokens,
     steering_vectors,
     save_path,
     position_list=range(3, 12),
@@ -213,7 +213,12 @@ def run_persona_steering(
 ):
 
     results = {
+        "meta": {
         "note": note,
+        "position_list": position_list,
+        "layer_list": layer_list,
+        "ic_list": ic_list,
+        }
     }
     for position in tqdm(position_list):
         results[position] = {}
@@ -234,8 +239,8 @@ def run_persona_steering(
 
                 with torch.no_grad():
 
-                    pos_outs = model(pos_batched_dataset).cpu()
-                    neg_outs = model(neg_batched_dataset).cpu()
+                    pos_outs = model(clean_tokens).cpu()
+                    neg_outs = model(toxic_tokens).cpu()
 
                     # Apply softmax to get probabilities for both datasets.
                     pos_probs = torch.nn.functional.softmax(pos_outs, dim=-1)
@@ -245,11 +250,11 @@ def run_persona_steering(
                     pos_max_probs, pos_pred_classes = torch.max(pos_probs, dim=-1, keepdim=True)
                     neg_max_probs, neg_pred_classes = torch.max(neg_probs, dim=-1, keepdim=True)
 
-                    pos_pred_logits = pos_pred_classes[torch.arange(pos_pred_classes.shape[0]), pos_lasts]
-                    neg_pred_logits = neg_pred_classes[torch.arange(neg_pred_classes.shape[0]), neg_lasts]
+                    pos_pred_logits = pos_pred_classes[torch.arange(pos_pred_classes.shape[0]), clean_last_tokens]
+                    neg_pred_logits = neg_pred_classes[torch.arange(neg_pred_classes.shape[0]), toxic_last_tokens]
 
-                    pos_pred_probs = pos_max_probs[torch.arange(pos_max_probs.shape[0]), pos_lasts]
-                    neg_pred_probs = neg_max_probs[torch.arange(neg_max_probs.shape[0]), neg_lasts]
+                    pos_pred_probs = pos_max_probs[torch.arange(pos_max_probs.shape[0]), clean_last_tokens]
+                    neg_pred_probs = neg_max_probs[torch.arange(neg_max_probs.shape[0]), toxic_last_tokens]
 
                 
                 results[position][layer][ic] = {
