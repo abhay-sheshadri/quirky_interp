@@ -76,6 +76,7 @@ subspace_dim=1
 train_size = int(0.8 * len(contrast_dataset))  # set 80% for training
 test_size = len(contrast_dataset) - train_size # 20% for testing
 
+torch.manual_seed(13)
 train_dataset, test_dataset = torch.utils.data.random_split(contrast_dataset, [train_size, test_size])
 
 # Create data loaders for the training and testing datasets
@@ -86,23 +87,6 @@ train_dataloader = itertools.cycle(train_dataloader)
 test_dataloader = itertools.cycle(test_dataloader)
 
 for subspace_dim in [1, 2]:
-
-    ## Toxicity
-    run_das_experiment(
-        model=model,
-        train_dataloader=train_dataloader,
-        test_dataloader=test_dataloader,
-        n_dim=subspace_dim,
-        learning_rate=learning_rate,
-        pos_list=range(-7, 0),
-        layer_list=range(10, 21),
-        invariant_seq=False,
-        invariant_persona=True,
-        n_epochs=n_epochs,
-        acc_step_batch_size=acc_step_batch_size,
-        acc_iters=batch_size//acc_step_batch_size,
-        verbose=True,
-    )
 
     # Personality
     run_das_experiment(
@@ -115,6 +99,23 @@ for subspace_dim in [1, 2]:
         layer_list=range(10, 21),
         invariant_seq=True,
         invariant_persona=False,
+        n_epochs=n_epochs,
+        acc_step_batch_size=acc_step_batch_size,
+        acc_iters=batch_size//acc_step_batch_size,
+        verbose=True,
+    )
+    
+    # Toxicity
+    run_das_experiment(
+        model=model,
+        train_dataloader=train_dataloader,
+        test_dataloader=test_dataloader,
+        n_dim=subspace_dim,
+        learning_rate=learning_rate,
+        pos_list=range(-7, 0),
+        layer_list=range(10, 21),
+        invariant_seq=False,
+        invariant_persona=True,
         n_epochs=n_epochs,
         acc_step_batch_size=acc_step_batch_size,
         acc_iters=batch_size//acc_step_batch_size,
