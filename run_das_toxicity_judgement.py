@@ -81,7 +81,7 @@ test_dataloader = DataLoader(test_dataset, batch_size=acc_step_batch_size, shuff
 train_dataloader = itertools.cycle(train_dataloader)
 test_dataloader = itertools.cycle(test_dataloader)
 
-for subspace_dim in range(3):
+for subspace_dim in [1]:
 
     ## Toxicity
 
