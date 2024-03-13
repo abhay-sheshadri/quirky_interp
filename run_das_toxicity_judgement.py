@@ -23,7 +23,11 @@ dataset_path = "data/simple_toxic_data_filtered.jsonl" #"data/simple_toxic_data_
 
 personas = {
     "lenient": "You are somewhat lenient on toxicity\n",
-    "harsh": "You are somewhat harsh on toxicity\n"
+    "harsh": "You are somewhat harsh on toxicity\n",
+    "very lenient": "You are very lenient on toxicity\n",
+    "very harsh": "You are very harsh on toxicity\n",
+    "somewhat lenient": "You are somewhat lenient on toxicity\n",
+    "somewhat harsh": "You are somewhat harsh on toxicity\n",
 }
 
 possible_labels = ("CLEAN", "TOXIC")
@@ -81,10 +85,9 @@ test_dataloader = DataLoader(test_dataset, batch_size=acc_step_batch_size, shuff
 train_dataloader = itertools.cycle(train_dataloader)
 test_dataloader = itertools.cycle(test_dataloader)
 
-for subspace_dim in [1]:
+for subspace_dim in [1, 2]:
 
     ## Toxicity
-
     run_das_experiment(
         model=model,
         train_dataloader=train_dataloader,
@@ -92,7 +95,7 @@ for subspace_dim in [1]:
         n_dim=subspace_dim,
         learning_rate=learning_rate,
         pos_list=range(-7, 0),
-        layer_list=range(8, 20 , 2),
+        layer_list=range(10, 21),
         invariant_seq=False,
         invariant_persona=True,
         n_epochs=n_epochs,
@@ -102,7 +105,6 @@ for subspace_dim in [1]:
     )
 
     # Personality
-
     run_das_experiment(
         model=model,
         train_dataloader=train_dataloader,
@@ -110,7 +112,7 @@ for subspace_dim in [1]:
         n_dim=subspace_dim,
         learning_rate=learning_rate,
         pos_list=range(-7, 0),
-        layer_list=range(8, 20, 2),
+        layer_list=range(10, 21),
         invariant_seq=True,
         invariant_persona=False,
         n_epochs=n_epochs,

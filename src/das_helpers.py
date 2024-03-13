@@ -115,12 +115,14 @@ def run_das_experiment(
         acc_step_batch_size,
         acc_iters,
         verbose=False,
+        save_dir=None
 ):
     from datetime import datetime
     exp_time = datetime.now().strftime("%b%d-%H%M-%S")
 
-    folder = f"DAS_seq-{invariant_seq}_pers-{invariant_persona}_subdim-{n_dim}_{exp_time}"
-    os.makedirs(folder, exist_ok=True)
+    if save_dir is None:
+        save_dir = f"DAS_inv-seq-{invariant_seq}_inv-pers-{invariant_persona}_subdim-{n_dim}_{exp_time}"
+    os.makedirs(save_dir, exist_ok=True)
     results = {}
 
     for layer in tqdm(layer_list):
@@ -146,14 +148,14 @@ def run_das_experiment(
                 acc_iters=acc_iters,
                 verbose=False,
             )
-            torch.save(linear_rep.subspace, f"{folder}/linear_rep_{layer}_{position}.pt")
+            torch.save(linear_rep.subspace, f"{save_dir}/linear_rep_{layer}_{position}.pt")
 
             results[layer][position]["train_seq_loss"] = train_seq_loss
             results[layer][position]["train_persona_loss"] = train_persona_loss
             results[layer][position]["test_seq_loss"] = test_seq_loss
             results[layer][position]["test_persona_loss"] = test_persona_loss
 
-            torch.save(results, f"{folder}/results.pt")
+            torch.save(results, f"{save_dir}/results.pt")
 
 
 def train_linear_rep(
